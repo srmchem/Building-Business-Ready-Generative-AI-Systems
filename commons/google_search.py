@@ -72,7 +72,7 @@ def google_search_and_summarize(serpapi_api_key, query):
         summary = fetch_and_summarize_content(link)
         if summary:
             print(f"\nValid Link: {link}")
-            print("\nSummary:\n", summary)
+            print("\nWeb Search summary:\n", summary)
             return
 
     print("No readable content found on the provided links.")
