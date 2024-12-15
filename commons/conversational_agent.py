@@ -19,7 +19,7 @@ def conversational_agent(initial_user_input, mrole, mcontent, user_role,user_nam
 
     # Handle the initial user input
     if initial_user_input:
-        print(f"You: {initial_user_input}")
+        print(f"{user_name}: {initial_user_input}")
         messages_obj.append({"role": user_role, "content": initial_user_input})
 
         # Cleansed string representation of conversation
@@ -46,8 +46,8 @@ def conversational_agent(initial_user_input, mrole, mcontent, user_role,user_nam
     # Start the conversational loop
     while True:
         # User input
-        user_input = input("You: ")
-
+        user_input = input(f"{user_name}: ")
+        
         # Check for quit condition
         if user_input.lower() in ["q", "quit"]:
             print("Exiting the conversation. Goodbye!")
