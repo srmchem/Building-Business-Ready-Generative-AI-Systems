@@ -44,6 +44,11 @@ def google_search_and_summarize(serpapi_api_key, query):
     Returns:
     None: Prints the first valid link and the summary.
     """
+    # Check if the API key is provided
+    if not serpapi_api_key:
+    print("Web search. API key required.")
+    return
+
     # Set up search parameters
     params = {
         "engine": "google",
