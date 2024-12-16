@@ -46,7 +46,7 @@ def google_search_and_summarize(serpapi_api_key, query):
     """
     # Check if the API key is provided
     if not serpapi_api_key:
-    print("Web search. API key required.")
+      print("Web search. API key required.")
     return
 
     # Set up search parameters
