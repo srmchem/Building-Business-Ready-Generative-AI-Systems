@@ -4,8 +4,12 @@ Building Business-ready Generative AI Systems, First Edition</h1>
 <p align="center">
     This is the code repository for <a href =""> Business-ready Generative AI Systems, First Edition</a>, published by Packt.
 </p>
-    
+
 <p align="center">Last updated: December 17, 2024.</p>
+<p align="center">
+  <img src="https://github.com/Denis2054/Building-Business-Ready-Generative-AI-Systems/raw/main/GenAISys.png" alt="Generative AI Systems" />
+</p>
+
 
 <p align="center">
   See the <a href="https://github.com/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/CHANGELOG.md">CHANGELOG.md</a> for details.
