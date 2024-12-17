@@ -58,7 +58,7 @@ You can run the notebooks directly from the table below:
 | :-------- | :-------- | :------- |
 | | | | | |
 **Part I Building the Generative AI Controler**
- **Chapter 1: What is a ChatGPT AI controller??**
+ **Chapter 1: What is a ChatGPT AI controller?**
 | <ul><li>Contextual_Awareness_and_Memory_Retention.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter01/Contextual_Awareness_and_Memory_Retention.ipynb)  | <a href="https://www.kaggle.com/kernels/welcome?src=https://github.com/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter01/Contextual_Awareness_and_Memory_Retention.ipynbb"><img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Open In Kaggle"></a><br> | 
 
 </details>
