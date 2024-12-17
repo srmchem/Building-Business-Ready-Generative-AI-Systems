@@ -1,6 +1,6 @@
 # Building-Business-Ready-Generative-AI-Systems
 <h1 align="center">
-RAG-driven Generative AI, First Edition</h1>
+Building Business-ready Generative AI Systems, First Edition</h1>
 
 <p align="center">
     This is the code repository for <a href =""> Business-ready Generative AI Systems, First Edition</a>, published by Packt.
