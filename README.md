@@ -1,4 +1,3 @@
-# Building-Business-Ready-Generative-AI-Systems
 <h1 align="center">
 Building Business-ready Generative AI Systems, First Edition</h1>
 
