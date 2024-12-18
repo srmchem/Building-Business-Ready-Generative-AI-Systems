@@ -19,7 +19,7 @@ def make_openai_api_call(input, mrole,mcontent,user_role):
     # Define all parameters in a dictionary
     params = {
         "temperature": 0,
-        "max_tokens": 256,
+        "max_tokens": 1024,
         "top_p": 1,
         "frequency_penalty": 0,
         "presence_penalty": 0
