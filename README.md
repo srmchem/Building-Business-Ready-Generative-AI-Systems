@@ -66,7 +66,7 @@ You can run the notebooks directly from the table below:
  **Chapter 2 Building the Generative AI Controller**
 | <ul><li>Conversational_AI_Agent.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter02/Conversational_AI_Agent.ipynb)  |
 | <ul><li>T52GPT.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter02/T52GPT.ipynb)  | 
-| <ul><li>Conversational_AI_Agent.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter02/Generative_AI_Controller_Orchestrator.ipynb)  | 
+| <ul><li>Generative_AI_Controller_Orchestrator.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter02/Generative_AI_Controller_Orchestrator.ipynb)  | 
 
 <details open> 
   <summary><h2>Requirements for this book</summary>
