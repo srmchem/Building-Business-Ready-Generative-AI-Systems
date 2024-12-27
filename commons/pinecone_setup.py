@@ -6,7 +6,7 @@ from google.colab import userdata
 # Function to initialize the Pinecone API key
 def initialize_pinecone_api():
     # Access the secret by its name
-    API_KEY = userdata.get('PINECONE_API_KEY')
+    PINECONE_API_KEY = userdata.get('PINECONE_API_KEY')
     
     if not API_KEY:
         raise ValueError("PINECONE_API_KEY is not set in userdata!")
