@@ -72,7 +72,7 @@ You can run the notebooks directly from the table below:
 | <ul><li>Pinecone_RAG.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter03/Pinecone_RAG.ipynb)  | 
 | <ul><li>Query_Pinecone.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter03/Query_Pinecone.ipynb)  | 
  **Chapter 4, The AI Controller Orchestration Interface**
-| <ul><li>Business_ready_GenAISys_framework.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter04/Business_ready_GenAISys_framework.ipynb)  | 
+| <ul><li>Event-driven_GenAISys_interface.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter04/Event-driven_GenAISys_interface.ipynb)  | 
 
 <details open> 
   <summary><h2>Requirements for this book</summary>
