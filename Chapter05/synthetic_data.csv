@@ -1,0 +1,1001 @@
+CUSTOMER_ID,COUNTRY_VISITED,ACTIVITY,RATING
+1,Thailand,sailing,4
+2,Thailand,museums,4
+3,Japan,sailing,5
+4,China,sailing,1
+5,Germany,tennis,3
+6,Thailand,tennis,4
+7,Mexico,surfing,2
+8,Germany,surfing,2
+9,Italy,museums,2
+10,France,tennis,4
+11,Mexico,sailing,5
+12,Germany,surfing,5
+13,Turkey,tennis,4
+14,Italy,sailing,3
+15,China,sailing,5
+16,Italy,museums,5
+17,Japan,museums,5
+18,Turkey,skiing,2
+19,France,museums,1
+20,Germany,museums,5
+21,United States,skiing,1
+22,France,surfing,1
+23,Japan,tennis,4
+24,China,skiing,1
+25,China,tennis,2
+26,United States,skiing,5
+27,Germany,museums,1
+28,China,tennis,4
+29,Japan,skiing,3
+30,Germany,tennis,2
+31,Thailand,museums,5
+32,Italy,museums,4
+33,Turkey,surfing,4
+34,China,surfing,1
+35,United Kingdom,surfing,1
+36,United States,skiing,3
+37,Japan,skiing,5
+38,United Kingdom,sailing,1
+39,Thailand,surfing,4
+40,China,tennis,5
+41,Germany,museums,1
+42,United Kingdom,skiing,3
+43,Thailand,skiing,2
+44,China,skiing,4
+45,Italy,museums,2
+46,Italy,sailing,3
+47,United Kingdom,sailing,2
+48,Turkey,surfing,4
+49,Japan,tennis,3
+50,Germany,sailing,2
+51,China,skiing,3
+52,United Kingdom,sailing,4
+53,United States,museums,3
+54,United Kingdom,museums,2
+55,Germany,sailing,4
+56,China,skiing,3
+57,Thailand,museums,4
+58,United States,museums,5
+59,Thailand,sailing,3
+60,United Kingdom,skiing,3
+61,Germany,skiing,4
+62,Japan,sailing,3
+63,United Kingdom,skiing,5
+64,Thailand,skiing,2
+65,Italy,museums,3
+66,Turkey,museums,3
+67,Turkey,skiing,3
+68,Thailand,tennis,5
+69,Mexico,surfing,5
+70,Germany,skiing,1
+71,Turkey,surfing,5
+72,Italy,museums,5
+73,Turkey,surfing,1
+74,Japan,museums,1
+75,Thailand,museums,1
+76,China,skiing,1
+77,Germany,surfing,5
+78,Turkey,surfing,4
+79,China,skiing,3
+80,France,surfing,3
+81,Japan,skiing,3
+82,United Kingdom,skiing,3
+83,China,tennis,4
+84,Turkey,tennis,4
+85,Turkey,surfing,5
+86,Thailand,museums,2
+87,Mexico,surfing,2
+88,Germany,skiing,3
+89,United States,surfing,1
+90,Thailand,sailing,3
+91,Germany,museums,2
+92,United Kingdom,museums,4
+93,Turkey,tennis,4
+94,Turkey,tennis,3
+95,France,surfing,4
+96,Italy,museums,5
+97,Mexico,museums,4
+98,Italy,surfing,5
+99,Turkey,surfing,3
+100,Germany,sailing,2
+101,Turkey,sailing,1
+102,Thailand,skiing,1
+103,France,surfing,5
+104,United Kingdom,tennis,3
+105,Thailand,surfing,2
+106,Germany,sailing,3
+107,Japan,tennis,3
+108,United States,museums,4
+109,United States,skiing,2
+110,Turkey,tennis,3
+111,China,sailing,5
+112,Thailand,tennis,5
+113,United States,tennis,4
+114,France,sailing,4
+115,Turkey,surfing,1
+116,United Kingdom,museums,3
+117,Mexico,surfing,5
+118,Italy,museums,4
+119,United Kingdom,skiing,3
+120,France,sailing,4
+121,Turkey,tennis,3
+122,Thailand,skiing,5
+123,Turkey,museums,4
+124,United States,tennis,5
+125,Turkey,tennis,1
+126,Germany,museums,1
+127,France,tennis,3
+128,United Kingdom,museums,3
+129,United States,surfing,2
+130,Italy,sailing,2
+131,China,skiing,1
+132,Japan,skiing,3
+133,United Kingdom,tennis,3
+134,Germany,surfing,3
+135,Germany,surfing,5
+136,United States,museums,3
+137,China,tennis,1
+138,United States,skiing,3
+139,Germany,museums,5
+140,France,museums,4
+141,Turkey,skiing,5
+142,Germany,tennis,5
+143,United Kingdom,sailing,1
+144,Turkey,museums,2
+145,France,surfing,1
+146,France,skiing,3
+147,Japan,surfing,3
+148,China,tennis,3
+149,Japan,surfing,5
+150,United Kingdom,museums,5
+151,Thailand,skiing,4
+152,Italy,skiing,4
+153,Japan,surfing,3
+154,Mexico,museums,1
+155,Japan,skiing,4
+156,Turkey,tennis,4
+157,Germany,skiing,5
+158,China,sailing,2
+159,Thailand,skiing,4
+160,Mexico,skiing,3
+161,Thailand,tennis,5
+162,Mexico,sailing,4
+163,France,museums,3
+164,Japan,museums,1
+165,Germany,tennis,5
+166,Turkey,museums,5
+167,Germany,tennis,5
+168,Germany,museums,2
+169,China,skiing,1
+170,Germany,tennis,5
+171,Germany,tennis,1
+172,Japan,tennis,3
+173,France,museums,2
+174,United Kingdom,sailing,3
+175,Mexico,museums,1
+176,United Kingdom,museums,3
+177,Germany,surfing,4
+178,United Kingdom,surfing,4
+179,Turkey,museums,5
+180,Germany,museums,4
+181,France,tennis,5
+182,United Kingdom,skiing,4
+183,United Kingdom,surfing,5
+184,Italy,sailing,2
+185,France,skiing,3
+186,Japan,museums,3
+187,Germany,tennis,2
+188,Turkey,surfing,3
+189,Turkey,sailing,3
+190,United Kingdom,skiing,1
+191,Japan,sailing,3
+192,China,tennis,5
+193,Italy,museums,1
+194,United States,museums,4
+195,China,museums,1
+196,France,skiing,2
+197,Thailand,tennis,2
+198,United Kingdom,sailing,4
+199,United Kingdom,skiing,3
+200,Italy,skiing,5
+201,Mexico,sailing,5
+202,Italy,sailing,2
+203,Italy,surfing,1
+204,China,museums,1
+205,Germany,museums,4
+206,Italy,sailing,3
+207,Japan,museums,2
+208,Italy,sailing,2
+209,Turkey,surfing,1
+210,France,surfing,5
+211,United States,sailing,4
+212,Mexico,skiing,1
+213,France,surfing,3
+214,China,surfing,1
+215,Turkey,skiing,1
+216,Italy,museums,2
+217,France,skiing,4
+218,Turkey,sailing,3
+219,Italy,skiing,4
+220,Japan,sailing,5
+221,Italy,tennis,1
+222,Italy,surfing,5
+223,Mexico,sailing,2
+224,China,museums,3
+225,United Kingdom,skiing,2
+226,Turkey,sailing,2
+227,Germany,sailing,4
+228,China,skiing,3
+229,Italy,tennis,4
+230,Italy,sailing,5
+231,Mexico,tennis,2
+232,United States,surfing,2
+233,United States,tennis,4
+234,Thailand,skiing,2
+235,Turkey,museums,5
+236,United States,surfing,1
+237,Mexico,sailing,4
+238,China,skiing,3
+239,Italy,museums,2
+240,Germany,surfing,5
+241,Italy,tennis,2
+242,Japan,skiing,1
+243,United Kingdom,tennis,2
+244,Thailand,tennis,3
+245,Mexico,surfing,3
+246,China,sailing,5
+247,Mexico,tennis,4
+248,United States,tennis,4
+249,Turkey,skiing,4
+250,France,skiing,3
+251,United Kingdom,sailing,1
+252,Turkey,sailing,1
+253,Germany,surfing,2
+254,Japan,sailing,3
+255,Mexico,skiing,4
+256,France,surfing,4
+257,United Kingdom,sailing,1
+258,United Kingdom,tennis,1
+259,United States,sailing,3
+260,Germany,surfing,1
+261,United States,museums,3
+262,Mexico,museums,1
+263,Thailand,museums,5
+264,Turkey,skiing,1
+265,Turkey,surfing,3
+266,Japan,tennis,3
+267,Japan,sailing,5
+268,Mexico,museums,3
+269,United Kingdom,museums,5
+270,Germany,museums,2
+271,United States,sailing,3
+272,Mexico,skiing,1
+273,Thailand,surfing,1
+274,France,surfing,2
+275,United Kingdom,museums,4
+276,Germany,sailing,4
+277,France,tennis,3
+278,France,skiing,5
+279,Turkey,sailing,1
+280,United Kingdom,sailing,5
+281,Japan,sailing,5
+282,Turkey,skiing,1
+283,Turkey,skiing,4
+284,China,sailing,2
+285,Mexico,surfing,4
+286,United States,museums,1
+287,France,sailing,1
+288,Turkey,sailing,4
+289,Turkey,museums,4
+290,France,museums,4
+291,United States,skiing,5
+292,Japan,museums,5
+293,France,skiing,5
+294,Italy,sailing,1
+295,Italy,museums,3
+296,Germany,skiing,5
+297,Japan,museums,3
+298,France,skiing,5
+299,Germany,museums,4
+300,United States,sailing,5
+301,Germany,surfing,5
+302,France,surfing,3
+303,Japan,tennis,1
+304,United States,sailing,3
+305,Thailand,museums,2
+306,Mexico,surfing,4
+307,United States,sailing,3
+308,Turkey,skiing,5
+309,France,sailing,2
+310,Turkey,sailing,2
+311,Japan,sailing,5
+312,Thailand,skiing,4
+313,Turkey,skiing,5
+314,United Kingdom,skiing,5
+315,United States,sailing,5
+316,Mexico,surfing,3
+317,United Kingdom,museums,5
+318,Mexico,museums,2
+319,Thailand,museums,3
+320,France,tennis,3
+321,United States,skiing,5
+322,United States,tennis,1
+323,Germany,museums,1
+324,United Kingdom,sailing,1
+325,France,surfing,3
+326,France,surfing,1
+327,France,sailing,2
+328,Turkey,skiing,2
+329,France,sailing,3
+330,Mexico,surfing,3
+331,France,surfing,4
+332,United States,sailing,2
+333,China,sailing,2
+334,France,museums,1
+335,United States,museums,2
+336,United Kingdom,tennis,5
+337,Mexico,tennis,5
+338,China,tennis,3
+339,France,sailing,3
+340,France,museums,1
+341,Mexico,museums,3
+342,Germany,tennis,5
+343,China,tennis,1
+344,France,museums,4
+345,Italy,surfing,4
+346,United States,tennis,5
+347,Italy,sailing,2
+348,Thailand,sailing,4
+349,Mexico,surfing,1
+350,Thailand,skiing,4
+351,Thailand,surfing,2
+352,Italy,museums,4
+353,Japan,tennis,4
+354,United Kingdom,museums,3
+355,United Kingdom,surfing,1
+356,Germany,tennis,3
+357,China,skiing,2
+358,Mexico,skiing,3
+359,United States,skiing,1
+360,China,surfing,1
+361,Japan,skiing,3
+362,China,surfing,4
+363,China,surfing,3
+364,Mexico,surfing,4
+365,Turkey,tennis,1
+366,Germany,surfing,1
+367,China,skiing,1
+368,United Kingdom,skiing,2
+369,Turkey,sailing,4
+370,United Kingdom,museums,2
+371,Mexico,skiing,5
+372,Turkey,museums,3
+373,Germany,sailing,2
+374,France,museums,4
+375,Turkey,surfing,2
+376,Germany,surfing,1
+377,United Kingdom,skiing,3
+378,Japan,tennis,4
+379,United States,skiing,1
+380,Italy,sailing,4
+381,China,tennis,2
+382,Japan,surfing,4
+383,Mexico,museums,2
+384,Turkey,tennis,2
+385,Italy,skiing,2
+386,Japan,skiing,1
+387,United States,skiing,2
+388,Germany,sailing,3
+389,Germany,sailing,2
+390,Thailand,museums,2
+391,China,tennis,4
+392,France,sailing,1
+393,Japan,skiing,5
+394,United Kingdom,skiing,4
+395,Thailand,museums,2
+396,Japan,tennis,5
+397,Italy,skiing,2
+398,Mexico,surfing,1
+399,Thailand,surfing,5
+400,Germany,surfing,1
+401,France,sailing,4
+402,United States,tennis,5
+403,Germany,sailing,5
+404,Japan,museums,5
+405,Japan,museums,1
+406,France,museums,2
+407,Italy,sailing,1
+408,France,surfing,2
+409,Italy,surfing,4
+410,United States,tennis,3
+411,Italy,sailing,3
+412,United States,sailing,5
+413,Germany,museums,4
+414,United Kingdom,museums,1
+415,United States,tennis,3
+416,Mexico,skiing,3
+417,Japan,museums,3
+418,France,tennis,5
+419,Mexico,skiing,4
+420,France,tennis,3
+421,Mexico,skiing,2
+422,United States,surfing,3
+423,Thailand,sailing,3
+424,China,surfing,2
+425,China,sailing,1
+426,United States,museums,5
+427,United Kingdom,skiing,3
+428,United States,sailing,3
+429,Mexico,skiing,1
+430,United Kingdom,museums,4
+431,United States,skiing,1
+432,Mexico,tennis,1
+433,United States,surfing,3
+434,United Kingdom,tennis,3
+435,United States,museums,2
+436,Japan,tennis,1
+437,United States,sailing,2
+438,Thailand,skiing,3
+439,Italy,surfing,2
+440,China,sailing,5
+441,France,sailing,5
+442,United Kingdom,museums,4
+443,Turkey,sailing,1
+444,Mexico,surfing,5
+445,Thailand,tennis,2
+446,Japan,tennis,4
+447,Thailand,surfing,1
+448,United Kingdom,tennis,1
+449,Turkey,sailing,5
+450,Germany,tennis,4
+451,France,sailing,4
+452,France,skiing,3
+453,France,skiing,1
+454,Mexico,tennis,5
+455,Japan,sailing,3
+456,Mexico,museums,4
+457,China,tennis,5
+458,United States,sailing,4
+459,Italy,surfing,5
+460,France,skiing,2
+461,Japan,sailing,5
+462,Italy,museums,1
+463,Mexico,surfing,3
+464,Mexico,sailing,2
+465,China,skiing,1
+466,Mexico,tennis,5
+467,Thailand,skiing,1
+468,France,museums,3
+469,Japan,surfing,5
+470,United States,museums,3
+471,Thailand,surfing,4
+472,Thailand,surfing,5
+473,Mexico,sailing,5
+474,China,museums,5
+475,France,sailing,1
+476,Mexico,sailing,5
+477,United States,museums,3
+478,China,museums,5
+479,Germany,skiing,2
+480,Turkey,skiing,3
+481,Japan,surfing,3
+482,United Kingdom,museums,4
+483,Japan,museums,5
+484,Thailand,skiing,1
+485,Thailand,tennis,4
+486,Mexico,tennis,2
+487,Mexico,tennis,3
+488,United States,sailing,1
+489,Mexico,sailing,5
+490,France,surfing,3
+491,France,surfing,3
+492,France,skiing,1
+493,Italy,museums,2
+494,Mexico,tennis,3
+495,Germany,sailing,4
+496,Germany,skiing,1
+497,Mexico,museums,5
+498,Germany,skiing,5
+499,Italy,museums,3
+500,Mexico,tennis,4
+501,United Kingdom,sailing,2
+502,Mexico,tennis,1
+503,Japan,skiing,3
+504,United States,tennis,4
+505,France,museums,2
+506,Thailand,skiing,1
+507,France,skiing,2
+508,Turkey,surfing,3
+509,Japan,skiing,1
+510,Germany,skiing,3
+511,Japan,sailing,5
+512,Japan,surfing,1
+513,Japan,surfing,1
+514,Turkey,skiing,4
+515,Germany,museums,5
+516,Turkey,tennis,4
+517,France,museums,1
+518,United Kingdom,tennis,1
+519,Italy,sailing,2
+520,Italy,tennis,2
+521,Japan,tennis,2
+522,Turkey,museums,2
+523,China,sailing,2
+524,Japan,skiing,5
+525,France,skiing,3
+526,China,skiing,1
+527,Thailand,tennis,2
+528,Mexico,sailing,4
+529,Thailand,tennis,2
+530,Thailand,surfing,5
+531,Turkey,skiing,5
+532,Mexico,museums,5
+533,Italy,skiing,1
+534,Japan,sailing,1
+535,Japan,tennis,2
+536,Turkey,sailing,1
+537,France,surfing,5
+538,Turkey,skiing,5
+539,Thailand,skiing,3
+540,United States,skiing,2
+541,Italy,skiing,4
+542,Turkey,museums,4
+543,Mexico,museums,4
+544,Germany,sailing,4
+545,Italy,museums,1
+546,Germany,surfing,5
+547,Thailand,skiing,4
+548,Italy,sailing,3
+549,Japan,skiing,3
+550,Thailand,museums,3
+551,France,surfing,5
+552,Mexico,surfing,2
+553,China,skiing,1
+554,Thailand,tennis,3
+555,Thailand,surfing,1
+556,Mexico,tennis,1
+557,China,skiing,2
+558,Japan,sailing,4
+559,China,sailing,4
+560,Italy,museums,2
+561,United States,surfing,4
+562,Germany,skiing,1
+563,Thailand,skiing,2
+564,Japan,skiing,1
+565,Turkey,skiing,5
+566,Turkey,skiing,1
+567,China,skiing,4
+568,China,surfing,5
+569,France,surfing,2
+570,Mexico,skiing,1
+571,United States,surfing,4
+572,United States,skiing,1
+573,Turkey,museums,1
+574,Thailand,tennis,2
+575,Mexico,skiing,4
+576,France,skiing,1
+577,United States,tennis,5
+578,Thailand,surfing,2
+579,United Kingdom,sailing,1
+580,Japan,tennis,2
+581,Thailand,sailing,3
+582,China,museums,2
+583,Italy,surfing,4
+584,Turkey,museums,3
+585,Thailand,sailing,4
+586,United States,museums,1
+587,Turkey,sailing,2
+588,Turkey,tennis,5
+589,France,surfing,5
+590,France,skiing,5
+591,United Kingdom,tennis,2
+592,United States,skiing,2
+593,Turkey,surfing,4
+594,China,tennis,2
+595,Mexico,skiing,1
+596,Japan,museums,4
+597,Turkey,skiing,2
+598,Japan,skiing,3
+599,Italy,sailing,4
+600,Turkey,sailing,1
+601,United Kingdom,skiing,3
+602,Mexico,sailing,3
+603,Japan,museums,1
+604,Turkey,sailing,4
+605,Germany,sailing,3
+606,France,skiing,4
+607,Italy,skiing,3
+608,Germany,skiing,1
+609,Thailand,surfing,1
+610,Mexico,tennis,1
+611,Mexico,sailing,5
+612,Turkey,tennis,4
+613,Mexico,museums,1
+614,Turkey,surfing,1
+615,Japan,museums,5
+616,Germany,surfing,4
+617,Germany,sailing,2
+618,Italy,surfing,4
+619,Mexico,skiing,1
+620,Italy,skiing,5
+621,Turkey,skiing,2
+622,United States,museums,3
+623,United States,museums,3
+624,Germany,tennis,2
+625,United States,skiing,2
+626,Germany,surfing,1
+627,Turkey,museums,1
+628,France,museums,3
+629,Mexico,tennis,5
+630,China,sailing,3
+631,Japan,surfing,5
+632,China,skiing,1
+633,Italy,museums,5
+634,Japan,surfing,1
+635,Mexico,skiing,3
+636,Italy,museums,1
+637,United States,skiing,2
+638,Japan,sailing,5
+639,France,skiing,3
+640,United Kingdom,sailing,1
+641,United Kingdom,sailing,2
+642,Italy,tennis,1
+643,China,museums,4
+644,Italy,sailing,5
+645,United Kingdom,skiing,2
+646,Thailand,skiing,5
+647,Germany,skiing,2
+648,Turkey,skiing,1
+649,United States,tennis,2
+650,Germany,tennis,2
+651,Japan,tennis,3
+652,Germany,surfing,4
+653,Japan,skiing,5
+654,Italy,surfing,3
+655,United Kingdom,sailing,1
+656,Japan,sailing,5
+657,France,skiing,2
+658,Mexico,sailing,1
+659,China,museums,4
+660,United States,sailing,1
+661,China,surfing,3
+662,Turkey,tennis,5
+663,Turkey,skiing,2
+664,France,skiing,3
+665,Mexico,tennis,1
+666,China,skiing,3
+667,Turkey,sailing,3
+668,Thailand,museums,4
+669,United Kingdom,surfing,4
+670,Japan,sailing,1
+671,United Kingdom,sailing,3
+672,United States,surfing,4
+673,Italy,tennis,3
+674,Germany,sailing,2
+675,China,surfing,2
+676,Germany,sailing,5
+677,Italy,museums,3
+678,Italy,skiing,1
+679,United States,surfing,5
+680,Thailand,skiing,4
+681,Italy,surfing,2
+682,China,tennis,1
+683,Japan,sailing,4
+684,United Kingdom,surfing,5
+685,Italy,museums,3
+686,Mexico,skiing,1
+687,China,surfing,3
+688,China,tennis,3
+689,Turkey,skiing,4
+690,France,surfing,3
+691,Italy,surfing,1
+692,Italy,sailing,1
+693,China,skiing,2
+694,United Kingdom,sailing,4
+695,France,sailing,1
+696,Turkey,sailing,5
+697,Thailand,museums,3
+698,Germany,skiing,2
+699,United Kingdom,museums,5
+700,France,museums,1
+701,France,museums,1
+702,Turkey,surfing,4
+703,Thailand,surfing,2
+704,China,sailing,2
+705,China,tennis,4
+706,United States,skiing,5
+707,France,tennis,2
+708,China,surfing,4
+709,Germany,museums,3
+710,United Kingdom,museums,2
+711,Thailand,surfing,1
+712,United States,skiing,4
+713,Turkey,surfing,4
+714,Mexico,tennis,1
+715,France,surfing,3
+716,Japan,sailing,1
+717,France,tennis,2
+718,France,sailing,4
+719,United Kingdom,museums,1
+720,Germany,sailing,5
+721,Thailand,tennis,4
+722,Thailand,skiing,3
+723,United States,sailing,2
+724,Italy,skiing,4
+725,United States,skiing,3
+726,United Kingdom,museums,2
+727,Turkey,museums,3
+728,United States,tennis,3
+729,Italy,sailing,5
+730,China,museums,2
+731,Mexico,sailing,3
+732,China,museums,5
+733,China,museums,2
+734,United Kingdom,museums,1
+735,United Kingdom,surfing,1
+736,Germany,surfing,3
+737,China,museums,4
+738,Thailand,tennis,4
+739,China,tennis,2
+740,Mexico,surfing,5
+741,Mexico,museums,5
+742,Italy,museums,2
+743,Italy,museums,3
+744,Thailand,museums,5
+745,United Kingdom,museums,5
+746,Japan,sailing,3
+747,Germany,tennis,3
+748,United States,museums,2
+749,United States,sailing,2
+750,Germany,surfing,4
+751,United Kingdom,sailing,3
+752,Turkey,tennis,4
+753,United Kingdom,surfing,3
+754,China,surfing,1
+755,United Kingdom,tennis,2
+756,Japan,tennis,5
+757,United States,sailing,5
+758,Turkey,tennis,5
+759,Italy,museums,1
+760,Italy,museums,4
+761,Germany,surfing,2
+762,France,skiing,5
+763,France,tennis,1
+764,United States,skiing,4
+765,Mexico,tennis,2
+766,Italy,skiing,2
+767,Thailand,surfing,2
+768,Japan,tennis,4
+769,Mexico,museums,2
+770,France,museums,4
+771,Mexico,surfing,5
+772,Germany,sailing,4
+773,Thailand,sailing,4
+774,Thailand,sailing,5
+775,United Kingdom,sailing,4
+776,United Kingdom,skiing,3
+777,Turkey,sailing,2
+778,Thailand,skiing,2
+779,Thailand,skiing,3
+780,Japan,skiing,5
+781,Mexico,surfing,4
+782,Italy,sailing,2
+783,Japan,tennis,1
+784,United States,tennis,4
+785,France,surfing,1
+786,Turkey,museums,2
+787,Italy,skiing,2
+788,China,tennis,2
+789,Mexico,sailing,1
+790,Mexico,museums,1
+791,China,museums,3
+792,United Kingdom,skiing,4
+793,France,museums,2
+794,Italy,tennis,1
+795,Italy,sailing,3
+796,Japan,sailing,2
+797,China,sailing,3
+798,Mexico,sailing,5
+799,China,surfing,1
+800,United States,museums,4
+801,Italy,skiing,3
+802,Japan,tennis,3
+803,United Kingdom,museums,4
+804,China,tennis,4
+805,Germany,museums,1
+806,Germany,surfing,2
+807,Germany,sailing,2
+808,Thailand,surfing,2
+809,United Kingdom,museums,2
+810,Turkey,museums,3
+811,United Kingdom,surfing,3
+812,Japan,surfing,2
+813,Turkey,sailing,3
+814,United States,tennis,5
+815,Italy,skiing,5
+816,Germany,sailing,4
+817,Germany,surfing,1
+818,Mexico,museums,1
+819,Thailand,sailing,1
+820,France,sailing,4
+821,Turkey,sailing,1
+822,Thailand,museums,3
+823,United Kingdom,skiing,2
+824,Germany,museums,2
+825,China,sailing,5
+826,France,skiing,1
+827,China,skiing,4
+828,Japan,museums,1
+829,Turkey,surfing,3
+830,United Kingdom,sailing,2
+831,Italy,museums,2
+832,Turkey,skiing,1
+833,Mexico,museums,4
+834,United Kingdom,surfing,3
+835,Italy,surfing,2
+836,China,sailing,2
+837,United States,museums,2
+838,Italy,tennis,4
+839,United Kingdom,museums,1
+840,Italy,tennis,2
+841,Turkey,surfing,4
+842,Italy,skiing,3
+843,Germany,tennis,1
+844,Italy,museums,4
+845,Italy,tennis,2
+846,United Kingdom,skiing,1
+847,United States,surfing,3
+848,United States,surfing,1
+849,Japan,tennis,4
+850,Italy,surfing,3
+851,China,museums,4
+852,Mexico,surfing,2
+853,Italy,surfing,3
+854,United Kingdom,tennis,4
+855,China,museums,2
+856,Italy,surfing,2
+857,France,surfing,4
+858,Turkey,tennis,5
+859,United Kingdom,sailing,3
+860,Italy,tennis,1
+861,Thailand,skiing,5
+862,Turkey,tennis,5
+863,Germany,sailing,5
+864,United States,surfing,2
+865,Germany,skiing,2
+866,Turkey,tennis,3
+867,Italy,tennis,5
+868,Turkey,sailing,4
+869,Italy,tennis,2
+870,Mexico,surfing,3
+871,Thailand,sailing,5
+872,Japan,sailing,1
+873,Mexico,skiing,3
+874,China,skiing,5
+875,Mexico,sailing,2
+876,Turkey,skiing,3
+877,Germany,sailing,3
+878,United Kingdom,skiing,2
+879,Italy,surfing,3
+880,United States,museums,4
+881,Japan,skiing,1
+882,United Kingdom,skiing,4
+883,France,tennis,4
+884,Italy,tennis,3
+885,Germany,sailing,5
+886,Mexico,surfing,1
+887,Mexico,sailing,4
+888,Germany,skiing,1
+889,Turkey,surfing,1
+890,Turkey,sailing,1
+891,United States,sailing,4
+892,United States,tennis,2
+893,Turkey,skiing,4
+894,United Kingdom,skiing,1
+895,Germany,tennis,5
+896,Japan,museums,3
+897,United Kingdom,skiing,3
+898,United States,surfing,3
+899,Germany,skiing,3
+900,France,skiing,2
+901,United Kingdom,surfing,1
+902,Italy,tennis,3
+903,Germany,surfing,1
+904,Italy,sailing,5
+905,Italy,skiing,1
+906,Turkey,surfing,1
+907,France,tennis,4
+908,Turkey,museums,2
+909,Thailand,sailing,1
+910,Mexico,skiing,4
+911,France,surfing,1
+912,China,museums,2
+913,France,surfing,3
+914,United States,sailing,1
+915,Germany,skiing,4
+916,China,skiing,1
+917,Japan,sailing,5
+918,Thailand,skiing,5
+919,France,museums,2
+920,United States,surfing,5
+921,France,tennis,2
+922,Thailand,tennis,5
+923,Italy,skiing,5
+924,Italy,tennis,2
+925,France,sailing,5
+926,Germany,museums,3
+927,China,sailing,1
+928,Japan,tennis,5
+929,Germany,tennis,1
+930,Italy,tennis,4
+931,Mexico,surfing,4
+932,Thailand,surfing,3
+933,Italy,skiing,2
+934,United Kingdom,surfing,1
+935,United Kingdom,sailing,1
+936,France,surfing,3
+937,Japan,skiing,3
+938,Turkey,tennis,4
+939,Turkey,surfing,1
+940,France,sailing,2
+941,France,surfing,1
+942,United States,skiing,1
+943,United States,sailing,3
+944,Italy,skiing,5
+945,Germany,museums,2
+946,Germany,tennis,1
+947,United Kingdom,museums,2
+948,China,museums,4
+949,Japan,skiing,5
+950,Italy,museums,4
+951,United States,tennis,5
+952,Germany,skiing,5
+953,Turkey,tennis,3
+954,France,tennis,3
+955,Germany,skiing,5
+956,Germany,sailing,5
+957,China,surfing,1
+958,United Kingdom,surfing,5
+959,Japan,skiing,2
+960,Mexico,tennis,5
+961,Turkey,surfing,1
+962,Germany,surfing,1
+963,France,surfing,4
+964,China,museums,2
+965,Italy,surfing,1
+966,United Kingdom,tennis,4
+967,France,sailing,1
+968,Japan,museums,2
+969,United States,surfing,5
+970,Mexico,museums,3
+971,United States,sailing,2
+972,Italy,museums,3
+973,France,surfing,1
+974,Japan,skiing,3
+975,China,surfing,2
+976,Germany,museums,3
+977,Turkey,surfing,4
+978,Italy,museums,1
+979,United Kingdom,surfing,1
+980,China,skiing,4
+981,Turkey,sailing,5
+982,United States,surfing,2
+983,Germany,museums,2
+984,China,museums,5
+985,China,sailing,3
+986,France,sailing,5
+987,Italy,surfing,5
+988,Germany,tennis,1
+989,Thailand,museums,3
+990,Turkey,sailing,1
+991,Italy,sailing,2
+992,Thailand,skiing,2
+993,Thailand,tennis,5
+994,United States,museums,1
+995,France,surfing,1
+996,Thailand,skiing,2
+997,Thailand,surfing,1
+998,Thailand,surfing,1
+999,Turkey,sailing,2
+1000,China,museums,5
