@@ -1,10 +1,12 @@
 import requests
-from IPython.display import display, Image
-from openai_api import make_openai_api_call
-from openai_api import image_analysis
-from openai_api import generate_image
-from machine_learning import bayes
-from web_search import search
+
+# Implemented in Chapter06
+def bayes(input, data):
+    #Endpoint for the Bayes algorithm that will be implemented in Chapter 6
+    if input=="":
+      # Testing the endpoint in a CoT (Chain of Reasoning)
+      text="The customers would like more activities during their trips especially on the ocean."
+    return text
 
 def chain_of_thought_reasoning(initial_query):
     steps = []
