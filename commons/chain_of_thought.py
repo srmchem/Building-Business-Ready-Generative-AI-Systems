@@ -92,6 +92,7 @@ def image_analysis(image_path_or_url, query_text, model="gpt-4o"):
 
     # Return the response content
     return response.choices[0].message.content
+
 # Implemented in Chapter05
 def generate_image(prompt, model="dall-e-3", size="1024x1024", quality="standard", n=1):
     """
@@ -164,7 +165,7 @@ def chain_of_thought_reasoning(initial_query):
     with open(save_path, "wb") as file:
         file.write(image_data)
     steps.append(f"Image saved as {save_path}")
-    display(Image(filename=save_path))
+    #display(Image(filename=save_path))
 
     # Step 4: Providing an engaging story based on the generated image
     steps.append("Step 4: Providing an engaging story based on the generated image.")
