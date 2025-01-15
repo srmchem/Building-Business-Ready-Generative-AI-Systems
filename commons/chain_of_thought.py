@@ -1,5 +1,10 @@
 import requests
 from IPython.display import display, Image
+from openai_api import make_openai_api_call
+from openai_api import image_analysis
+from openai_api import generate_image
+from machine_learning import bayes
+from web_search import search
 
 def chain_of_thought_reasoning(initial_query):
     steps = []
