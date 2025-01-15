@@ -1,4 +1,4 @@
-# Implemented in Chapter06
+# Implemented in Chapter09
 def search(query):
     #Endpoint for the web search function that will be implemented in Chapter 6
     if query=="":
