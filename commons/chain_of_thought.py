@@ -13,7 +13,7 @@ def chain_of_thought_reasoning(initial_query):
 
     # Step 1: Bayes analysis of the customer database
     steps.append("Step 1: Performing Bayes analysis of the customer database.")
-    result_ml = machine_learning.bayes("", "")
+    result_ml = bayes("", "")
     steps.append(f"Bayes analysis result: {result_ml}")
 
     # Step 2: Searching for activities that fit the customer needs
