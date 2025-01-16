@@ -144,7 +144,7 @@ def chain_of_thought_reasoning(initial_query):
     display(reasoning_output)
 
     # Step 1: Bayes analysis of the customer database
-    steps.append("Step 1: Performing Bayes analysis of the customer database.")
+    steps.append("Process: Performing Bayes analysis of the customer database. \n")
     with reasoning_output:
         reasoning_output.clear_output(wait=True)
         print(steps[-1])  # Print the current step
@@ -153,7 +153,7 @@ def chain_of_thought_reasoning(initial_query):
     steps.append(f"Bayes analysis result: {result_ml}")
 
     # Step 2: Searching for activities that fit the customer needs
-    steps.append("Step 2: Searching for activities that fit the customer needs.")
+    steps.append("Process: Searching for activities that fit the customer needs. \n")
     with reasoning_output:
         reasoning_output.clear_output(wait=True)
         print(steps[-1])
@@ -172,7 +172,7 @@ def chain_of_thought_reasoning(initial_query):
     steps.append(f"Activity suggestions: {task_response}")
 
     # Step 3: Generating an image based on the ideation
-    steps.append("Step 3: Generating an image based on the ideation.")
+    steps.append("Process: Generating an image based on the ideation. \n")
     with reasoning_output:
         reasoning_output.clear_output(wait=True)
         print(steps[-1])
@@ -187,7 +187,7 @@ def chain_of_thought_reasoning(initial_query):
     steps.append(f"Image saved as {save_path}")
 
     # Step 4: Providing an engaging story based on the generated image
-    steps.append("Step 4: Providing an engaging story based on the generated image.")
+    steps.append("Process: Providing an engaging story based on the generated image. \n")
     with reasoning_output:
         reasoning_output.clear_output(wait=True)
         print(steps[-1])
