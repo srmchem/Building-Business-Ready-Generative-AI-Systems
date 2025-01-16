@@ -89,19 +89,7 @@ def image_analysis(image_path_or_url, query_text, model="gpt-4o"):
 
 # Implemented in Chapter05
 def generate_image(prompt, model="dall-e-3", size="1024x1024", quality="standard", n=1):
-    """
-    Function to generate an image using OpenAI's image generation API.
-
-    Args:
-        prompt (str): The prompt describing the image to generate.
-        model (str): The OpenAI model to use for image generation. Defaults to "dall-e-3".
-        size (str): The size of the generated image. Defaults to "1024x1024".
-        quality (str): The quality of the generated image. Defaults to "standard".
-        n (int): The number of images to generate. Defaults to 1.
-
-    Returns:
-        str: The URL of the generated image.
-    """
+    
     # Initialize the OpenAI client
     client = OpenAI()
 
