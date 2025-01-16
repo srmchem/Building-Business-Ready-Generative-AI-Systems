@@ -90,6 +90,10 @@ def image_analysis(image_path_or_url, query_text, model="gpt-4o"):
         **params  # Unpack the parameters dictionary
     )
 
+    # Save the result to a file
+    with open("image_text.txt", "w") as file:
+        file.write(result)
+        
     # Return the response content
     return response.choices[0].message.content
 
