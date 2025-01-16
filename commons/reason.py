@@ -92,7 +92,7 @@ def image_analysis(image_path_or_url, query_text, model="gpt-4o"):
 
     # Save the result to a file
     with open("image_text.txt", "w") as file:
-        file.write(result)
+        file.write(response.choices[0].message.content)
         
     # Return the response content
     return response.choices[0].message.content
