@@ -46,17 +46,7 @@ def make_openai_api_call(input, mrole,mcontent,user_role):
     return response.choices[0].message.content
 
 def image_analysis(image_path_or_url, query_text, model="gpt-4o"):
-    """
-    Analyze an image using OpenAI's vision-capable model.
-
-    Args:
-        image_path_or_url (str): Path to a local image file or URL of the image.
-        query_text (str): The query related to the image.
-        model (str): The OpenAI model to use. Defaults to "gpt-4o".
-
-    Returns:
-        str: The analysis result from the model.
-    """
+    
     # Initialize the content list with the query text
     content = [{"type": "text", "text": query_text}]
 
