@@ -106,7 +106,7 @@ def generate_image(prompt, model="dall-e-3", size="1024x1024", quality="standard
     return response.data[0].url
 
 # Implemented in Chapter06
-def bayes(input, data):
+def ml_baseline(input, data):
     #Endpoint for the Bayes algorithm that will be implemented in Chapter 6
     if input=="":
       # Testing the endpoint in a CoT (Chain of Reasoning)
@@ -125,16 +125,16 @@ def chain_of_thought_reasoning(initial_query):
     # Display the reasoning_output widget in the interface
     display(reasoning_output)
 
-    # Step 1: Bayes analysis of the customer database
-    steps.append("Process: Performing Bayes analysis of the customer database. \n")
+    # Step 1: Analysis of the customer database and prediction
+    steps.append("Process: Performing machine learning analysis of the customer database. \n")
     with reasoning_output:
         reasoning_output.clear_output(wait=True)
         print(steps[-1])  # Print the current step
     time.sleep(2)  # Simulate processing time
-    result_ml = bayes("", "")
-    steps.append(f"Bayes analysis result: {result_ml}")
+    result_ml = ml_baseline("", "")
+    steps.append(f"Machine learning analysis result: {result_ml}")
 
-    # Step 2: Searching for activities that fit the customer needs
+    # Step 2: Searching for activities that fits customer needs
     steps.append("Process: Searching for activities that fit the customer needs. \n")
     with reasoning_output:
         reasoning_output.clear_output(wait=True)
