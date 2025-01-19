@@ -74,8 +74,7 @@ You can run the notebooks directly from the table below:
  **Chapter 4, The AI Controller Orchestration Interface**
 | <ul><li>Event-driven_GenAISys_framework.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter04/Event-driven_GenAISys_framework.ipynb)  | 
  **Chapter 5, Multimodal Multi-Functional Reasoning with Chain of Thought(CoT)**
-| <ul><li>Multimodal_reasoning_with Chain_of_Thought.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter05/Multimodal_reasoning_with Chain_of_Thought.ipynb)  | 
-
+| <ul><li>Multimodal_reasoning_with_Chain_of_Thought.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter05/Multimodal_reasoning_with_Chain_of_Thought.ipynb)  | 
 
 <details open> 
   <summary><h2>Requirements for this book</summary>
