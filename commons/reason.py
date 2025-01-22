@@ -184,11 +184,6 @@ def chain_of_thought_reasoning(initial_query):
         print("All steps completed!")
     return steps
 
-# Import the function from custom machine learning file
-import os
-import machine_learning
-from machine_learning import ml_agent
-
 def react(initial_query):
     steps = []
 
