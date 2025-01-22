@@ -197,7 +197,7 @@ def react(initial_query):
     display(reasoning_output)
 
     # Step 1: Analysis of the customer database and prediction
-    steps.append("Process: ensemble method analysis of the customer database. \n")
+    steps.append("Process: Ensemble method analysis of the customer database. \n")
     with reasoning_output:
         reasoning_output.clear_output(wait=True)
         print(steps[-1])  # Print the current step
