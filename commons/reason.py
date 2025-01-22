@@ -202,8 +202,8 @@ def react(initial_query):
         reasoning_output.clear_output(wait=True)
         print(steps[-1])  # Print the current step
     time.sleep(2)  # Simulate processing time
-    result_ml = ml_baseline("", "")
-    #result_ml = machine_learning.ml_agent("", "")
+    #result_ml = ml_baseline("", "")
+    result_ml = machine_learning.ml_agent("", "")
     steps.append(f"Machine learning analysis result: {result_ml}")
 
     # Step 2: Searching for activities that fits customer needs
