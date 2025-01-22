@@ -183,3 +183,39 @@ def chain_of_thought_reasoning(initial_query):
         reasoning_output.clear_output(wait=True)
         print("All steps completed!")
     return steps
+
+def react(initial_query):
+    steps = []
+
+    # Display the reasoning_output widget in the interface
+    display(reasoning_output)
+
+    # Step 1: Analysis of the customer database and prediction
+    steps.append("Process: Performing machine learning analysis of the customer database. \n")
+    with reasoning_output:
+        reasoning_output.clear_output(wait=True)
+        print(steps[-1])  # Print the current step
+    time.sleep(2)  # Simulate processing time
+    result_ml = ml_baseline("", "")
+    steps.append(f"Machine learning analysis result: {result_ml}")
+
+    # Step 2: Searching for activities that fits customer needs
+    steps.append("Process: Searching for activities that fit the customer needs. \n")
+    with reasoning_output:
+        reasoning_output.clear_output(wait=True)
+        print(steps[-1])
+    time.sleep(2)
+    umessage = (
+        "What activities could you suggest to provide more activities and excitement in holiday trips."
+        + result_ml
+    )
+    mrole = "system"
+    mcontent = (
+        "You are an assistant that explains your reasoning step by step before providing the answer. "
+        "Use structured steps to break down the query."
+    )
+    user_role = "user"
+    task_response = make_openai_api_call(umessage, mrole, mcontent, user_role)
+    steps.append(f"Activity suggestions: {task_response}")
+    return steps
+
