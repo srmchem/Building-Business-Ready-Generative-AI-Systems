@@ -197,7 +197,7 @@ def react(initial_query):
     display(reasoning_output)
 
     # Step 1: Analysis of the customer database and prediction
-    steps.append("Process: Performing machine learning analysis of the customer database. \n")
+    steps.append("Process: ensemble method analysis of the customer database. \n")
     with reasoning_output:
         reasoning_output.clear_output(wait=True)
         print(steps[-1])  # Print the current step
@@ -224,5 +224,34 @@ def react(initial_query):
     user_role = "user"
     task_response = make_openai_api_call(umessage, mrole, mcontent, user_role)
     steps.append(f"Activity suggestions: {task_response}")
-    return steps
 
+    # Step 3: Generating an image based on the ideation
+    steps.append("Process: Generating an image based on the ideation. \n")
+    with reasoning_output:
+        reasoning_output.clear_output(wait=True)
+        print(steps[-1])
+    time.sleep(2)
+    prompt = task_response
+    image_url = generate_image(prompt)
+    steps.append(f"Generated Image URL: {image_url}")
+    save_path = "c_image.png"
+    image_data = requests.get(image_url).content
+    with open(save_path, "wb") as file:
+        file.write(image_data)
+    steps.append(f"Image saved as {save_path}")
+
+    # Step 4: Providing an engaging story based on the generated image
+    steps.append("Process: Providing an engaging story based on the generated image. \n")
+    with reasoning_output:
+        reasoning_output.clear_output(wait=True)
+        print(steps[-1])
+    time.sleep(2)
+    query_text = "Providing an engaging story based on the generated image"
+    response = image_analysis(image_url, query_text)
+    steps.append(f"Story response: {response}")
+
+    # Clear output and notify completion
+    with reasoning_output:
+        reasoning_output.clear_output(wait=True)
+        print("All steps completed!")
+    return steps
