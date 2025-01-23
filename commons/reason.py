@@ -197,7 +197,7 @@ def react(initial_query):
     display(reasoning_output)
 
     # Step 1: Analysis of the customer database and prediction
-    steps.append("Process: Ensemble method analysis of the customer database. \n")
+    steps.append("Process: Analysis of the customer database. \n")
     with reasoning_output:
         reasoning_output.clear_output(wait=True)
         print(steps[-1])  # Print the current step
@@ -206,20 +206,29 @@ def react(initial_query):
     result_ml = machine_learning.ml_agent("", "")
     steps.append(f"Machine learning analysis result: {result_ml}")
 
-    # Step 2: Searching for activities that fits customer needs
+    # Step 2: Extracting memory tags
     steps.append("Process: Searching for activities that fit the customer needs. \n")
     with reasoning_output:
         reasoning_output.clear_output(wait=True)
         print(steps[-1])
     time.sleep(2)
     umessage = (
-        "What activities could you suggest to provide more activities and excitement in holiday trips."
+        "First, clearly delineate each memory type in the following text that begins with a memory tag:
+Short-term memory tag that holds information temporarily for immediate tasks.
+Long-term memory tag that stores information over extended periods.
+Semantic memory tag that involves general world knowledge, such as facts and concepts.
+Episodic memory tag that pertains to personal experiences and specific events.
+Reality memory tag that relates to actual events that have occurred.
+Fiction memory tag that concerns imagined or dreamed events.
+Time memory tag that involves the temporal context of memories, such as past, present, or future.
+Then provide the list of memory tags in the text. Do not provide a single word of the text. Just
+the memory tags found in the text as a plain list."
         + result_ml
     )
     mrole = "system"
     mcontent = (
-        "You are an assistant that explains your reasoning step by step before providing the answer. "
-        "Use structured steps to break down the query."
+        "You are a psychologist who extracts memory tags from a text and who only provides the list of memory types. "
+        "Use your ability to be concise and provide the tags."
     )
     user_role = "user"
     task_response = make_openai_api_call(umessage, mrole, mcontent, user_role)
@@ -231,7 +240,7 @@ def react(initial_query):
         reasoning_output.clear_output(wait=True)
         print(steps[-1])
     time.sleep(2)
-    prompt = task_response
+    prompt = "Create a picture of a vacation based on the memory tags extracted from this review " + result_ml+  " make a very realistic picture taken from a smartphone based on the memory tags with these memory tags: "task_response
     image_url = generate_image(prompt)
     steps.append(f"Generated Image URL: {image_url}")
     save_path = "c_image.png"
@@ -241,12 +250,12 @@ def react(initial_query):
     steps.append(f"Image saved as {save_path}")
 
     # Step 4: Providing an engaging story based on the generated image
-    steps.append("Process: Providing an engaging story based on the generated image. \n")
+    steps.append("Process: Provide a travel agency engaging short paragraph describing the trip a customer could make. Don't use markdown or bullet points. Just write a short summary to introduce the trip \n")
     with reasoning_output:
         reasoning_output.clear_output(wait=True)
         print(steps[-1])
     time.sleep(2)
-    query_text = "Providing an engaging story based on the generated image"
+    query_text = "Providing an engaging presentation of a trip based on the generated image"
     response = image_analysis(image_url, query_text)
     steps.append(f"Story response: {response}")
 
