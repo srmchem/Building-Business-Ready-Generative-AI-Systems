@@ -213,16 +213,7 @@ def react(initial_query):
         print(steps[-1])
     time.sleep(2)
     umessage = (
-        "First  clearly delineate each memory type in the following text that begins with a memory tag.
-Short-term memory tag that holds information temporarily for immediate tasks.
-Long-term memory tag that stores information over extended periods.
-Semantic memory tag that involves general world knowledge, such as facts and concepts.
-Episodic memory tag that pertains to personal experiences and specific events.
-Reality memory tag that relates to actual events that have occurred.
-Fiction memory tag that concerns imagined or dreamed events.
-Time memory tag that involves the temporal context of memories, such as past, present, or future.
-Then provide the list of memory tags in the text. Do not provide a single word of the text. Just
-the memory tags found in the text as a plain list."
+        message = """First clearly delineate each memory type in the following text that begins with a memory tag. Short-term memory tag that holds information temporarily for immediate tasks. Long-term memory tag that stores information over extended periods. Semantic memory tag that involves general world knowledge, such as facts and concepts. Episodic memory tag that pertains to personal experiences and specific events. Reality memory tag that relates to actual events that have occurred. Fiction memory tag that concerns imagined or dreamed events. Time memory tag that involves the temporal context of memories, such as past, present, or future. Then provide the list of memory tags in the text. Do not provide a single word of the text. Just the memory tags found in the text as a plain list."""
         + result_ml
     )
     mrole = "system"
