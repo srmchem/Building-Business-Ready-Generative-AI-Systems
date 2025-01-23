@@ -222,8 +222,7 @@ Fiction memory tag that concerns imagined or dreamed events.
 Time memory tag that involves the temporal context of memories, such as past, present, or future. 
 Then provide the list of memory tags in the text. Do not provide a single word of the text. Just the memory tags found in the text as a plain list.""" + result_ml
 
-    umessage = (
-        message =um     )
+    umessage =um    
     mrole = "system"
     mcontent = (
         "You are a psychologist who extracts memory tags from a text and who only provides the list of memory types. "
