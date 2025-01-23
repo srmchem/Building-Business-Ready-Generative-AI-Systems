@@ -238,7 +238,7 @@ Then provide the list of memory tags in the text. Do not provide a single word o
         reasoning_output.clear_output(wait=True)
         print(steps[-1])
     time.sleep(2)
-    prompt = "Create a picture of a vacation based on the memory tags extracted from this review " + result_ml+  " make a very realistic picture taken from a smartphone based on the memory tags with these memory tags: "task_response
+    prompt = "Create a picture of a vacation based on the memory tags extracted from this review " + result_ml+  " make a very realistic picture taken from a smartphone based on the memory tags with these memory tags: " + task_response
     image_url = generate_image(prompt)
     steps.append(f"Generated Image URL: {image_url}")
     save_path = "c_image.png"
