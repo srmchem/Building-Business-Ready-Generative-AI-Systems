@@ -213,7 +213,7 @@ def react(initial_query):
         print(steps[-1])
     time.sleep(2)
     umessage = (
-        "First, clearly delineate each memory type in the following text that begins with a memory tag:
+        "First  clearly delineate each memory type in the following text that begins with a memory tag.
 Short-term memory tag that holds information temporarily for immediate tasks.
 Long-term memory tag that stores information over extended periods.
 Semantic memory tag that involves general world knowledge, such as facts and concepts.
