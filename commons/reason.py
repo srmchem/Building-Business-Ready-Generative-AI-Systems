@@ -45,8 +45,8 @@ def make_openai_api_call(input, mrole,mcontent,user_role):
     # Return the response
     return response.choices[0].message.content
 
-# Implemented in Chapter01
-def make_openai_api_call(input, mrole,mcontent,user_role):
+# Implemented in Chapter06
+def make_openai_reasoning_call(input, mrole,mcontent,user_role):
     # Define parameters
     gmodel = "o1"
 
