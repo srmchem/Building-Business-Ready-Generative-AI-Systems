@@ -46,9 +46,7 @@ def make_openai_api_call(input, mrole,mcontent,user_role):
     return response.choices[0].message.content
 
 # Implemented in Chapter06
-def make_openai_o1_call(input, mrole,mcontent,user_role):
-
-  user_text=review
+def make_openai_o1_call(user_text, mrole,mcontent,user_role):
   system_prompt=mrole
   client = OpenAI()
   response = client.chat.completions.create(
