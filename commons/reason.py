@@ -46,43 +46,27 @@ def make_openai_api_call(input, mrole,mcontent,user_role):
     return response.choices[0].message.content
 
 # Implemented in Chapter06
-def make_openai_reasoning_call(input, mrole,mcontent,user_role):
-    # Define parameters
-    gmodel = "o1" #model defined in this file in /commons to make a global change to all the notebooks in the repo when there is an OpenAI update
+import requests
+from openai import OpenAI
+import openai
+from openai import OpenAI
+# Initialize the OpenAI client
+client = OpenAI()
+import base64
 
-    # Create the messages object
-    messages_obj = [
-        {
-            "role": mrole,
-            "content": mcontent
-        },
-        {
-            "role": user_role,
-            "content": input
-        }
-    ]
+def make_openai_o1_call(input, mrole,mcontent,user_role):
 
-    # Define all parameters in a dictionary
-    params = {
-        "temperature": 0,
-        "max_tokens": 1024,
-        "top_p": 1,
-        "frequency_penalty": 0,
-        "presence_penalty": 0
-    }
-
-    # Initialize the OpenAI client
-    client = OpenAI()
-
-    # Make the API call
-    response = client.chat.completions.create(
-        model=gmodel,
-        messages=messages_obj,
-        **params  # Unpack the parameters dictionary
-    )
-
-    # Return the response
-    return response.choices[0].message.content
+  user_text=review
+  system_prompt=mrole
+  client = OpenAI()
+  response = client.chat.completions.create(
+      model="o1",  # or your preferred model
+      messages=[
+          {"role": "system", "content": system_prompt},
+          {"role": "user", "content": user_text}
+      ],
+  )
+  return response
 
 def image_analysis(image_path_or_url, query_text, model="gpt-4o"):
     
