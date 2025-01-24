@@ -56,7 +56,7 @@ def make_openai_o1_call(user_text, mrole,mcontent,user_role):
           {"role": "user", "content": user_text}
       ],
   )
-  return response
+  return response.choices[0].message.content
 
 def image_analysis(image_path_or_url, query_text, model="gpt-4o"):
     
