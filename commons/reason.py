@@ -46,14 +46,6 @@ def make_openai_api_call(input, mrole,mcontent,user_role):
     return response.choices[0].message.content
 
 # Implemented in Chapter06
-import requests
-from openai import OpenAI
-import openai
-from openai import OpenAI
-# Initialize the OpenAI client
-client = OpenAI()
-import base64
-
 def make_openai_o1_call(input, mrole,mcontent,user_role):
 
   user_text=review
