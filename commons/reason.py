@@ -9,7 +9,7 @@ import base64
 # Implemented in Chapter01
 def make_openai_api_call(input, mrole,mcontent,user_role):
     # Define parameters
-    gmodel = "gpt-4o"
+    gmodel = "gpt-4o" #model defined in this file in /commons to make a global change to all the notebooks in the repo when there is an OpenAI update
 
     # Create the messages object
     messages_obj = [
@@ -48,7 +48,7 @@ def make_openai_api_call(input, mrole,mcontent,user_role):
 # Implemented in Chapter06
 def make_openai_reasoning_call(input, mrole,mcontent,user_role):
     # Define parameters
-    gmodel = "o1"
+    gmodel = "o1" #model defined in this file in /commons to make a global change to all the notebooks in the repo when there is an OpenAI update
 
     # Create the messages object
     messages_obj = [
@@ -143,14 +143,6 @@ def generate_image(prompt, model="dall-e-3", size="1024x1024", quality="standard
 
     # Extract and return the image URL from the response
     return response.data[0].url
-
-# Implemented in Chapter06
-def ml_baseline(input, data):
-    #Endpoint for the Bayes algorithm that will be implemented in Chapter 6
-    if input=="":
-      # Testing the endpoint in a CoT (Chain of Reasoning)
-      text="The customers would like more activities during their trips especially on the ocean."
-    return text
 
 
 
