@@ -196,6 +196,20 @@ def chain_of_thought_reasoning(initial_query):
     return steps
 
 # Implemented in Chapter06
+def extract(tasks_response):
+  umessage = """
+  1) Read the following text analysis that returns detailled memory tags for each part of the text
+  2) Then return the list of memory tags with absolutely no other text
+  3) Use no formatting, no hastages, no markdown. Just answer in plain text
+  4) Also provide the sentiment analysis score for each tag in this format(no brackets) : memory tag sentiment Score
+  """
+  umessage+=retres
+  mrole = "system"
+  mcontent = "You are a marketing expert specialized in the psychological analysis of content"
+  user_role = "user"
+  task_response = reason.make_openai_api_call(umessage,mrole,mcontent,user_role)
+  return task_response
+
 def memory_reasoning_thread(input1,msystem_prompt1,umessage4,utarget4):
   steps = []
 
@@ -212,7 +226,7 @@ def memory_reasoning_thread(input1,msystem_prompt1,umessage4,utarget4):
   user_text=input1
   mcontent = "You are a psychologist specialized in the memory and emotional analysis of content"
   user_role = "user"
-  retres=reason.make_openai_o1_call(user_text, mrole,mcontent,user_role)
+  retres=make_openai_o1_call(user_text, mrole,mcontent,user_role)
   steps.append(f"Memory analysis result: {retres}")
 
   # Step 2. Extract scores
