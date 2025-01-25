@@ -196,7 +196,7 @@ def chain_of_thought_reasoning(initial_query):
     return steps
 
 # Implemented in Chapter06
-def memory_reasoning_thread(msystem_prompt1,umessage4,utarget4):
+def memory_reasoning_thread(input1,msystem_prompt1,umessage4,utarget4):
   steps = []
 
   # Display the VBox in the interface
