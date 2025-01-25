@@ -207,7 +207,7 @@ def extract(retres):
   mrole = "system"
   mcontent = "You are a marketing expert specialized in the psychological analysis of content"
   user_role = "user"
-  task_response = reason.make_openai_api_call(umessage,mrole,mcontent,user_role)
+  task_response = make_openai_api_call(umessage,mrole,mcontent,user_role)
   return task_response
 
 def memory_reasoning_thread(input1,msystem_prompt1,umessage4,utarget4):
