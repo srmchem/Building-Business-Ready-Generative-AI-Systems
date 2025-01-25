@@ -196,7 +196,7 @@ def chain_of_thought_reasoning(initial_query):
     return steps
 
 # Implemented in Chapter06
-def extract(tasks_response):
+def extract(retres):
   umessage = """
   1) Read the following text analysis that returns detailled memory tags for each part of the text
   2) Then return the list of memory tags with absolutely no other text
