@@ -209,7 +209,7 @@ def memory_reasoning_thread(input1,msystem_prompt1,umessage4,utarget4):
         print(steps[-1])  # Print the current step
   # API call
   mrole=msystem_prompt1
-  user_text=review
+  user_text=input1
   mcontent = "You are a psychologist specialized in the memory and emotional analysis of content"
   user_role = "user"
   retres=reason.make_openai_o1_call(user_text, mrole,mcontent,user_role)
