@@ -203,7 +203,7 @@ def memory_reasoning_thread(msystem_prompt1,umessage4,utarget4):
   display(reasoning_output)
 
   # Step 1. Memory and sentiment analysis
-  steps.append("Process: Performing memory and sentiment analysis.\n")
+  steps.append("Process: Performing memory and sentiment analysis\n")
   with reasoning_output:
         reasoning_output.clear_output(wait=True)
         print(steps[-1])  # Print the current step
@@ -252,7 +252,7 @@ def memory_reasoning_thread(msystem_prompt1,umessage4,utarget4):
 
 
   #Step 4: Creating content
-  steps.append("Process: Creating content.\n")
+  steps.append("Process: Creating content\n")
   with reasoning_output:
         reasoning_output.clear_output(wait=True)
         print(steps[-1])  # Print the current step
@@ -274,7 +274,7 @@ def memory_reasoning_thread(msystem_prompt1,umessage4,utarget4):
 
 
   # Step 5: Creating an image
-  steps.append("Process: Creating an image.\n")
+  steps.append("Process: Creating an image\n")
   with reasoning_output:
         reasoning_output.clear_output(wait=True)
         print(steps[-1])  # Print the current step
@@ -289,7 +289,7 @@ def memory_reasoning_thread(msystem_prompt1,umessage4,utarget4):
   steps.append(f"Image created")
 
   # Step 6: Creating a message
-  steps.append("Process: Creating a message.\n")
+  steps.append("Process: Creating a message\n")
   with reasoning_output:
         reasoning_output.clear_output(wait=True)
         print(steps[-1])  # Print the current step
