@@ -118,8 +118,6 @@ def generate_image(prompt, model="dall-e-3", size="1024x1024", quality="standard
     # Extract and return the image URL from the response
     return response.data[0].url
 
-
-
 # Import the function from custom machine learning file
 import os
 import machine_learning
@@ -197,81 +195,115 @@ def chain_of_thought_reasoning(initial_query):
         print("All steps completed!")
     return steps
 
+# Implemented in Chapter06
+def memory_reasoning_thread(msystem_prompt1,umessage4,utarget4):
+  steps = []
 
-# Import the function from custom machine learning file
-import os
-import machine_learning
-from machine_learning import ml_agent
+  # Display the VBox in the interface
+  display(reasoning_output)
 
-def react(initial_query):
-    steps = []
-
-    # Display the reasoning_output widget in the interface
-    display(reasoning_output)
-
-    # Step 1: Analysis of the customer database and prediction
-    steps.append("Process: Analysis of the customer database. \n")
-    with reasoning_output:
+  # Step 1. Memory and sentiment analysis
+  steps.append("Process: Performing memory and sentiment analysis.\n")
+  with reasoning_output:
         reasoning_output.clear_output(wait=True)
         print(steps[-1])  # Print the current step
-    time.sleep(2)  # Simulate processing time
-    #result_ml = ml_baseline("", "")
-    result_ml = machine_learning.ml_agent("", "")
-    steps.append(f"Machine learning analysis result: {result_ml}")
+  # API call
+  mrole=msystem_prompt1
+  user_text=review
+  mcontent = "You are a psychologist specialized in the memory and emotional analysis of content"
+  user_role = "user"
+  retres=reason.make_openai_o1_call(user_text, mrole,mcontent,user_role)
+  steps.append(f"Memory analysis result: {retres}")
 
-    # Step 2: Extracting memory tags
-    steps.append("Process: Searching for activities that fit the customer needs. \n")
-    with reasoning_output:
+  # Step 2. Extract scores
+  steps.append("Process: Extracting scores from response.\n")
+  with reasoning_output:
         reasoning_output.clear_output(wait=True)
-        print(steps[-1])
-    time.sleep(2)
-    um="""First clearly delineate each memory type in the following text that begins with a memory tag. 
-Short-term memory tag that holds information temporarily for immediate tasks. 
-Long-term memory tag that stores information over extended periods. 
-Semantic memory tag that involves general world knowledge, such as facts and concepts. 
-Episodic memory tag that pertains to personal experiences and specific events. 
-Reality memory tag that relates to actual events that have occurred. 
-Fiction memory tag that concerns imagined or dreamed events. 
-Time memory tag that involves the temporal context of memories, such as past, present, or future. 
-Then provide the list of memory tags in the text. Do not provide a single word of the text. Just the memory tags found in the text as a plain list.""" + result_ml
+        print(steps[-1])  # Print the current step
+  task_response=extract(retres)
+  steps.append(f"Memory analysis result: {task_response}")
 
-    umessage =um    
-    mrole = "system"
-    mcontent = (
-        "You are a psychologist who extracts memory tags from a text and who only provides the list of memory types. "
-        "Use your ability to be concise and provide the tags."
-    )
-    user_role = "user"
-    task_response = make_openai_api_call(umessage, mrole, mcontent, user_role)
-    steps.append(f"Activity suggestions: {task_response}")
-
-    # Step 3: Generating an image based on the ideation
-    steps.append("Process: Generating an image based on the ideation. \n")
-    with reasoning_output:
+  # Step 3 : Statistics
+  steps.append("Process: Statistical analysis\n")
+  with reasoning_output:
         reasoning_output.clear_output(wait=True)
-        print(steps[-1])
-    time.sleep(2)
-    prompt = "Create a picture of a vacation based on the memory tags extracted from this review " + result_ml+  " make a very realistic picture taken from a smartphone based on the memory tags with these memory tags: " + task_response
-    image_url = generate_image(prompt)
-    steps.append(f"Generated Image URL: {image_url}")
-    save_path = "c_image.png"
-    image_data = requests.get(image_url).content
-    with open(save_path, "wb") as file:
-        file.write(image_data)
-    steps.append(f"Image saved as {save_path}")
+        print(steps[-1])  # Print the current step
+  
+  import re
+  # Input text
+  text=task_response
 
-    # Step 4: Providing an engaging story based on the generated image
-    steps.append("Process: Provide a travel agency engaging short paragraph describing the trip a customer could make. Don't use markdown or bullet points. Just write a short summary to introduce the trip \n")
-    with reasoning_output:
-        reasoning_output.clear_output(wait=True)
-        print(steps[-1])
-    time.sleep(2)
-    query_text = "Providing an engaging presentation of a trip based on the generated image"
-    response = image_analysis(image_url, query_text)
-    steps.append(f"Story response: {response}")
+  # Regular expression to extract sentiment scores
+  pattern = r"(\d+\.\d+)"
+  scores = [float(match) for match in re.findall(pattern, text)]
 
-    # Clear output and notify completion
-    with reasoning_output:
+  # Output the extracted scores
+  steps.append(f"Extracted sentiment scores: {scores}")
+
+  # Optional: calculate the overall score and scaled rating
+  if scores:
+    overall_score = sum(scores) / len(scores)
+    overall_score = round(overall_score, 2)
+    scaled_rating = overall_score * 5
+    scaled_rating = round(scaled_rating, 2)
+
+    steps.append(f"Extracted sentiment scores: {overall_score}")
+    steps.append(f"Scaled rating (0–5): {scaled_rating}")
+
+
+  #Step 4: Creating content
+  steps.append("Process: Creating content.\n")
+  with reasoning_output:
         reasoning_output.clear_output(wait=True)
-        print("All steps completed!")
-    return steps
+        print(steps[-1])  # Print the current step
+  
+  #Step 4: Creating content
+  if scaled_rating >= 3:
+    umessage = umessage4
+    umessage+=task_response + utarget4
+
+  if scaled_rating <3:
+    umessage = umessage4
+    umessage+=task_response + utarget4b
+
+  mrole = "system"
+  mcontent = "You are a marketing expert specialized in the psychological analysis of content"
+  user_role = "user"
+  creation_response = reason.make_openai_api_call(umessage,mrole,mcontent,user_role)
+  steps.append(f"Prompt created for image generation: {creation_response}")
+
+
+  # Step 5: Creating an image
+  steps.append("Process: Creating an image.\n")
+  with reasoning_output:
+        reasoning_output.clear_output(wait=True)
+        print(steps[-1])  # Print the current step
+  
+  import requests
+  prompt=creation_response
+  image_url = reason.generate_image(prompt)
+  save_path = "c_image.png"
+  image_data = requests.get(image_url).content
+  with open(save_path, "wb") as file:
+    file.write(image_data)
+  steps.append(f"Image created")
+
+  # Step 6: Creating a message
+  steps.append("Process: Creating a message.\n")
+  with reasoning_output:
+        reasoning_output.clear_output(wait=True)
+        print(steps[-1])  # Print the current step
+  
+  umessage = """
+  1) Read the following text carefully
+  2) Then sum it up in a paragraphs without numbering the lines
+  3) They output should be a text to send to a customer
+  """
+  umessage+=creation_response
+  mrole = "system"
+  mcontent = "You are an expert in summarization for texts to send to a customer"
+  user_role = "user"
+  process_response = reason.make_openai_api_call(umessage,mrole,mcontent,user_role)
+  steps.append(f"Customer message: {process_response}")
+  
+  return steps
