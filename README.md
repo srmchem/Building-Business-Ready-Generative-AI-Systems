@@ -75,6 +75,8 @@ You can run the notebooks directly from the table below:
 | <ul><li>Event-driven_GenAISys_framework.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter04/Event-driven_GenAISys_framework.ipynb)  | 
  **Chapter 5, Multimodal Multi-Functional Reasoning with Chain of Thought(CoT)**
 | <ul><li>Multimodal_reasoning_with_Chain_of_Thought.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter05/Multimodal_reasoning_with_Chain_of_Thought.ipynb)  | 
+ **Chapter 6. The emergence of  e-Marketing  with Reasoning AI agents**
+| <ul><li>Agent_Memory.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter06/Agent_Memory.ipynb)  | 
 
 <details open> 
   <summary><h2>Requirements for this book</summary>
