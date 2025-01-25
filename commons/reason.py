@@ -283,7 +283,7 @@ def memory_reasoning_thread(input1,msystem_prompt1,umessage4,utarget4):
   mrole = "system"
   mcontent = "You are a marketing expert specialized in the psychological analysis of content"
   user_role = "user"
-  creation_response = reason.make_openai_api_call(umessage,mrole,mcontent,user_role)
+  creation_response = make_openai_api_call(umessage,mrole,mcontent,user_role)
   steps.append(f"Prompt created for image generation: {creation_response}")
 
 
@@ -295,7 +295,7 @@ def memory_reasoning_thread(input1,msystem_prompt1,umessage4,utarget4):
   
   import requests
   prompt=creation_response
-  image_url = reason.generate_image(prompt)
+  image_url = generate_image(prompt)
   save_path = "c_image.png"
   image_data = requests.get(image_url).content
   with open(save_path, "wb") as file:
@@ -317,7 +317,7 @@ def memory_reasoning_thread(input1,msystem_prompt1,umessage4,utarget4):
   mrole = "system"
   mcontent = "You are an expert in summarization for texts to send to a customer"
   user_role = "user"
-  process_response = reason.make_openai_api_call(umessage,mrole,mcontent,user_role)
+  process_response = make_openai_api_call(umessage,mrole,mcontent,user_role)
   steps.append(f"Customer message: {process_response}")
   
   return steps
