@@ -105,14 +105,14 @@ When I provide multisegment text, you must do a thorough memory-tag analysis for
   """
 
 # messages for step 4
- umessage4 = """
-  1) Analyze the following memory tags provided by the analysis of a successful marketing campaign
-  2) Then create a promotional advertisement using each type of memory tag provided in the following list
-  3) Use no other memory tags than the ones provided in the list
-  4) Focus on the topic provided that begins with the term the topic is
-  Example The topic is skiing in France
-  5) Use your training to suggest named entities for that topic
-  """
+umessage4 = """
+1) Analyze the following memory tags provided by the analysis of a successful marketing campaign
+2) Then create a promotional advertisement using each type of memory tag provided in the following list
+3) Use no other memory tags than the ones provided in the list
+4) Focus on the topic provided that begins with the term the topic is
+Example The topic is skiing in France
+5) Use your training to suggest named entities for that topic
+"""
 
 #utarget4="the topic is skiing in France"
 utarget4="the topic is hotels when we go on vacation"
