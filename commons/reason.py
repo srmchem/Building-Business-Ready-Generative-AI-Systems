@@ -210,7 +210,7 @@ def extract(retres):
   task_response = make_openai_api_call(umessage,mrole,mcontent,user_role)
   return task_response
 
-def memory_reasoning_thread(system_message_s1,umessage4,utarget4,utarget4b):
+def memory_reasoning_thread(input1,system_message_s1,umessage4,utarget4,utarget4b):
   steps = []
 
   # Display the VBox in the interface
@@ -223,7 +223,7 @@ def memory_reasoning_thread(system_message_s1,umessage4,utarget4,utarget4b):
         print(steps[-1])  # Print the current step
   # API call
   mrole=system_message_s1
-  user_text=review
+  user_text=input1
   mcontent = "You are a psychologist specialized in the memory and emotional analysis of content"
   user_role = "user"
   retres=reason.make_openai_o1_call(user_text, mrole,mcontent,user_role)
