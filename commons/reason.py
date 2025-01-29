@@ -210,6 +210,19 @@ def extract(retres):
   task_response = make_openai_api_call(umessage,mrole,mcontent,user_role)
   return task_response
 
+def memory(input1,system_message_s1,umessage4,utarget4,utarget4b):
+  steps = []
+
+  # Display the VBox in the interface
+  display(reasoning_output)
+
+  # Step 1. Memory and sentiment analysis
+  steps.append("Process: Performing memory and sentiment analysis.\n")
+  with reasoning_output:
+        reasoning_output.clear_output(wait=True)
+        print(steps[-1])  # Print the current step
+  return steps
+    
 def memory_reasoning_thread(input1,system_message_s1,umessage4,utarget4,utarget4b):
   steps = []
 
