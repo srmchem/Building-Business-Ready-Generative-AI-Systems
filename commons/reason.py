@@ -288,7 +288,7 @@ def memory_reasoning_thread(input1,system_message_s1,umessage4,utarget4,utarget4
   mrole = "system"
   mcontent = "You are a marketing expert specialized in the psychological analysis of content"
   user_role = "user"
-  creation_response = reason.make_openai_api_call(umessage,mrole,mcontent,user_role)  
+  creation_response = make_openai_api_call(umessage,mrole,mcontent,user_role)  
   steps.append(f"Prompt created for image generation: {creation_response}")
 
 
