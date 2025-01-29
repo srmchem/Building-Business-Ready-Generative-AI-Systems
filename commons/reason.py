@@ -209,34 +209,6 @@ def extract(retres):
   user_role = "user"
   task_response = make_openai_api_call(umessage,mrole,mcontent,user_role)
   return task_response
-
-def memory(input1,system_message_s1,umessage4,utarget4,utarget4b):
-  steps = []
-
-  # Display the VBox in the interface
-  display(reasoning_output)
-
-  # Step 1. Memory and sentiment analysis
-  steps.append("Process: Performing memory and sentiment analysis.\n")
-  with reasoning_output:
-        reasoning_output.clear_output(wait=True)
-        print(steps[-1])  # Print the current step
-  # API call
-  mrole=system_message_s1
-  user_text=input1
-  mcontent = "You are a psychologist specialized in the memory and emotional analysis of content"
-  user_role = "user"
-  retres=reason.make_openai_o1_call(user_text, mrole,mcontent,user_role)
-  steps.append(f"Memory analysis result: {retres}")
-
-  # Step 2. Extract scores
-  steps.append("Process: Extracting scores from response.\n")
-  with reasoning_output:
-        reasoning_output.clear_output(wait=True)
-        print(steps[-1])  # Print the current step
-  task_response=extract(retres)
-  steps.append(f"Memory analysis result: {task_response}")
-  return steps
     
 def memory_reasoning_thread(input1,system_message_s1,umessage4,utarget4,utarget4b):
   steps = []
@@ -254,7 +226,7 @@ def memory_reasoning_thread(input1,system_message_s1,umessage4,utarget4,utarget4
   user_text=input1
   mcontent = "You are a psychologist specialized in the memory and emotional analysis of content"
   user_role = "user"
-  retres=reason.make_openai_o1_call(user_text, mrole,mcontent,user_role)
+  retres=make_openai_o1_call(user_text, mrole,mcontent,user_role)
   steps.append(f"Memory analysis result: {retres}")
 
   # Step 2. Extract scores
@@ -310,7 +282,13 @@ def memory_reasoning_thread(input1,system_message_s1,umessage4,utarget4,utarget4
   mrole = "system"
   mcontent = "You are a marketing expert specialized in the psychological analysis of content"
   user_role = "user"
-  creation_response = reason.make_openai_api_call(umessage,mrole,mcontent,user_role)
+  creation_response = make_openai_api_call(umessage,mrole,mcontent,user_role)
+    
+  umessage="Clean and simplify the following text for use as a DALL-E prompt. Focus on converting the detailed analysis into a concise visual description suitable for generating an engaging promotional image" + pre_creation_response
+  mrole = "system"
+  mcontent = "You are a marketing expert specialized in the psychological analysis of content"
+  user_role = "user"
+  creation_response = reason.make_openai_api_call(umessage,mrole,mcontent,user_role)  
   steps.append(f"Prompt created for image generation: {creation_response}")
 
 
@@ -322,7 +300,7 @@ def memory_reasoning_thread(input1,system_message_s1,umessage4,utarget4,utarget4
 
   import requests
   prompt=creation_response
-  image_url = reason.generate_image(prompt)
+  image_url = generate_image(prompt)
   save_path = "c_image.png"
   image_data = requests.get(image_url).content
   with open(save_path, "wb") as file:
@@ -344,7 +322,7 @@ def memory_reasoning_thread(input1,system_message_s1,umessage4,utarget4,utarget4
   mrole = "system"
   mcontent = "You are an expert in summarization for texts to send to a customer"
   user_role = "user"
-  process_response = reason.make_openai_api_call(umessage,mrole,mcontent,user_role)
+  process_response = make_openai_api_call(umessage,mrole,mcontent,user_role)
   steps.append(f"Customer message: {process_response}")
 
   return steps
