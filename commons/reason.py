@@ -46,7 +46,7 @@ def make_openai_api_call(input, mrole,mcontent,user_role):
     return response.choices[0].message.content
 
 # Implemented in Chapter06
-def make_openai_o1_call(user_text, mrole,mcontent,user_role):
+def make_openai_o1_call(user_text, mrole):
   system_prompt=mrole
   client = OpenAI()
   response = client.chat.completions.create(
@@ -226,7 +226,7 @@ def memory_reasoning_thread(input1,system_message_s1,umessage4,utarget4,utarget4
   user_text=input1
   mcontent = "You are a psychologist specialized in the memory and emotional analysis of content"
   user_role = "user"
-  retres=make_openai_o1_call(user_text, mrole,mcontent,user_role)
+  retres=make_openai_o1_call(user_text, mrole)
   steps.append(f"Memory analysis result: {retres}")
 
   # Step 2. Extract scores
