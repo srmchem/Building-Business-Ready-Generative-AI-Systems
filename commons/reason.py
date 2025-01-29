@@ -282,7 +282,7 @@ def memory_reasoning_thread(input1,system_message_s1,umessage4,utarget4,utarget4
   mrole = "system"
   mcontent = "You are a marketing expert specialized in the psychological analysis of content"
   user_role = "user"
-  creation_response = make_openai_api_call(umessage,mrole,mcontent,user_role)
+  pre_creation_response = make_openai_api_call(umessage,mrole,mcontent,user_role)
     
   umessage="Clean and simplify the following text for use as a DALL-E prompt. Focus on converting the detailed analysis into a concise visual description suitable for generating an engaging promotional image" + pre_creation_response
   mrole = "system"
