@@ -4,6 +4,8 @@ import pandas as pd
 import random
 from sklearn.preprocessing import LabelEncoder  # For encoding categorical variables
 from sklearn.tree import DecisionTreeClassifier  # For training the Decision Tree model
+import warnings
+warnings.simplefilter(action='ignore', category=UserWarning)
 
 def ml_agent(feature1_value, feature2_column):
     # Load the dataset
