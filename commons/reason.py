@@ -1,4 +1,4 @@
-import requests
+*import requests
 from openai import OpenAI
 import openai
 from openai import OpenAI
@@ -335,5 +335,6 @@ def check_messages(input1,messages_01):
   from cot_messages_c6 import system_message_s1, umessage4, utarget4, utarget4b
   #import importlib
   #import cot_messages_c6
-  return system_message_s1, umessage4, utarget4, utarget4b
+  content_system=system_message_s1
+  return content_system
   
