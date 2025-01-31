@@ -335,5 +335,5 @@ def check_messages(input1,messages_01):
   user_text=input1
   user_role = "user"
   retres=make_openai_o1_call(user_text, mrole)
-  return content_system
+  return retres
   
