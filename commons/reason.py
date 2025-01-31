@@ -218,7 +218,9 @@ def memory_reasoning_thread(input1,system_message_s1,umessage4,utarget4,utarget4
   #Customer service 
   # 1.AI agent : the messages and prompts
   from cot_messages_c6 import system_message_s1, umessage4, utarget4, utarget4b
-  
+  import importlib
+  import cot_messages_c6
+  importlib.reload(cot_messages_c6)
     
   # Step 1. Memory and sentiment analysis
   steps.append("Process: Performing memory and sentiment analysis.\n")
