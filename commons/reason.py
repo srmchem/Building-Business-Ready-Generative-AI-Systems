@@ -1,4 +1,4 @@
-*import requests
+import requests
 from openai import OpenAI
 import openai
 from openai import OpenAI
