@@ -221,7 +221,7 @@ def memory_reasoning_thread(input1,system_message_s1,umessage4,utarget4,utarget4
   import importlib
   import cot_messages_c6
   importlib.reload(cot_messages_c6)
-  sire=dir(cot_messages_c6))  # List all attributes in the module
+  sire=dir(cot_messages_c6)  # List all attributes in the module
   with reasoning_output:
         reasoning_output.clear_output(wait=True)
         print(sire)  # Print the current step
