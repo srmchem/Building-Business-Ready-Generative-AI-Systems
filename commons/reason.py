@@ -216,8 +216,7 @@ def memory_reasoning_thread(input1,messages_01):
   display(reasoning_output)
 
   #Customer service
-  if int(messages_01)==1:
-      from cot_messages_c6 import system_message_s1, umessage4, utarget4, utarget4b
+  from cot_messages_c6 import system_message_s1, umessage4, utarget4, utarget4b
     
   # Step 1. Memory and sentiment analysis
   steps.append("Process: Performing memory and sentiment analysis.\n")
