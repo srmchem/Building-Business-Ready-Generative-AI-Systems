@@ -211,10 +211,18 @@ def extract(retres):
     
 def memory_reasoning_thread(input1,system_message_s1,umessage4,utarget4,utarget4b):
   steps = []
-
+  
   # Display the VBox in the interface
   display(reasoning_output)
 
+  #Customer service 
+  # 1.AI agent : the messages and prompts
+  from cot_messages_c6 import system_message_s1 # system message for step 1
+  from cot_messages_c6 import umessage4 # message for step 4
+  from cot_messages_c6 import utarget4 # message for step 4
+  from cot_messages_c6 import utarget4b # message for step 4
+  
+    
   # Step 1. Memory and sentiment analysis
   steps.append("Process: Performing memory and sentiment analysis.\n")
   with reasoning_output:
@@ -316,7 +324,7 @@ def memory_reasoning_thread(input1,system_message_s1,umessage4,utarget4,utarget4
   2) Then sum it up in a paragraphs without numbering the lines
   3) They output should be a text to send to a customer
   """
-  umessage6b+=creation_response
+  umessage6b=creation_response
   mrole6 = "system"
   mcontent6 = "You are an expert in summarization for texts to send to a customer"
   user_role6b = "user"
