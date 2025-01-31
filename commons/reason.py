@@ -331,18 +331,9 @@ def memory_reasoning_thread(input1,messages_01):
 
   return steps
 
-def check_messages(input1,messages_01):
-  steps = []
-  
-  # Display the VBox in the interface
-  display(reasoning_output)
-
-  #Customer service 
-  # 1.AI agent : the messages and prompts
+def check_messages(input1,messages_01):  
   from cot_messages_c6 import system_message_s1, umessage4, utarget4, utarget4b
-  import importlib
-  import cot_messages_c6
-  importlib.reload(cot_messages_c6)
-  sire=dir(cot_messages_c6)  # List all attributes in the module
-  return sire
+  #import importlib
+  #import cot_messages_c6
+  return system_message_s1, umessage4, utarget4, utarget4b
   
