@@ -215,8 +215,8 @@ def memory_reasoning_thread(input1,messages_01):
   # Display the VBox in the interface
   display(reasoning_output)
 
-  #Customer service 
-  # 1.AI agent : the messages and prompts
+  #Customer service
+  if int(messages_01)==1:
   from cot_messages_c6 import system_message_s1, umessage4, utarget4, utarget4b
     
   # Step 1. Memory and sentiment analysis
