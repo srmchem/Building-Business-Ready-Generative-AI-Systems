@@ -209,7 +209,7 @@ def extract(retres):
   task_response = make_openai_api_call(umessage,mrole,mcontent,user_role)
   return task_response
     
-def memory_reasoning_thread(input1,system_message_s1,umessage4,utarget4,utarget4b):
+def memory_reasoning_thread(input1,messages_01):
   steps = []
   
   # Display the VBox in the interface
@@ -217,18 +217,10 @@ def memory_reasoning_thread(input1,system_message_s1,umessage4,utarget4,utarget4
 
   #Customer service 
   # 1.AI agent : the messages and prompts
-  from cot_messages_c6 import system_message_s1, umessage4, utarget4, utarget4b
+  #from cot_messages_c6 import system_message_s1, umessage4, utarget4, utarget4b
   import importlib
   import cot_messages_c6
-  importlib.reload(cot_messages_c6)
-  sire=dir(cot_messages_c6)  # List all attributes in the module
-  with reasoning_output:
-        reasoning_output.clear_output(wait=True)
-        print(sire)  # Print the current step
-
-  import time
-  time.sleep(10)  # Pauses execution for 10 seconds
-
+  
   # Step 1. Memory and sentiment analysis
   steps.append("Process: Performing memory and sentiment analysis.\n")
   with reasoning_output:
