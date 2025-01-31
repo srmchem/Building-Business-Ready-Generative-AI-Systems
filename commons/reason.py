@@ -225,7 +225,10 @@ def memory_reasoning_thread(input1,system_message_s1,umessage4,utarget4,utarget4
   with reasoning_output:
         reasoning_output.clear_output(wait=True)
         print(sire)  # Print the current step
-    
+
+  import time
+  time.sleep(10)  # Pauses execution for 10 seconds
+
   # Step 1. Memory and sentiment analysis
   steps.append("Process: Performing memory and sentiment analysis.\n")
   with reasoning_output:
