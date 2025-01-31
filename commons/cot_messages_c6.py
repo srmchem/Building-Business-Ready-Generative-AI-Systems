@@ -113,9 +113,5 @@ umessage4 = """
 Example The topic is skiing in France
 5) Use your training to suggest named entities for that topic
 """
-
 utarget4="the topic is hotels when we go on vacation"
-utarget4g="the topic is the primary topic in the text."
-
 utarget4b="The topic is not going to a hotel when going on vacation but rather to stay at a friend or family house. Explain how nice and warm this is."
-utarget4bg="The sentiment score of the topic seems negative. Expand the topic to althernative ideas to make it more engaging."
