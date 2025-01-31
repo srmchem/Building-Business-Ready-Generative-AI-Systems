@@ -223,7 +223,6 @@ def memory_reasoning_thread(input1,system_message_s1,umessage4,utarget4,utarget4
   # API call
   mrole=system_message_s1
   user_text=input1
-  mcontent = "You are a psychologist specialized in the memory and emotional analysis of content"
   user_role = "user"
   retres=make_openai_o1_call(user_text, mrole)
   steps.append(f"Memory analysis result: {retres}")
@@ -271,23 +270,23 @@ def memory_reasoning_thread(input1,system_message_s1,umessage4,utarget4,utarget4
 
   #Step 4: Creating content
   if scaled_rating >= 3:
-    umessage = umessage4
+    umessage4 = umessage4
     umessage+=task_response + utarget4
 
   if scaled_rating <3:
     umessage = umessage4
     umessage+=task_response + utarget4b
 
-  mrole = "system"
-  mcontent = "You are a marketing expert specialized in the psychological analysis of content"
+  mrole4 = "system"
+  mcontent4 = "You are a marketing expert specialized in the psychological analysis of content"
   user_role = "user"
-  pre_creation_response = make_openai_api_call(umessage,mrole,mcontent,user_role)
+  pre_creation_response = make_openai_api_call(umessage4,mrole4,mcontent4,user_role)
     
-  umessage="Clean and simplify the following text for use as a DALL-E prompt. Focus on converting the detailed analysis into a concise visual description suitable for generating an engaging promotional image" + pre_creation_response
-  mrole = "system"
-  mcontent = "You are a marketing expert specialized in the psychological analysis of content"
-  user_role = "user"
-  creation_response = make_openai_api_call(umessage,mrole,mcontent,user_role)  
+  umessage4b="Clean and simplify the following text for use as a DALL-E prompt. Focus on converting the detailed analysis into a concise visual description suitable for generating an engaging promotional image" + pre_creation_response
+  mrole4b = "system"
+  mcontent4b = "You are a marketing expert specialized in the psychological analysis of content"
+  user_role4b = "user"
+  creation_response = make_openai_api_call(umessage4b,mrole4b,mcontent4b,user_role4b)  
   steps.append(f"Prompt created for image generation: {creation_response}")
 
 
@@ -312,16 +311,16 @@ def memory_reasoning_thread(input1,system_message_s1,umessage4,utarget4,utarget4
         reasoning_output.clear_output(wait=True)
         print(steps[-1])  # Print the current step
 
-  umessage = """
+  umessage6 = """
   1) Read the following text carefully
   2) Then sum it up in a paragraphs without numbering the lines
   3) They output should be a text to send to a customer
   """
-  umessage+=creation_response
-  mrole = "system"
-  mcontent = "You are an expert in summarization for texts to send to a customer"
-  user_role = "user"
-  process_response = make_openai_api_call(umessage,mrole,mcontent,user_role)
+  umessage6b+=creation_response
+  mrole6 = "system"
+  mcontent6 = "You are an expert in summarization for texts to send to a customer"
+  user_role6b = "user"
+  process_response = make_openai_api_call(umessage6b,mrole6,mcontent6,user_role6b)
   steps.append(f"Customer message: {process_response}")
 
   return steps
