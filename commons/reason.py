@@ -46,11 +46,12 @@ def make_openai_api_call(input, mrole,mcontent,user_role):
     return response.choices[0].message.content
 
 # Implemented in Chapter06
+model="o1",  # or your preferred model
 def make_openai_o1_call(user_text, mrole):
   system_prompt=mrole
   client = OpenAI()
   response = client.chat.completions.create(
-      model="o1",  # or your preferred model
+      model="o3-mini",  # or your preferred model
       messages=[
           {"role": "system", "content": system_prompt},
           {"role": "user", "content": user_text}
