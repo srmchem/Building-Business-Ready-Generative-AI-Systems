@@ -339,7 +339,7 @@ def memory_reasoning_thread(input1,system_message_s1,umessage4,utarget4,utarget4
 
   return steps
 
-def check_messages(input1,system_message_s1,umessage4,utarget4,utarget4b):
+def check_messages():
   steps = []
   
   # Display the VBox in the interface
