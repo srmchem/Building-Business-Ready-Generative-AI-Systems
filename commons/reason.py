@@ -210,7 +210,7 @@ def extract(retres):
   task_response = make_openai_api_call(umessage,mrole,mcontent,user_role)
   return task_response
     
-def memory_reasoning_thread(input1,system_message_s1,umessage4,utarget4,utarget4b,imcontent4,imcontent4b):
+def memory_reasoning_thread(input1,system_message_s1,umessage4,imcontent4,imcontent4b):
   steps = []
   
   # Display the VBox in the interface
@@ -270,15 +270,6 @@ def memory_reasoning_thread(input1,system_message_s1,umessage4,utarget4,utarget4
         print(steps[-1])  # Print the current step
 
   #Step 4: Creating content
-  """
-  if scaled_rating >= 3:
-    umessage4 = umessage4
-    umessage+=task_response + utarget4
-
-  if scaled_rating <3:
-    umessage = umessage4
-    umessage+=task_response + utarget4b
-  """
   ugeneration=umessage4 + "The advanced memory analysis of each segment of a text with a sentiment score:" + retres + " the scaled overall rating: "+ str(scaled_rating)+ " and the list of memory tags of the text "+ task_response
   mrole4 = "system"
   mcontent4 = imcontent4
