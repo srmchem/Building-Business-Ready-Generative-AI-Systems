@@ -279,7 +279,7 @@ def memory_reasoning_thread(input1,system_message_s1,umessage4,utarget4,utarget4
     umessage = umessage4
     umessage+=task_response + utarget4b
   """
-  ugeneration=umessage4 + "The advanced memory analysis of each segment of a text with a sentiment score:" + retres + " the scaled overall rating: "+ scaled_rating + " and the list of memory tags of the text "+ task_response
+  ugeneration=umessage4 + "The advanced memory analysis of each segment of a text with a sentiment score:" + retres + " the scaled overall rating: "+ str(scaled_rating)+ " and the list of memory tags of the text "+ task_response
   mrole4 = "system"
   mcontent4 = imcontent4
   user_role = "user"
