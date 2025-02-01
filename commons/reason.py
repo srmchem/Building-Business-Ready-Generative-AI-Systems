@@ -210,7 +210,7 @@ def extract(retres):
   task_response = make_openai_api_call(umessage,mrole,mcontent,user_role)
   return task_response
     
-def memory_reasoning_thread(input1,umessage4,utarget4,utarget4b,imcontent4,imcontent4b):
+def memory_reasoning_thread(input1,system_message_s1,umessage4,utarget4,utarget4b,imcontent4,imcontent4b):
   steps = []
   
   # Display the VBox in the interface
