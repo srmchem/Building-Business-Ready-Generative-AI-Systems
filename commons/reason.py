@@ -46,7 +46,7 @@ def make_openai_api_call(input, mrole,mcontent,user_role):
     return response.choices[0].message.content
 
 # Implemented in Chapter06
-model="o1",  # or your preferred model
+#model="o1",  # or your preferred model
 def make_openai_o1_call(user_text, mrole):
   system_prompt=mrole
   client = OpenAI()
