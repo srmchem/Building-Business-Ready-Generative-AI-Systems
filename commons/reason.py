@@ -46,12 +46,12 @@ def make_openai_api_call(input, mrole,mcontent,user_role):
     return response.choices[0].message.content
 
 # Implemented in Chapter06
-#model="o1",  # or your preferred model
-def make_openai_o1_call(user_text, mrole):
+def make_openai_reasoning_call(user_text, mrole):
   system_prompt=mrole
   client = OpenAI()
+  rmodel = "o3-mini" # o1 or other models. model defined in this file in /commons to make a global change to all the notebooks in the repo when there is an OpenAI update
   response = client.chat.completions.create(
-      model="o3-mini",  # or your preferred model
+      model=rmodel,  
       messages=[
           {"role": "system", "content": system_prompt},
           {"role": "user", "content": user_text}
