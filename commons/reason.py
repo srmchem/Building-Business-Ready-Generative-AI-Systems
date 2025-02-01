@@ -285,7 +285,7 @@ def memory_reasoning_thread(input1,system_message_s1,umessage4,utarget4,utarget4
     
   umessage4b="Clean and simplify the following text for use as a DALL-E prompt. Focus on converting the detailed analysis into a concise visual description suitable for generating an engaging promotional image" + pre_creation_response
   mrole4b = "system"
-  mcontent4b = imcontentb
+  mcontent4b = imcontent4b
   user_role4b = "user"
   creation_response = make_openai_api_call(umessage4b,mrole4b,mcontent4b,user_role4b)  
   steps.append(f"Prompt created for image generation: {creation_response}")
