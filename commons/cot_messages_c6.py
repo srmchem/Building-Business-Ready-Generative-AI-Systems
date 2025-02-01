@@ -103,6 +103,7 @@ When I provide multisegment text, you must do a thorough memory-tag analysis for
 
 [End of System Prompt]
   """
+
 # messages for step 4
 generation = """
 1) Your task is to generate an engaging text  for a customer based on a memory analysis of a text
@@ -111,12 +112,13 @@ The text also contains the overal sentiment score and the list of memory tags in
 3) Use no other memory tags than those provided to generate your engaging text
 4) Use the overall sentiment score to give the tone of your response
 If the overall sentiment score is positive write an engaging text addressing each segment with its memory tag and sentiment score
-If the overall sentiment score is negative analyze why and find ideas and solutions to find a way to satisfy the customer and begin by using the term very satisfy to make the transition from negative to positive
-4) Focus on the topic provided that begins with the term the topic which is a lodging use case in this case
+If the overall sentiment score is negative analyze why and find ideas and solutions to find a way to satisfy the customer
+If the overall sentiment score is negative analyze make sure to show empathy for this negative feeling and then make the transition from negative to positive
+4) Focus on the topic provided that begins with the term the topic which focuses on the core topic of the text to make the customer happy
 5) Use your training to suggest named entities for that topic to make sure that the customer receives a message tailored to the memory tags and sentiment score
 """
 
 #generate content
 imcontent4 = "You are a marketing expert specialized in the psychological analysis of content"
-#summarize content!
+#summarize content
 imcontent4b = "You are a marketing expert specialized in the psychological analysis of content"
