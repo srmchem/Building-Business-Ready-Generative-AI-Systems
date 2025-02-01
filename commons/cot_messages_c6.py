@@ -103,14 +103,20 @@ When I provide multisegment text, you must do a thorough memory-tag analysis for
 
 [End of System Prompt]
   """
-
 # messages for step 4
-umessage4 = """
-1) Analyze the following memory tags provided by the analysis of Trip Advisor Hotel reviews
-2) Then create a promotional advertisement using each type of memory tag provided in the following list
-3) Use no other memory tags than the ones provided in the list
+generation = """
+1) Your task is to generate an engaging text  for a customer based on a memory analysis of a text
+2) The analysis of the text is provided in the following format: text segment, memory tags, dimension, sentiment score, and explanation
+The text also contains the overal sentiment score and the list of memory tags in the text
+3) Use no other memory tags than those provided to generate your engaging text
+4) Use the overall sentiment score to give the tone of your response
+If the overall sentiment score is positive write an engaging text addressing each segment with its memory tag and sentiment score
+If the overall sentiment score is negative analyze why and find ideas and solutions to find a way to satisfy the customer and begin by using the term very satisfy to make the transition from negative to positive
 4) Focus on the topic provided that begins with the term the topic which is a lodging use case in this case
-5) Use your training to suggest named entities for that topic
+5) Use your training to suggest named entities for that topic to make sure that the customer receives a message tailored to the memory tags and sentiment score
 """
-utarget4="the topic is hotels when we go on vacation"
-utarget4b="The topic is not going to a hotel when going on vacation but rather to stay at a friend or family house. Explain how nice and warm this is."
+
+#generate content
+imcontent4 = "You are a marketing expert specialized in the psychological analysis of content"
+#summarize content!
+imcontent4b = "You are a marketing expert specialized in the psychological analysis of content"
