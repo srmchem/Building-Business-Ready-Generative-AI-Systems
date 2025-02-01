@@ -77,6 +77,7 @@ You can run the notebooks directly from the table below:
 | <ul><li>Multimodal_reasoning_with_Chain_of_Thought.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter05/Multimodal_reasoning_with_Chain_of_Thought.ipynb)  | 
  **Chapter 6. The emergence of  e-Marketing  with Reasoning AI agents**
 | <ul><li>1_Building_the_Consumer_Memory_Agent.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter06/1_Building_the_Consumer_Memory_Agent.ipynb)  | 
+| <ul><li>2-Reasoning_GenAISys.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter06/2-Reasoning_GenAISys.ipynb)  | 
 
 <details open> 
   <summary><h2>Requirements for this book</summary>
