@@ -270,6 +270,7 @@ def memory_reasoning_thread(input1,system_message_s1,umessage4,utarget4,utarget4
         print(steps[-1])  # Print the current step
 
   #Step 4: Creating content
+  """
   if scaled_rating >= 3:
     umessage4 = umessage4
     umessage+=task_response + utarget4
@@ -277,11 +278,12 @@ def memory_reasoning_thread(input1,system_message_s1,umessage4,utarget4,utarget4
   if scaled_rating <3:
     umessage = umessage4
     umessage+=task_response + utarget4b
-
+  """
+  ugeneration=umessage4 + "The advanced memory analysis of each segment of a text with a sentiment score:" + retres + " the scaled overall rating: "+ scaled_rating + " and the list of memory tags of the text "+ task_response
   mrole4 = "system"
   mcontent4 = imcontent4
   user_role = "user"
-  pre_creation_response = make_openai_api_call(umessage4,mrole4,mcontent4,user_role)
+  pre_creation_response = make_openai_api_call(ugeneration,mrole4,mcontent4,user_role)
     
   umessage4b="Clean and simplify the following text for use as a DALL-E prompt. Focus on converting the detailed analysis into a concise visual description suitable for generating an engaging promotional image" + pre_creation_response
   mrole4b = "system"
