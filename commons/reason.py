@@ -225,7 +225,7 @@ def memory_reasoning_thread(input1,system_message_s1,umessage4,imcontent4,imcont
   mrole=system_message_s1
   user_text=input1
   user_role = "user"
-  retres=make_openai_o1_call(user_text, mrole)
+  retres=make_openai_reasoning_call(user_text, mrole)
   steps.append(f"Memory analysis result: {retres}")
 
   # Step 2. Extract scores
