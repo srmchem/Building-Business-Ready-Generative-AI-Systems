@@ -316,14 +316,5 @@ def memory_reasoning_thread(input1,system_message_s1,umessage4,imcontent4,imcont
   user_role6b = "user"
   process_response = make_openai_api_call(umessage6b,mrole6,mcontent6,user_role6b)
   steps.append(f"Customer message: {process_response}")
-
+    
   return steps
-
-def check_messages(input1,messages_01):  
-  from cot_messages_c6 import system_message_s1, umessage4, utarget4, utarget4b
-  mrole=system_message_s1
-  user_text=input1
-  user_role = "user"
-  retres=make_openai_o1_call(user_text, mrole)
-  return retres
-  
