@@ -108,7 +108,7 @@ When I provide multisegment text, you must do a thorough memory-tag analysis for
 generation = """
 1) Your task is to generate an engaging text  for a customer based on a memory analysis of a text
 2) The analysis of the text is provided in the following format: text segment, memory tags, dimension, sentiment score, and explanation
-The text also contains the overal sentiment score and the list of memory tags in the text
+The text also contains the overall sentiment score and the list of memory tags in the text
 3) Use no other memory tags than those provided to generate your engaging text
 4) Use the overall sentiment score to give the tone of your response
 If the overall sentiment score is positive write an engaging text addressing each segment with its memory tag and sentiment score
