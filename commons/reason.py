@@ -120,6 +120,15 @@ def generate_image(prompt, model="dall-e-3", size="1024x1024", quality="standard
     return response.data[0].url
 
 #Implemented in Chapter07
+
+import os
+
+# Define the cache directory in your Google Drive
+cache_dir = '/content/drive/MyDrive/genaisys/HuggingFaceCache'
+
+# Set environment variables to direct Hugging Face to use this cache directory
+os.environ['TRANSFORMERS_CACHE'] = cache_dir
+#os.environ['HF_DATASETS_CACHE'] = os.path.join(cache_dir, 'datasets')
 from transformers import AutoTokenizer, AutoModelForCausalLM
 # Initialize the tokenizer and model
 
