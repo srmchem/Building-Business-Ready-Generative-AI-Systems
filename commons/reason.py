@@ -120,6 +120,12 @@ def generate_image(prompt, model="dall-e-3", size="1024x1024", quality="standard
     return response.data[0].url
 
 #Implemented in Chapter07
+from transformers import AutoTokenizer, AutoModelForCausalLM
+# Initialize the tokenizer and model
+model_name = 'unsloth/DeepSeek-R1-Distill-Llama-8B'
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+model = AutoModelForCausalLM.from_pretrained(model_name, device_map='auto', torch_dtype='auto')
+
 def deepseekr1distill(prompt,max_new_tokens,temperature,top_k,top_p,do_sample):
   # Tokenize the input
   inputs = tokenizer(prompt, return_tensors='pt').to('cuda')
