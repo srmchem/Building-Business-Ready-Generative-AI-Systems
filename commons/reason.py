@@ -126,7 +126,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 # Define the path to the model directory
 model_path = '/content/drive/MyDrive/genaisys/HuggingFaceCache/models--unsloth--DeepSeek-R1-Distill-Llama-8B/snapshots/71f34f954141d22ccdad72a2e3927dddf702c9de'
 tokenizer = AutoTokenizer.from_pretrained(model_name)
-model = AutoModelForCausalLM.from_pretrained(model_path, device_map='auto', torch_dtype='auto')
+model = AutoModelForCausalLM.from_pretrained(model_name, device_map='auto', torch_dtype='auto')
 
 def deepseekr1distill(prompt,max_new_tokens,temperature,top_k,top_p,do_sample):
   # Tokenize the input
