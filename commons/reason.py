@@ -119,6 +119,27 @@ def generate_image(prompt, model="dall-e-3", size="1024x1024", quality="standard
     # Extract and return the image URL from the response
     return response.data[0].url
 
+#Implemented in Chapter07
+def deepseekr1distill(prompt,max_new_tokens,temperature,top_k,top_p,do_sample):
+  # Tokenize the input
+  inputs = tokenizer(prompt, return_tensors='pt').to('cuda')
+
+  # Generate output
+  outputs = model.generate(**inputs, max_new_tokens=500)
+  # Generate output with specified parameters
+  outputs = model.generate(
+    **inputs,
+    max_new_tokens=500,
+    temperature=0.7,  # Adjust as needed
+    top_k=50,        # Adjust as needed
+    top_p=0.9,       # Adjust as needed
+    do_sample=True   # Set to False for deterministic output
+  )
+
+  # Decode and display the output
+  generated_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
+  return generated_text
+
 # Import the function from custom machine learning file
 import os
 import machine_learning
