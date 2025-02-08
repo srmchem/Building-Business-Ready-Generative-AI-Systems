@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genaisys Handlers</title>
+</head>
+<body>
+    <h1>Handlers</h1>
+    <p>A handler is a function that is conditionally selected by a Handler Selection Mechanism to process specific types of input, triggering the appropriate function to perform an action and return a response.</p>
+    <p>The Handler Selection Mechanism dynamically selects an appropriate handler based on the given input. Once a matching handler is identified, it is executed. The handler then calls a specialized function, such as <code>handle_generation</code>, which processes the request by performing reasoning and returning the required output.</p>
+    
+    <h2>Handler Selection Mechanism</h2>
+    <p>This function dynamically selects and executes the appropriate handler based on predefined conditions. It iterates through available handlers, evaluating conditions until it finds a match, ensuring efficient and structured processing of user input.</p>
+    
+    <h2>Main Chat Function with Handlers</h2>
+    <pre>
+    def chat_with_gpt(messages, user_message, files_status, active_instruct):
+        try:
+            for condition, handler in handlers:
+                if condition(user_message, active_instruct, user_memory):
+                    if handler == handle_with_memory:
+                        return handler(messages, user_message, files_status=files_status, instruct=active_instruct, mem=user_memory)
+                    else:
+                        return handler(user_message, files_status=files_status, instruct=active_instruct, mem=user_memory)
+            return "No matching handler found."
+        except Exception as e:
+            return f"An error occurred: {str(e)}"
+    </pre>
+    
+    <h2>Handler Registry</h2>
+    <p>This is a structured collection of condition-handler pairs. Each condition is a lambda function that checks if a given user message and instruction match specific criteria. The first matching handler is selected and executed.</p>
+    
+    <h2>Kwargs Implementation</h2>
+    <p><code>kwargs</code> (short for keyword arguments) is a special argument type in Python that allows you to pass a variable number of named arguments to a function.</p>
+    <pre>
+    def example_function(name, **kwargs):
+        print(f"Name: {name}")
+        for key, value in kwargs.items():
+            print(f"{key}: {value}")
+    example_function("Alice", age=25, city="New York", profession="Engineer")
+    </pre>
+    
+    <h2>Handlers</h2>
+    <p>AI Agent functions</p>
+    <pre>
+    def handle_pinecone_rag(user_message, **kwargs):
+        if "Pinecone" in user_message:
+            namespace = "genaisys"
+        if "RAG" in user_message:
+            namespace = "data01"
+        print(namespace)
+        query_text = user_message
+        query_results = get_query_results(query_text, namespace)
+        qtext, target_id = display_results(query_results)
+        sc_input = qtext + " " + user_message
+        task_response = reason.make_openai_api_call(
+            sc_input, "system",
+            "You are an assistant who executes the tasks you are asked to do.", "user"
+        )
+        return f"{namespace}: {task_response}"
+    </pre>
+    
+    <h2>Chain of Thought (CoT)</h2>
+    <pre>
+    def handle_reasoning_customer(user_message, **kwargs):
+        initial_query = user_message
+        download("Chapter05", "customer_activities.csv")
+        reasoning_steps = reason.chain_of_thought_reasoning(initial_query)
+        return reasoning_steps
+    </pre>
+    
+    <h2>Generation</h2>
+    <pre>
+    def handle_generation(user_message, **kwargs):
+        from cot_messages_c6 import system_message_s1, generation, imcontent4, imcontent4b
+        reasoning_steps = reason.memory_reasoning_thread(user_message, system_message_s1, generation, imcontent4, imcontent4b)
+        return reasoning_steps
+    </pre>
+    
+    <h2>Creating an Image</h2>
+    <pre>
+    def handle_image_creation(user_message, **kwargs):
+        prompt = user_message
+        image_url = reason.generate_image(prompt, model="dall-e-3", size="1024x1024", quality="standard", n=1)
+        save_path = "c_image.png"
+        image_data = requests.get(image_url).content
+        with open(save_path, "wb") as file:
+            file.write(image_data)
+        return "Image created"
+    </pre>
+</body>
+</html>
