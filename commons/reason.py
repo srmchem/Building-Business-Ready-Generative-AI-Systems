@@ -318,3 +318,92 @@ def memory_reasoning_thread(input1,system_message_s1,umessage4,imcontent4,imcont
   steps.append(f"Customer message: {process_response}")
     
   return steps
+
+# Implemented in Chapter05
+def chain_of_thought_reasoning(initial_query):
+    steps = []
+
+    # Display the reasoning_output widget in the interface
+    display(reasoning_output)
+
+    # Step 1: Analysis of the customer database and prediction
+    steps.append("Process: Performing machine learning analysis of the customer database. \n")
+    with reasoning_output:
+        reasoning_output.clear_output(wait=True)
+        print(steps[-1])  # Print the current step
+    time.sleep(2)  # Simulate processing time
+    result_ml = machine_learning.ml_agent("", "ACTIVITY")
+    steps.append(f"Machine learning analysis result: {result_ml}")
+
+    # Step 2: Searching for activities that fit customer needs
+    steps.append("Process: Searching for activities that fit the customer needs. \n")
+    with reasoning_output:
+        reasoning_output.clear_output(wait=True)
+        print(steps[-1])
+    time.sleep(2)
+    umessage = (
+        "What activities could you suggest to provide more activities and excitement in holiday trips."
+        + result_ml
+    )
+    mrole = "system"
+    mcontent = (
+        "You are an assistant that explains your reasoning step by step before providing the answer. "
+        "Use structured steps to break down the query."
+    )
+    user_role = "user"
+    task_response = make_openai_api_call(umessage, mrole, mcontent, user_role)
+    steps.append(f"Activity suggestions: {task_response}")
+
+    # Step 3: Generating an image based on the ideation
+    steps.append("Process: Generating an image based on the ideation. \n")
+    with reasoning_output:
+        reasoning_output.clear_output(wait=True)
+        print(steps[-1])
+    time.sleep(2)
+    prompt = task_response
+    image_url = generate_image(prompt)
+    steps.append(f"Generated Image URL: {image_url}")
+    save_path = "c_image.png"
+    image_data = requests.get(image_url).content
+    with open(save_path, "wb") as file:
+        file.write(image_data)
+    steps.append(f"Image saved as {save_path}")
+
+    # Step 4: Providing an engaging story based on the generated image
+    steps.append("Process: Providing an engaging story based on the generated image. \n")
+    with reasoning_output:
+        reasoning_output.clear_output(wait=True)
+        print(steps[-1])
+    time.sleep(2)
+    query_text = "Providing an engaging story based on the generated image"
+    response = image_analysis(image_url, query_text)
+    steps.append(f"Story response: {response}")
+
+    # Clear output and notify completion
+    with reasoning_output:
+        reasoning_output.clear_output(wait=True)
+        print("All steps completed!")
+    return steps
+
+# Implemented in Chapter07
+def mobility_agent_reasoning_thread(input1,msystem_message_s1,mumessage4,mimcontent4,mimcontent4b):
+  steps = []
+  
+  # Display the VBox in the interface
+  display(reasoning_output)
+
+  #Step 1: Mobility agent
+  steps.append("Process: the mobility agent is thinking\n")
+  with reasoning_output:
+        reasoning_output.clear_output(wait=True)
+        print(steps[-1])  # Print the current step
+
+  mugeneration=msystem_message_s1 + input1
+  mrole4 = "system"
+  mcontent4 = mimcontent4
+  user_role = "user"
+  create_response = make_openai_api_call(mugeneration,mrole4,mcontent4,user_role)
+  steps.append(f"Customer message: {create_response}")
+    
+  return steps
+
