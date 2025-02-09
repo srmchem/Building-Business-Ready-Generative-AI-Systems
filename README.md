@@ -81,7 +81,6 @@ You can run the notebooks directly from the table below:
  **Chapter 7. [DeepSeek]**
 | <ul><li>Getting_started_with_DeepSeek-R1-Distill-Llama-8B.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter07/Getting_started_with_DeepSeek-R1-Distill-Llama-8B.ipynb)  | 
 | <ul><li>GenAISys_DeepSeek.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter07/GenAISys_DeepSeek.ipynb)  | 
-| <ul><li>IPython_Interface_doc.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter07/IPython_Interface_doc.ipynb)  | 
 <details open> 
   <summary><h2>Requirements for this book</summary>
 
