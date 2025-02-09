@@ -122,3 +122,84 @@ If the overall sentiment score is negative analyze make sure to show empathy for
 imcontent4 = "You are a marketing expert specialized in the psychological analysis of content"
 #summarize content
 imcontent4b = "You are a marketing expert specialized in the psychological analysis of content"
+
+# Message for Mobility agent (Chapter 7)
+msystem_message_s1= """
+**Role:** You are an advanced predictive model specializing in agent mobility within an environment.
+
+**Environment Description:**
+
+- **Environment Grid:** The environment is structured as a 200x200 grid of equally sized cells.
+  - **Coordinates:** Each cell is identified by coordinates (x, y), where x increases from left to right and y increases from top to bottom.
+  - **Boundaries:** Top-left corner is (0, 0); bottom-right corner is (199, 199).
+
+**Trajectory Data Format:**
+
+- **Data Point Structure:** Each data point is a quadruple: (day_id, timeslot_id, x, y).
+  - **day_id:** Integer representing the specific day.
+  - **timeslot_id:** Integer from 0 to 47, each representing a 30-minute interval within a 24-hour day.
+  - **x, y:** Integers representing the agent's location within the grid.
+
+**Task:**
+
+You will receive a sequence of trajectory data points for an individual pedestrian. Some data points have missing coordinates, denoted as (999, 999). Your task is to predict and fill in these missing coordinates based on the available data.
+
+**Instructions:**
+
+1. **Analyze the Provided Data:**
+   - Examine the sequence to understand the agent's movement patterns.
+   - Consider temporal and spatial continuity, typical pedestrian behavior, and any observable trends.
+
+2. **Predict Missing Coordinates:**
+   - For each data point with coordinates (999, 999), estimate the most probable (x, y) values.
+   - Ensure that predictions are within the grid boundaries (0 ≤ x, y ≤ 199).
+
+3. **Output Format:**
+   - Provide your predictions in a JSON object with the key "prediction".
+   - The value should be a list of quadruples representing the predicted data points.
+   - Example: {"prediction": [[day_id, timeslot_id, x, y], ...]}
+
+**Example:**
+*Input Data:*
+
+[
+  (1, 10, 50, 75),
+  (1, 11, 51, 76),
+  (1, 12, 999, 999),
+  (1, 13, 53, 78)
+]
+
+*Expected Output:*
+{"prediction": [[1, 12, 52, 77]]}
+**Note:**
+- Base your predictions solely on the provided data.
+- Do not include any additional commentary or explanation in your output.
+- Ensure that the output strictly follows the specified JSON format.
+""" The input data is : *Example:**
+
+*Input Data:*
+
+[
+  (1, 50, 50, 75),
+  (1, 51, 51, 76),
+  (1, 52, 999, 999),
+  (1, 53, 53, 78)
+]
+
+mgeneration = """
+1) Your task is to generate the expected output
+2) Then add an explanation with the labels provided by the user:
+- **Data Point Structure:** Each data point is a quadruple: (day_id, timeslot_id, x, y).
+  - **day_id:** Integer representing the time unit. This could be for example "hour", "minute", or any label provided.
+  - **timeslot_id:** Integer from 0 to 47, each representing a 30-minute interval within a 24-hour day. This could be any interval with the label provided such as "section"
+  - **x, y:** Integers representing the agent's location within the grid. These coordinates could be labeled : "location in warehouse", "constraint in schedule"
+
+Example the prediction is displayed
+{"prediction": [[1, 12, 52, 77]]}
+Then it is explained by reading the user input that begins with "LABELS:"
+For example the labels for the quadruple could be: 
+LABELS: "hour", "period", "aisle", "rack"
+"""
+
+mimcontent4 = "You are a mobility agent expert that can run mobility reasoning in any domain with the data and explain the output with the labels"
+mimcontent4b = "You are a mobility agent expert that can run mobility reasoning in any domain with the data and explain the output with the labels"
