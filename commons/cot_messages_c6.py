@@ -123,84 +123,45 @@ imcontent4 = "You are a marketing expert specialized in the psychological analys
 #summarize content
 imcontent4b = "You are a marketing expert specialized in the psychological analysis of content"
 
-# Message for Mobility agent (Chapter 7)
-msystem_message_s1= """
-**Role:** You are an advanced predictive model specializing in agent mobility within an environment.
-
-**Environment Description:**
-
-- **Environment Grid:** The environment is structured as a 200x200 grid of equally sized cells.
-  - **Coordinates:** Each cell is identified by coordinates (x, y), where x increases from left to right and y increases from top to bottom.
-  - **Boundaries:** Top-left corner is (0, 0); bottom-right corner is (199, 199).
-
-**Trajectory Data Format:**
-
-- **Data Point Structure:** Each data point is a quadruple: (day_id, timeslot_id, x, y).
-  - **day_id:** Integer representing the specific day.
-  - **timeslot_id:** Integer from 0 to 47, each representing a 30-minute interval within a 24-hour day.
-  - **x, y:** Integers representing the agent's location within the grid.
-
-**Task:**
-
-You will receive a sequence of trajectory data points for an individual pedestrian. Some data points have missing coordinates, denoted as (999, 999). Your task is to predict and fill in these missing coordinates based on the available data.
-
-**Instructions:**
-
-1. **Analyze the Provided Data:**
-   - Examine the sequence to understand the agent's movement patterns.
-   - Consider temporal and spatial continuity, typical pedestrian behavior, and any observable trends.
-
-2. **Predict Missing Coordinates:**
-   - For each data point with coordinates (999, 999), estimate the most probable (x, y) values.
-   - Ensure that predictions are within the grid boundaries (0 ≤ x, y ≤ 199).
-
-3. **Output Format:**
-   - Provide your predictions in a JSON object with the key "prediction".
-   - The value should be a list of quadruples representing the predicted data points.
-   - Example: {"prediction": [[day_id, timeslot_id, x, y], ...]}
-
-**Example:**
-*Input Data:*
-
-[
-  (1, 10, 50, 75),
-  (1, 11, 51, 76),
-  (1, 12, 999, 999),
-  (1, 13, 53, 78)
-]
-
-*Expected Output:*
-{"prediction": [[1, 12, 52, 77]]}
-**Note:**
-- Base your predictions solely on the provided data.
-- Do not include any additional commentary or explanation in your output.
-- Ensure that the output strictly follows the specified JSON format.
-**The input data is : *Example:**
-
-*Input Data:*
-
-[
-  (1, 50, 50, 75),
-  (1, 51, 51, 76),
-  (1, 52, 999, 999),
-  (1, 53, 53, 78)
-]
+# Generic Synthetic Trajectory Simulation and Predictive System (Chapter 7)
+msystem_message_s1 = """
+You are GPT-4o, an expert in grid-based mobility prediction for manufacturing processes. In this task, you are provided with a grid of coordinates where missing values are flagged with 999. The grid has 200 rows. The x coordinate indicates the production process according to the following rules:
+  - If x is between 1 and 50, the coordinate belongs to 'process1'.
+  - If x is between 51 and 100, the coordinate belongs to 'process2'.
+  - If x is between 101 and 150, the coordinate belongs to 'process3'.
+  - If x is between 151 and 200, the coordinate belongs to 'process4'.
+For any coordinate (x, y) where one or both values are missing (i.e. 999), predict the correct coordinate value using the unchanged mobility function, and also output the corresponding process label based on the x coordinate range.
 """
 
 mgeneration = """
-1) Your task is to generate the expected output
-2) Then add an explanation with the labels provided by the user:
-- **Data Point Structure:** Each data point is a quadruple: (day_id, timeslot_id, x, y).
-  - **day_id:** Integer representing the time unit. This could be for example "hour", "minute", or any label provided.
-  - **timeslot_id:** Integer from 0 to 47, each representing a 30-minute interval within a 24-hour day. This could be any interval with the label provided such as "section"
-  - **x, y:** Integers representing the agent's location within the grid. These coordinates could be labeled : "location in warehouse", "constraint in schedule"
-
-Example the prediction is displayed
-{"prediction": [[1, 12, 52, 77]]}
-Then it is explained by reading the user input that begins with "LABELS:"
-For example the labels for the quadruple could be: 
-LABELS: "hour", "period", "aisle", "rack"
+When processing the grid data:
+1. Identify any coordinate where x or y equals 999.
+2. Use the underlying mobility function to predict the missing coordinate value.
+3. Based on the (predicted or given) x coordinate, assign a process label:
+    - x in [1, 50]: 'process1'
+    - x in [51, 100]: 'process2'
+    - x in [101, 150]: 'process3'
+    - x in [151, 200]: 'process4'
+4. Return each coordinate pair along with its predicted value (if missing) and the corresponding process label.
+Note: The mobility function itself remains unchanged; you are only adding the labeling functionality.
 """
 
-mimcontent4 = "You are a mobility agent expert that can run mobility reasoning in any domain with the data and explain the output with the labels"
-mimcontent4b = "You are a mobility agent expert that can run mobility reasoning in any domain with the data and explain the output with the labels"
+mimcontent4 = """
+This grid represents a manufacturing process where each row corresponds to a stage in production. The x coordinate of a grid point not only indicates spatial location but also categorizes the process:
+  - Rows 1–50 are dedicated to 'process1'
+  - Rows 51–100 are dedicated to 'process2'
+  - Rows 101–150 are dedicated to 'process3'
+  - Rows 151–200 are dedicated to 'process4'
+Missing coordinate values are indicated by the number 999. Your task is to predict these missing values and, for each coordinate, also provide the appropriate process label based on the x coordinate. This allows the system to understand which production process had incomplete data.
+"""
+
+muser_message1 = """
+I have a grid representing a manufacturing process where some coordinate values are missing (flagged as 999). For each (x, y) coordinate with a missing value, please:
+  - Predict the actual coordinate value using the given mobility function.
+  - Determine the process label based on the x coordinate:
+      • x in [1,50] should be labeled as 'process1'
+      • x in [51,100] should be labeled as 'process2'
+      • x in [101,150] should be labeled as 'process3'
+      • x in [151,200] should be labeled as 'process4'
+Return your predictions in a structured format that includes both the complete coordinate and the corresponding process label.
+"""
