@@ -125,43 +125,42 @@ imcontent4b = "You are a marketing expert specialized in the psychological analy
 
 # Generic Synthetic Trajectory Simulation and Predictive System (Chapter 7)
 msystem_message_s1 = """
-You are GPT-4o, an expert in grid-based mobility prediction for manufacturing processes. In this task, you are provided with a grid of coordinates where missing values are flagged with 999. The grid has 200 rows. The x coordinate indicates the production process according to the following rules:
-  - If x is between 1 and 50, the coordinate belongs to 'process1'.
-  - If x is between 51 and 100, the coordinate belongs to 'process2'.
-  - If x is between 101 and 150, the coordinate belongs to 'process3'.
-  - If x is between 151 and 200, the coordinate belongs to 'process4'.
-For any coordinate (x, y) where one or both values are missing (i.e. 999), predict the correct coordinate value using the unchanged mobility function, and also output the corresponding process label based on the x coordinate range.
+You are GPT-4o, an expert in grid-based mobility analysis. Your task is to analyze the provided trajectory dataset and **identify missing coordinates** flagged as `999,999`, then predict their correct values.
+
+**Task:**
+1. **Process only the dataset provided in the user input. Do not generate or use your own sample data.**
+2. Identify **every single** instance where `x` or `y` is `999`, including consecutive and scattered occurrences.
+3. Predict the missing coordinate values based on the trajectory pattern.
+4. **Do not modify, reorder, or filter the data in any way**—your response must reflect the dataset exactly as given except for replacing missing values.
+5. Before responding, **validate your output** against the original dataset to confirm completeness and accuracy.
+6. Maintain the exact order of missing values as they appear in the dataset.
+7. Include a debugging step: **first print the list of detected missing values before structuring the final JSON output**.
+
+**Output Format:**
+```json
+{"predicted_coordinates": [[day, timeslot, x, y], ...]}
+```
 """
 
 mgeneration = """
-When processing the grid data:
-1. Identify any coordinate where x or y equals 999.
-2. Use the underlying mobility function to predict the missing coordinate value.
-3. Based on the (predicted or given) x coordinate, assign a process label:
-    - x in [1, 50]: 'process1'
-    - x in [51, 100]: 'process2'
-    - x in [101, 150]: 'process3'
-    - x in [151, 200]: 'process4'
-4. Return each coordinate pair along with its predicted value (if missing) and the corresponding process label.
-Note: The mobility function itself remains unchanged; you are only adding the labeling functionality.
+Scan the user-provided trajectory data and extract **every** point where either `x` or `y` equals `999`.
+You must process only the given dataset and not generate new data.
+Ensure that all missing values are explicitly listed in the output without skipping consecutive values, isolated values, or any part of the dataset. **Before responding, verify that all occurrences match the input data exactly.**
+
+Then, predict the missing values based on detected trajectory movement patterns. **Provide a corrected trajectory with inferred missing values.**
+
+To assist debugging, **first print the detected missing values list as a pre-response validation step**, then return the structured JSON output.
 """
 
 mimcontent4 = """
-This grid represents a manufacturing process where each row corresponds to a stage in production. The x coordinate of a grid point not only indicates spatial location but also categorizes the process:
-  - Rows 1–50 are dedicated to 'process1'
-  - Rows 51–100 are dedicated to 'process2'
-  - Rows 101–150 are dedicated to 'process3'
-  - Rows 151–200 are dedicated to 'process4'
-Missing coordinate values are indicated by the number 999. Your task is to predict these missing values and, for each coordinate, also provide the appropriate process label based on the x coordinate. This allows the system to understand which production process had incomplete data.
+This dataset contains spatial-temporal trajectories where some coordinate values are missing and represented as `999,999`. Your goal is to **identify these missing coordinates from the user-provided dataset only**, then predict their correct values based on movement patterns. Ensure that consecutive, isolated, and scattered missing values are not omitted. **Before generating the final response, validate your results and confirm that every missing value is properly predicted.**
 """
 
 muser_message1 = """
-I have a grid representing a manufacturing process where some coordinate values are missing (flagged as 999). For each (x, y) coordinate with a missing value, please:
-  - Predict the actual coordinate value using the given mobility function.
-  - Determine the process label based on the x coordinate:
-      • x in [1,50] should be labeled as 'process1'
-      • x in [51,100] should be labeled as 'process2'
-      • x in [101,150] should be labeled as 'process3'
-      • x in [151,200] should be labeled as 'process4'
-Return your predictions in a structured format that includes both the complete coordinate and the corresponding process label.
+Here is a dataset of trajectory points. Some entries have missing coordinates represented by `999,999`.
+You must process only this dataset and **strictly avoid generating your own sample data**.
+Please identify **all occurrences** of missing coordinates and return their positions in JSON format, ensuring that no values are skipped, omitted, or restructured. Then, **predict and replace** the missing values using trajectory movement patterns.
+
+Before returning the response, **first output the raw missing coordinates detected** as a validation step, then structure them into the final JSON output with predicted values.
 """
+
