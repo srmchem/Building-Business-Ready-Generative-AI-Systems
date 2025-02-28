@@ -78,10 +78,13 @@ You can run the notebooks directly from the table below:
  **Chapter 6. The emergence of  e-Marketing  with Reasoning AI agents**
 | <ul><li>1_Building_the_Consumer_Memory_Agent.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter06/1_Building_the_Consumer_Memory_Agent.ipynb)  | 
 | <ul><li>2_Running_the_Reasoning_GenAISys.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter06/2_Running_the_Reasoning_GenAISys.ipynb)  | 
- **Chapter 7. Powering GenAISys with DeepSeek for AI-Optimized Manufacturing**
+ **Chapter 7. Powering GenAISys with DeepSeek for Production**
 | <ul><li>Getting_started_with_DeepSeek_R1_Distill_Llama_8B.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter07/Getting_started_with_DeepSeek_R1_Distill_Llama_8B.ipynb)  | 
 | <ul><li>GenAISys_DeepSeek.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter07/GenAISys_DeepSeek.ipynb)  | 
- **Chapter 10,Presenting a Business-ready Generative AI System**
+ **Chapter 8.GenAISys for Trajectory Simulation and Prediction**
+| <ul><li>Trajectory_simulation_and_prediction.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter08/1_Trajectory_simulation_and_prediction.ipynb)  | 
+| <ul><li>GenAISys_DeepSeek.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter07/GenAISys_DeepSeek.ipynb)  | 
+ **Chapter 10, Presenting a Business-ready Generative AI System**
 | <ul><li>GenAISys_Presentation.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter10/GenAISys_Presentation.ipynb)  | 
 <details open> 
   <summary><h2>Requirements for this book</summary>
