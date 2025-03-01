@@ -385,7 +385,7 @@ def chain_of_thought_reasoning(initial_query):
         print("All steps completed!")
     return steps
 
-# Implemented in Chapter07
+# Implemented in Chapter08
 def mobility_agent_reasoning_thread(input1,msystem_message_s1,mumessage4,mimcontent4,mimcontent4b):
   steps = []
   
