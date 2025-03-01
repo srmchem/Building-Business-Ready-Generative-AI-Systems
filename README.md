@@ -83,7 +83,7 @@ You can run the notebooks directly from the table below:
 | <ul><li>GenAISys_DeepSeek.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter07/GenAISys_DeepSeek.ipynb)  | 
  **Chapter 8.GenAISys for Trajectory Simulation and Prediction**
 | <ul><li>Trajectory_simulation_and_prediction.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter08/1_Trajectory_simulation_and_prediction.ipynb)  | 
-| <ul><li>GenAISys_DeepSeek.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter07/GenAISys_DeepSeek.ipynb)  | 
+| <ul><li>2_GenAISys_Mobility.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter08/2_GenAISys_Mobility.ipynb)  | 
  **Chapter 10, Presenting a Business-ready Generative AI System**
 | <ul><li>GenAISys_Presentation.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter10/GenAISys_Presentation.ipynb)  | 
 <details open> 
