@@ -1,7 +1,7 @@
 import os
 from google.colab import userdata
 
-# Function to initialize the Pinecone API key
+# Function to initialize the Weather API key
 def initialize_weather_api():
     # Access the secret by its name
     Weather_Key = userdata.get('PINECONE_API_KEY')
