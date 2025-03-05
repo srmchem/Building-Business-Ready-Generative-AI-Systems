@@ -4,7 +4,7 @@ from google.colab import userdata
 # Function to initialize the Weather API key
 def initialize_weather_api():
     # Access the secret by its name
-    Weather_Key = userdata.get('PINECONE_API_KEY')
+    Weather_Key = userdata.get('Weather_Key')
     
     if not Weather_Key:
         raise ValueError("Weather_Key is not set in userdata!")
