@@ -9,7 +9,7 @@ def download(directory, filename):
     file_url = f"{base_url}{directory}/{filename}"
 
     # Add the private token (hardcoded)
-    private_token = "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"
+    private_token = "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"
 
     # Use curl to download the file, including an Authorization header for the private token
     try:
