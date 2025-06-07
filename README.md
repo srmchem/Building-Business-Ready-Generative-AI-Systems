@@ -84,11 +84,12 @@ You can run the notebooks directly from the table below:
  **Chapter 8.GenAISys for Trajectory Simulation and Prediction**
 | <ul><li>1_Trajectory_simulation_and_prediction.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter08/1_Trajectory_simulation_and_prediction.ipynb)  | 
 | <ul><li>2_GenAISys_Mobility.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter08/2_GenAISys_Mobility.ipynb)  | 
- **Chapter 9.Enhancing GenAISys with Data Security and Moderation for Customer Service**
+ **Chapter 9. Enhancing GenAISys with Data Security and Moderation for Customer Service**
 | <ul><li>Pinecone_Security.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter09/Pinecone_Security.ipynb)  | 
 | <ul><li>GenAISys_Customer_Service.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter09/GenAISys_Customer_Service.ipynb)  | 
  **Chapter 10, Presenting a Business-ready Generative AI System**
 | <ul><li>GenAISys_Presentation.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter10/GenAISys_Presentation.ipynb)  | 
+| <ul><li>GenAISYS_&_MAS.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter10/GenAISYS_&_MAS.ipynb)  |
 <details open> 
   <summary><h2>Requirements for this book</summary>
 
