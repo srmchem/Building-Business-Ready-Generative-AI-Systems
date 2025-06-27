@@ -15,6 +15,8 @@ The notes are organized by theme.
  
  `grequests.py` contains the private token used to download files from the repository. It contains the function that will be used to download files from the repo.
 
+  If the grequests.py is not installed and run properly, the requirements cannot be download and run leading to missing package errors.
+
 ## [1.Google Colab]
 The strategic choice of Google Colab for this book was for the user to be able to open a notebook in one click on GitHub while reading the book.
 Once the requested API keys are configured (OpenAI, Pinecone), the user can run the notebooks with one click.
