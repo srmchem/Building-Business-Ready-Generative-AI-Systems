@@ -35,10 +35,11 @@ When necessary, OpenAI and Gemini were used to fine-tune the functions. The code
 
 *Goal*: Remain focused on the architecture of GenAISys.
 
-
-
-
-
+## [4.Cutting-edge LLMs]
+Cutting-edge LLMs such as OpenAI GPT-4o and the Ox series are advanced.
+We are not in the intial stages of Generative AI. They can produce sophisticaed formated responses and tasks.
+However, an LLM will not systematically produce the exact same result in complex cases because the LLM controllers are designed to produce
+a diversity of responses.
 
 
 
