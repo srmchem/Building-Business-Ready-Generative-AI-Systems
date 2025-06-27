@@ -7,6 +7,14 @@ This codelog contains the author's notes when addressing the TR comments on **Bu
 
 The notes are organized by theme.
 
+
+## [0.Private token and grequests.py]
+ `grequests.py` is downloaded early in each notebook. It contains a download function. But to download it with curl, we need a private token.
+ The GitHub repository is private until a few days before the book is released.
+ As such, as private token is *temporarily** required in the curl command in each notebook that will be removed.
+ 
+ `grequests.py` contains the private token used to download files from the repository. It contains the function that will be used to download files from the repo.
+
 ## [1.Google Colab]
 The strategic choice of Google Colab for this book was for the user to be able to open a notebook in one click on GitHub while reading the book.
 Once the requested API keys are configured (OpenAI, Pinecone), the user can run the notebooks with one click.
