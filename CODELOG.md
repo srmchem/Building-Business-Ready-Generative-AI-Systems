@@ -1,28 +1,27 @@
-# Changelog
+# Codelog
 
 Last update June 27, 2025
 
 This codelog contains the author's notes when addressing the TR comments on **Building-Business-Ready-Generative-AI-Systems** repository.   
-🐬 Indicates *new notes since last update* 
+🐬 Indicates *new notes since the last update* 
 
 The notes are organized by theme.
 
 
 ## [0.Private token and grequests.py]
  `grequests.py` is downloaded early in each notebook. It contains a download function. But to download it with curl, we need a private token.
- The GitHub repository is private until a few days before the book is released.
- As such, as private token is *temporarily** required in the curl command in each notebook that will be removed.
+ The GitHub repository remains private until a few days before the book is released.
+ As such, a private token is *temporarily** required in the curl command in each notebook which will be removed.
  
  `grequests.py` contains the private token used to download files from the repository. It contains the function that will be used to download files from the repo.
 
-  If the grequests.py is not installed and run properly, the requirements cannot be download and run leading to missing package errors.
+  *If grequests.py is not installed and run properly, the requirements cannot be downloaded and run, leading to missing package errors.*
 
 ## [1.Google Colab]
-The strategic choice of Google Colab for this book was for the user to be able to open a notebook in one click on GitHub while reading the book.
-Once the requested API keys are configured (OpenAI, Pinecone), the user can run the notebooks with one click.
-*Goal*: Focus on the complexity of the Generative AI Systems. 
+The strategic choice of Google Colab for this book was to enable users to open a notebook with one click on GitHub while reading the book. Once the requested API keys (OpenAI, Pinecone) are configured, the user can run the notebooks with a single click. 
 
-The readers are free to install the programs in whatever environment they wish.
+*Goal*: Focus on the complexity of the Generative AI Systems.
+Readers are free to install the programs in any environment they prefer.
 
 ## [2.Python]
 This book is *not for beginners." As such, there is no need to explain what numpy, matplotlib or any other Python library is beyond a few words when using
@@ -40,16 +39,13 @@ The links to the platforms are provided. OpenAI and Pinecone have comprehensive 
 
 ## [4.Copilots]
 
-The author's strategy is to focus on the architecture of complex GenAISys. As such, the architecture was designed first, then the main blocks of code and functions.
-When necessary, OpenAI and Gemini were used to fine-tune the functions. The code thus follows the standards these models learned on GitHub and other code repositories.
+The author's strategy is to focus on the architecture of complex GenAISys. As such, the architecture was designed first, then the main blocks of code and functions. When necessary, OpenAI and Gemini were used to fine-tune the functions. The code thus follows the standards that these models were trained on, as seen on GitHub and other code repositories.
 
-*Goal*: Remain focused on the architecture of GenAISys.
+*Goal*: Remain focused on the architecture of GenAISys and the narrative.
 
 ## [4.Cutting-edge LLMs]
-Cutting-edge LLMs such as OpenAI GPT-4o and the Ox series are advanced.
-We are not in the intial stages of Generative AI. They can produce sophisticaed formated responses and tasks.
-However, an LLM will not systematically produce the exact same result in complex cases because the LLM controllers are designed to produce
-a diversity of responses.
+Cutting-edge LLMs such as OpenAI GPT-4o and the Ox series are advanced. We are not in the initial stages of Generative AI. They can produce sophisticated formatted responses and tasks. However, an LLM will not systematically produce the exact same though acceptable result in complex cases because the LLM controllers are designed to produce a diversity of responses.
+We're in a new era and we must evolve with the LLMs.
 
 
 
