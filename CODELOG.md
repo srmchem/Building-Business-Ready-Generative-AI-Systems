@@ -13,7 +13,7 @@ The notes are organized by theme.
  The GitHub repository remains private until a few days before the book is released.
  As such, a private token is *temporarily* required in the curl command in each notebook which will be removed.
  
- `grequests.py` contains the private token used to download files from the repository. It contains the function that will be used to download files from the repo.
+ `grequests.py` contains the current private token that must be used to download files from the repository. It contains the function that will be used to download files from the repo.
 
   *If grequests.py is not installed and run properly, the requirements cannot be downloaded and run, leading to missing package errors.*
 
