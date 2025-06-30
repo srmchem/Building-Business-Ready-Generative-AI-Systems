@@ -24,7 +24,7 @@ The strategic choice of Google Colab for this book was to enable users to open a
 Readers are free to install the programs in any environment they prefer.
 
 ## [2.Python]
-This book is *not for beginners.*As such, there is no need to explain what numpy, matplotlib or any other Python library is beyond a few words when using
+This book is *not for beginners*.As such, there is no need to explain what numpy, matplotlib or any other Python library is beyond a few words when using
 a specific library.
 
 Also, the code is educational and not meant for production. The focus is on the complexity of the architecture of Generative AI Systems. As such, the code is focused on the functions and not overloaded or drowned in controls. That is for a project, not a prototype. 
