@@ -14,8 +14,8 @@ The notes are organized by theme.
  The GitHub repository remains private until a few days before the book is released.
  As such, a private token is *temporarily* required in the curl command in each notebook which will be removed when the repository is made public.
  
- `grequests.py` contains the current private token that must be used to download files from the repository. It contains the function that will be used to download files from the repo.
-
+ `grequests.py` contains the current private token that must be used to download files from the repository. It contains the function that must be used to download files from the repo. This private token must be the one used to download grequests.py itself in the first line(s) of each notebook. 
+ 
   *If grequests.py is not installed and run properly, the requirements cannot be downloaded and run, leading to missing package errors.*
 
 ## 1.Google Colab
