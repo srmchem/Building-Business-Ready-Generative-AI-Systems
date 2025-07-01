@@ -8,7 +8,7 @@ This codelog contains the author's notes when addressing the TR comments on **Bu
 The notes are organized by theme.
 
 
-##0.Private token and grequests.py
+## 0.Private token and grequests.py
  `grequests.py` is downloaded early in each notebook. It contains a download function. But to download it with curl, we need a private token.
  The GitHub repository remains private until a few days before the book is released.
  As such, a private token is *temporarily* required in the curl command in each notebook which will be removed when the repository is made public.
