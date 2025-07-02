@@ -51,5 +51,28 @@ The author's strategy is to focus on the architecture of complex GenAISys. As su
 Cutting-edge LLMs such as OpenAI GPT-4o and the Ox series are advanced. We are not in the initial stages of Generative AI. They can produce sophisticated formatted responses and tasks. However, an LLM will not systematically produce the exact same, though acceptable, result in complex cases because the LLM controllers are designed to produce a diversity of responses.
 We're in a new era, and we must evolve with the LLMs, push the boundaries, and explore unchartered territory.
 
+# 6.About the code structure 
+
+It's important to clarify the primary objective of the code presented in the book. This code is educational and designed to serve as a learning tool for aspiring AI architects, rather than a production-ready codebase for immediate deployment.
+
+Our goal is to train readers to become proficient architects who understand the fundamental design principles of Generative AI Systems, rather than just operators who can implement pre-existing solutions. To achieve this, the code intentionally highlights core architectural concepts, design patterns, and the rationale behind specific structural choices, even if those choices might differ from what's ideal in a highly optimized, scalable production environment.
+For example, aspects like:
+
+**Modular Design**: The use of a commons directory and separate Python files clearly demonstrates the importance of modularity, reusability, and separation of concerns—key architectural principles.
+
+**Explicit Memory Management**: The code meticulously illustrates how to design and implement different types of memory (short-term, long-term), which is crucial for building stateful conversational AI systems, providing a direct lesson in architectural decision-making for contextual awareness.
+API Abstraction: The functions that abstract API calls teach architects how to create clean interfaces, isolate dependencies, and design for future extensibility.
+
+**Adaptive Orchestration and Chain of Thought**: 
+These sections are designed to convey how to architect intelligent decision-making and complex reasoning pipelines within a GenAISys.
+
+
+While we've made efforts to ensure the code is functional and illustrative, certain choices prioritize clarity and direct demonstration of architectural concepts over production-level robustness, advanced error handling, or extreme optimization. 
+
+These are areas that an architect, having understood the core principles from this book, would then further refine in a real-world production setting.
+
+
+We believe this approach effectively equips readers with the foundational architectural knowledge necessary to design their own sophisticated GenAISys, which they can then build upon with more advanced engineering practices
+
 
 
