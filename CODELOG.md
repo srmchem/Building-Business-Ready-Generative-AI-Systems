@@ -1,6 +1,6 @@
 # Codelog
 
-Last update July 2, 2025
+Last update July 3, 2025
 
 This codelog contains the author's notes when addressing the TR comments on **Building-Business-Ready-Generative-AI-Systems** repository.   
 
@@ -48,7 +48,8 @@ The author's strategy is to focus on the architecture of complex GenAISys. As su
 *Goal*: Remain focused on the architecture of GenAISys and the narrative.
 
 ## 5.Cutting-edge LLMs
-Cutting-edge LLMs such as OpenAI GPT-4o and the Ox series are advanced. We are not in the initial stages of Generative AI. They can produce sophisticated formatted responses and tasks. However, an LLM will not systematically produce the exact same, though acceptable, result in complex cases because the LLM controllers are designed to produce a diversity of responses.
+Cutting-edge LLMs such as OpenAI GPT-4o and the Ox series are advanced. We are not in the initial stages of Generative AI. They can produce sophisticated formatted responses and tasks. *However, an LLM will not systematically produce the exact same, though acceptable, result in complex cases because the LLM controllers are designed to produce a diversity of responses*. 
+
 We're in a new era, and we must evolve with the LLMs, push the boundaries, and explore unchartered territory.
 
 # 6.🐬About the code structure 
@@ -99,3 +100,7 @@ In essence, the book equips the reader to be the architect who designs the busin
 ## Primary TR goal
 
 *The primary goal is to verify each scenario in each chapter, section, and line of code, describing the input and output. Though this does not exclude other controls, it remains the primary objective.*
+
+In practical terms , this means that for output in a chapter two types of comments add value :
+- "works as expected" 
+- "doesn't work as expected because:" + explanation. 
