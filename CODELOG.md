@@ -96,3 +96,6 @@ The code is therefore an educational tool to demonstrate these architectural pri
 
 In essence, the book equips the reader to be the architect who designs the business-ready blueprint, not the operator who finalizes the construction for immediate deployment.
 
+## Primary TR goal
+
+*Verify each scenario in each chapter in each section, each line of code described: input/output.*
