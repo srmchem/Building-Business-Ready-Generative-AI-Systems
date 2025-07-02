@@ -98,4 +98,4 @@ In essence, the book equips the reader to be the architect who designs the busin
 
 ## Primary TR goal
 
-*Verify each scenario in each chapter in each section, each line of code described: input/output.*
+*The primary goal is to verify each scenario in each chapter, section, and line of code, describing the input and output. Though this does not exclude other controls, it remains the primary objective.*
