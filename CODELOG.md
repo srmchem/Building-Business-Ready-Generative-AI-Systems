@@ -103,6 +103,6 @@ In essence, the book equips the reader to be the architect who designs the busin
 
 Though this does not exclude other controls, it remains the primary objective. 
 
-In practical terms , this means that for output in a chapter two types of comments add value :
+In practical terms , this means that for each output in a chapter, two types of TR comments add value :
 - "works as expected" 
 - "doesn't work as expected because:" + explanation. 
