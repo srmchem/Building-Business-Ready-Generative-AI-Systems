@@ -1,6 +1,6 @@
 # Codelog
 
-Last update July 1, 2025
+Last update July 2, 2025
 
 This codelog contains the author's notes when addressing the TR comments on **Building-Business-Ready-Generative-AI-Systems** repository.   
 
@@ -51,7 +51,7 @@ The author's strategy is to focus on the architecture of complex GenAISys. As su
 Cutting-edge LLMs such as OpenAI GPT-4o and the Ox series are advanced. We are not in the initial stages of Generative AI. They can produce sophisticated formatted responses and tasks. However, an LLM will not systematically produce the exact same, though acceptable, result in complex cases because the LLM controllers are designed to produce a diversity of responses.
 We're in a new era, and we must evolve with the LLMs, push the boundaries, and explore unchartered territory.
 
-# 6.About the code structure 
+# 6.🐬About the code structure 
 
 It's important to clarify the primary objective of the code presented in the book. This code is educational and designed to serve as a learning tool for aspiring AI architects, rather than a production-ready codebase for immediate deployment.
 
