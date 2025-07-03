@@ -4,7 +4,7 @@ Last update July 3, 2025
 
 This codelog contains the author's notes when addressing the TR comments on the **Building-Business-Ready-Generative-AI-Systems** repository.  
 
-The motivation of this document is to emphasize that *The primary goal of the code reviewing process is to verify that each example in the notebook of each chapter works as expected, as explained in Section 6 of this document, which doesn't exclude other pertinent comments on the code*. 
+➬The motivation of this document is to emphasize that *The primary goal of the code reviewing process is to verify that each example in the notebook of each chapter works as expected, as explained in Section 6 of this document, which doesn't exclude other pertinent comments on the code*. 
 
 
 🐬 Indicates *new notes since the last update* 
@@ -103,7 +103,7 @@ The code is therefore an educational tool to demonstrate these architectural pri
 
 In essence, the book equips the reader to be the architect who designs the business-ready blueprint, not the operator who finalizes the construction for immediate deployment.
 
-## →Primary TR goal
+## ➬Primary TR goal
 
 *The primary goal is to verify each scenario in each chapter, section, and line of code in a chapter that contains an input and output*. 
 
