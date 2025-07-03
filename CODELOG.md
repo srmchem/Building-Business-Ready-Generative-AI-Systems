@@ -41,6 +41,9 @@ necessary to understand the architecture.
 The links to the platforms are provided. OpenAI and Pinecone have comprehensive documentation. 
 *Goal*: Remain focused on the architecture to upskill the readers on GenAI Systems.
 
+🐬 The *Setting up the environment* section of Chapter 1 contains the main information on how to set up an environment, including OpenAI API keys in the  *OpenAI API key initialization*
+    For Pinecone and any other API Key, the same process is described in the *Setting up the environment* section of a Chapter. 
+
 ## 4.Copilots
 
 The author's strategy is to focus on the architecture of complex GenAISys. As such, the architecture was designed first, then the main blocks of code and functions. When necessary, OpenAI and Gemini were used to fine-tune the functions. The code thus follows the standards that these models were trained on, as seen on GitHub and other code repositories.
