@@ -2,7 +2,10 @@
 
 Last update July 3, 2025
 
-This codelog contains the author's notes when addressing the TR comments on **Building-Business-Ready-Generative-AI-Systems** repository.   
+This codelog contains the author's notes when addressing the TR comments on the **Building-Business-Ready-Generative-AI-Systems** repository.  
+
+The motivation of this document is to emphasize that *The primary goal of the code reviewing process is to verify that each example in the notebook of each chapter works as expected, as explained in Section 6 of this document, which doesn't exclude other pertinent comments on the code*. 
+
 
 🐬 Indicates *new notes since the last update* 
 
