@@ -148,7 +148,7 @@ a)Search for this sentence:
 
 b) Then insert the following text after that sentence:     
 
-`click`, a command-line library, is required for gTTS. The first cell of the notebook will check for and set up the correct `click` version. If an update is needed, it will then display a clear message in the notebook output prompting you to manually restart the runtime. After restarting, simply click `Run All` to continue.      
+`click`, a command-line library, is required for gTTS. The first cell of the notebook will check for and set up the correct `click` version. If an update is needed, it will then display a clear message in the notebook output prompting you to manually restart the runtime. After restarting, simply click `Run All` to continue. The code will display an HTML message to restart if the version is updated:     
 
 ```python
 import importlib.metadata
