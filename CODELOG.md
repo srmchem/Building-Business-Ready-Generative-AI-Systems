@@ -138,6 +138,7 @@ Issue: gTTs requires a version of `click` that is not 8.1.8.
 Google Colab's version is higher. So presently, a restart is required in the middle of the *Setting up the environment process*
 
 *Resolution*: I added a cell at the top of the notebooks that contains gTTs starting from Chapter 5.
+*Note: In this book, we only describe the setup code once, when it first appears.*
 
 **Explanation and content update required in Chapter 5**
 
@@ -169,12 +170,9 @@ if current_click_version != required_click_version:
 else:
     print(f"--- 'click' is already at the correct version ({required_click_version}). No action needed. ---")
 ```
-
 c) the chapter continues as before:
-
 We can define a text-to-speech conversion function:
 
-*Note: In this book, we only describe the setup code once, when it first appears.*
 
 ### 3.Missing term when installation transformers
 Issue: The term `install` was missing in several notebooks starting Chapter 7.
