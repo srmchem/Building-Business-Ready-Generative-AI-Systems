@@ -1,16 +1,12 @@
 # Codelog
 
-Last update July 3, 2025
+Last update July 7, 2025
 
-This codelog contains the author's notes when addressing the TR comments on the **Building-Business-Ready-Generative-AI-Systems** repository.  
+This code log contains the author's notes when addressing the TR comments on the **Building-Business-Ready-Generative-AI-Systems** repository.  
 
 ➬The motivation of this document is to emphasize that *The primary goal of the code reviewing process is to verify that each example in the notebook of each chapter works as expected, as explained in Section 6 of this document, which doesn't exclude other pertinent comments on the code*. 
 
-
-🐬 Indicates *new notes since the last update* 
-
 The notes are organized by theme.
-
 
 ## 0. Private token and grequests.py
  `grequests.py` is downloaded early in each notebook. It contains a download function. But to download it with curl, we need a private token.
@@ -29,6 +25,13 @@ The strategic choice of Google Colab for this book was to enable users to open a
 
 *Goal*: Focus on the complexity of the Generative AI Systems.
 Readers are free to install the programs in any environment they prefer.
+
+### 1.1. Paths in Google Colab
+In Google Colab, /content/ is the default directory. So, the following file paths point to the same directory:
+  file_path = '/content/conversation_history.json' or
+ file_path = 'conversation_history.json'
+In another environment, you may need absolute paths.
+
 
 ## 2.Python
 This book is *not for beginners*. As such, there is no need to explain what numpy, matplotlib or any other Python library is beyond a few words when using
@@ -58,7 +61,7 @@ Cutting-edge LLMs such as OpenAI GPT-4o and the Ox series are advanced. We are n
 
 We're in a new era, and we must evolve with the LLMs, push the boundaries, and explore uncharted territory.
 
-# 6.🐬About the code structure 
+# 6.About the code structure 
 
 It's important to clarify the primary objective of the code presented in the book. This code is educational and designed to serve as a learning tool for aspiring AI architects, rather than a production-ready codebase for immediate deployment.
 
