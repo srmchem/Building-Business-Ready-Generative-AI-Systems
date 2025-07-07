@@ -117,11 +117,11 @@ In practical terms, this means that for each output in a chapter, two types of T
 - "doesn't work as expected because:" + explanation.
   
 
-## 7.Code Optimization
+## 7.Quality Control
 
 The following issues are quality control items.
 
-### 1.Explain Google Colab file paths
+### 1. Explain Google Colab file paths
 
 *Issue*   
 Section 1.1. explains that Google Colab's default directory is:    
@@ -134,77 +134,36 @@ The following sentence has been added at the beginning of the *Setting up the en
 This notebook was developed in Google Colab. Colab includes many pre-installed libraries and sets `/content/` as the default directory, meaning you can access files directly by their filename if you wish (e.g., `filename` instead of needing to specify `/content/filename`). This differs from local environments, where you'll often need to install libraries or specify full file paths.
 
 ### 2.Pre-installing the required version of `click` when installing gTTs
-*Status*: Implement the new cell when removing the private token. Update the content in Chapter 5 with a short explanation and a code excerpt (about 5 lines altogether).
+Issue: gTTs requires a version of `click` that is not 8.1.8. 
+Google Colab's version is higher. So presently, a restart is required in the middle of the *Setting up the environment process*
 
-gTTs requires a version of `click` that is not 8.1.8. 
-Google Colab's version is higher.
-So presently, a restart is required in the middle of the *Setting up the environment process*
-I'm thinking of inserting the  following cell in cell 2 of the notebooks so that the user just *Run all* during the session. The program will 
-automatically uninstall `click`, kill the session, trigger, and auto-restart. The user simply needs to press *Run All* again.
+*Resolution*: I added a cell at the top of the notebooks that contains gTTs starting from Chapter 5.
 
-*Solution*: This cell resolves the issue, and I can easily add it when I remove the private token from each notebook before making the repository public.
-It could only be mentioned once in Chapter 5, when gTTs is first introduced, since the following chapters do not repeat the setting up of the environment each time.
+**Explanation and content update required in Chapter 5**
 
-```
-# Cell 1: Conditional 'click' setup and auto-restart.
-# This cell will only modify 'click' and restart the runtime IF the 'click' version is not 8.1.8.
-# After the restart (if it occurs), Colab will reconnect, and you can simply "Run All" from the top.
-
-import importlib.metadata
-import os
-import time
-
-required_click_version = '8.1.8'
-current_click_version = None
-
-print("--- Checking 'click' package version... ---")
-
-try:
-    current_click_version = importlib.metadata.version('click')
-    print(f"Currently installed 'click' version: {current_click_version}")
-except importlib.metadata.PackageNotFoundError:
-    print("'click' package not found.")
-
-# Check if current click version is not the required one
-if current_click_version != required_click_version:
-    print(f"\n--- 'click' version is not {required_click_version}. Initiating setup... ---")
-
-    # Uninstall any existing 'click' version
-    print("Uninstalling any existing 'click' installation...")
-    !pip uninstall -y click
-
-    # Install the specific 'click' version required by gTTS
-    print(f"Installing 'click=={required_click_version}' for compatibility...")
-    !pip install click=={required_click_version}
-
-    print("\n--- 'click' setup complete. ---")
-    print("!!! Initiating runtime restart to load the correct 'click' version. !!!")
-    print("!!! Please wait for Colab to reconnect, then simply click 'Run All' from the top. !!!")
-
-    # Give a brief moment for print statements to flush
-    time.sleep(2)
-
-    # Force a runtime restart. Colab will detect this.
-    os.kill(os.getpid(), 9)
-
-else:
-    print(f"--- 'click' is already at the correct version ({required_click_version}). No action needed. ---")
-
-# IMPORTANT: If a restart happens above, this part of the code will NOT be executed
-# until the notebook is re-run AFTER the restart.
-```
-**Content update required: In Chapter 5**
-
-...
+a)Search for this sentence:
 •Google Text-to-Speech is installed with !pip install gTTS==2.5.4 which is an open-source free text-to-Speech library that fits prototyping purposes:  https://pypi.org/project/gTTS/.
 
-*Insert the text here*
+
+b) Then insert the following text after that sentence:
+
+`click`, a command-line library, is required for gTTs. The first cell of the notebook will set up the correct 'click' version and *trigger a runtime restart*. After reconnecting, simply click `Run All` to continue.  The code first checks if the correct version of `click` is installed and, if not, will install it:             
+
+```python
+if current_click_version != required_click_version:
+      ... (pip uninstall/install click) ...    
+# Force a runtime restart. Colab will detect this.
+        import os
+   os.kill(os.getpid(), 9)
+else:
+    print(f"--- 'click' is already at the correct version ({required_click_version}). No action needed. ---")
+```
+
+c) the chapter continues as before:
 
 We can define a text-to-speech conversion function:
 
-Text to insert:
-
-
+*Note: In this book, we only describe the setup code once, when it first appears.*
 
 ### 3.Missing term when installation transformers
 Issue: The term `install` was missing in several notebooks starting Chapter 7.
