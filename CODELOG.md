@@ -138,9 +138,9 @@ automatically uninstall click, kill the session, trigger and auto-restart. The u
 
 This cell solves the issue:
 
-# Cell 2: Conditional 'click' setup and auto-restart.
-# This cell will only modify 'click' and restart the runtime IF the 'click' version is not 8.1.8.
-# After the restart (if it occurs), Colab will reconnect, and you can simply "Run All" from the top.
+`# Cell 2: Conditional 'click' setup and auto-restart.
+`# This cell will only modify 'click' and restart the runtime IF the 'click' version is not 8.1.8.`
+`# After the restart (if it occurs), Colab will reconnect, and you can simply "Run All" from the top.`
 
 import importlib.metadata
 import os
@@ -157,15 +157,15 @@ try:
 except importlib.metadata.PackageNotFoundError:
     print("'click' package not found.")
 
-# Check if current click version is not the required one
+`# Check if current click version is not the required one`
 if current_click_version != required_click_version:
     print(f"\n--- 'click' version is not {required_click_version}. Initiating setup... ---")
 
-    # Uninstall any existing 'click' version
+    `# Uninstall any existing 'click' version`
     print("Uninstalling any existing 'click' installation...")
     !pip uninstall -y click
 
-    # Install the specific 'click' version required by gTTS
+    `# Install the specific 'click' version required by gTTS`
     print(f"Installing 'click=={required_click_version}' for compatibility...")
     !pip install click=={required_click_version}
 
@@ -173,15 +173,15 @@ if current_click_version != required_click_version:
     print("!!! Initiating runtime restart to load the correct 'click' version. !!!")
     print("!!! Please wait for Colab to reconnect, then simply click 'Run All' from the top. !!!")
 
-    # Give a brief moment for print statements to flush
+    `# Give a brief moment for print statements to flush`
     time.sleep(2)
 
-    # Force a runtime restart. Colab will detect this.
+    `# Force a runtime restart. Colab will detect this.`
     os.kill(os.getpid(), 9)
 
 else:
     print(f"--- 'click' is already at the correct version ({required_click_version}). No action needed. ---")
 
-# IMPORTANT: If a restart happens above, this part of the code will NOT be executed
-# until the notebook is re-run AFTER the restart.
+`# IMPORTANT: If a restart happens above, this part of the code will NOT be executed
+`# until the notebook is re-run AFTER the restart.
 
