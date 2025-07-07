@@ -193,15 +193,36 @@ else:
 # IMPORTANT: If a restart happens above, this part of the code will NOT be executed
 # until the notebook is re-run AFTER the restart.
 ```
+**Content update required: In Chapter 5**
+
+...
+•Google Text-to-Speech is installed with !pip install gTTS==2.5.4 which is an open-source free text-to-Speech library that fits prototyping purposes:  https://pypi.org/project/gTTS/.
+
+*Insert the text here*
+
+We can define a text-to-speech conversion function:
+
+Text to insert:
+
+
+
 ### 3.Missing term when installation transformers
 Issue: The term `install` was missing in several notebooks starting Chapter 7.
 Resolution: The notebooks were checked to make sure the code was  '!pip install transformers' and not  '!pip transformers` starting Chapter 7'
 
+**Content update required in Chapter 7:**
+"We can now install the Hugging Face Transformers library:
+!pip transformers==4.48.3"
+
+to 
+
+We can now install the Hugging Face Transformers library:
+!pip install transformers==4.48.3
+
 ### 3.Invalid Notebook when opening the Notebook directly in GitHub
 Issue: When opening a notebook directly in GitHub, an invalid notebook message appeared due to residual metadata.
-
 Resolved by deleting the metadata (outputs in the notebook) when saving the notebook in GitHub
 
 ### 4. Checklist before making the repository public
-Check readme, remove private token, simplify collaborators list
+Check the README file, remove the private token, and simplify the collaborators list.
 
