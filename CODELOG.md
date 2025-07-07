@@ -121,7 +121,7 @@ In practical terms, this means that for each output in a chapter, two types of T
 
 The following issues are quality control items.
 
-### 1. Explain Google Colab file paths
+### 7.1. Explain Google Colab file paths
 
 *Issue*   
 Section 1.1. explains that Google Colab's default directory is:    
@@ -133,7 +133,7 @@ So:
 The following sentence has been added at the beginning of the *Setting up the environment section* in each notebook:   
 This notebook was developed in Google Colab. Colab includes many pre-installed libraries and sets `/content/` as the default directory, meaning you can access files directly by their filename if you wish (e.g., `filename` instead of needing to specify `/content/filename`). This differs from local environments, where you'll often need to install libraries or specify full file paths.
 
-### 2.Pre-installing the required version of `click` when installing gTTs
+### 7.2.Installing the required version of `click` when installing gTTs
 Issue: gTTs requires a version of `click` that is not 8.1.8. 
 Google Colab's version is higher. So presently, a restart is required in the middle of the *Setting up the environment process*
 
@@ -174,7 +174,7 @@ c) the chapter continues as before:
 We can define a text-to-speech conversion function:
 
 
-### 3.Missing term when installation transformers
+### 7.3.Missing term when installation transformers
 Issue: The term `install` was missing in several notebooks starting Chapter 7.
 Resolution: The notebooks were checked to make sure the code was  '!pip install transformers' and not  '!pip transformers` starting Chapter 7'
 
@@ -187,10 +187,10 @@ to
 We can now install the Hugging Face Transformers library:
 !pip install transformers==4.48.3
 
-### 3.Invalid Notebook when opening the Notebook directly in GitHub
+### 7.4.Invalid Notebook when opening the Notebook directly in GitHub
 Issue: When opening a notebook directly in GitHub, an invalid notebook message appeared due to residual metadata.
 Resolved by deleting the metadata (outputs in the notebook) when saving the notebook in GitHub
 
-### 4. Checklist before making the repository public
+### 7.5. Checklist before making the repository public
 Check the README file, remove the private token, and simplify the collaborators list.
 
