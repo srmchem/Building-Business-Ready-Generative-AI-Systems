@@ -119,6 +119,10 @@ In practical terms, this means that for each output in a chapter, two types of T
 
 ## Code Optimization
 
+The following issues are unimportant for an advanced developer. However, for beginners and some TRs, these issues can be confusing.   
+Solution 1: Leave everything as it is because it is explained in the content.   
+SOlution 2: Implement the solutions for those who are not experienced in development or didn't read the explanations    
+
 ### 1.Unifiying Google Colab Paths or not
 *Status*: decision pending
 
