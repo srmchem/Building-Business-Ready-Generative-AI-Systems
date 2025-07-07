@@ -146,7 +146,7 @@ a)Search for this sentence:
 •Google Text-to-Speech is installed with !pip install gTTS==2.5.4 which is an open-source free text-to-Speech library that fits prototyping purposes:  https://pypi.org/project/gTTS/.
 
 
-b) Then insert the following text after that sentence:
+b) Then insert the following text after that sentence:     
 
 `click`, a command-line library, is required for gTTS. The first cell of the notebook will check for and set up the correct `click` version. If an update is needed, it will then display a clear message in the notebook output prompting you to manually restart the runtime. After restarting, simply click `Run All` to continue.      
 
