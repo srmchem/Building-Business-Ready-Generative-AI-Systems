@@ -194,12 +194,14 @@ if current_click_version != required_click_version:
 else:
     print(f"--- 'click' is already at the correct version ({required_click_version}). No action needed. ---")
 
-# Installation transformers
-Check that transformers are installed with  '!pip install transformers' and not  '!pip transformers starting Chapter 7'
-
 # IMPORTANT: If a restart happens above, this part of the code will NOT be executed
 # until the notebook is re-run AFTER the restart.
 ```
+----
+### 3.Installation transformers
+Check that transformers are installed with  '!pip install transformers' and not  '!pip transformers starting Chapter 7'
 
+### 3.Invalid Notebook when opening the Notebook directly in GitHub
+Solved by deleting metadata (outputs in the notebook) when saving the notebook in GitHub
 
 
