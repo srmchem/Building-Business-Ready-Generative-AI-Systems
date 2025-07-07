@@ -169,8 +169,8 @@ if current_click_version != required_click_version:
 
 else:
     print(f"--- 'click' is already at the correct version ({required_click_version}). No action needed. ---")
-```
-c) the chapter continues as before:
+```  
+c) the chapter continues as before:     
 We can define a text-to-speech conversion function:
 
 
