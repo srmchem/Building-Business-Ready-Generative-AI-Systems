@@ -119,13 +119,9 @@ In practical terms, this means that for each output in a chapter, two types of T
 
 ## 7.Code Optimization
 
-The following issues are unimportant for an advanced developer. However, for beginners and some TRs, these issues can be confusing.   
-Solution 1: Leave everything as it is because it is explained in the content.   
-Solution 2: Implement the solutions for those who are not experienced in development or didn't read the explanations    
+The following issues are quality control items.
 
-### 1.Unifiying Google Colab Paths or not
-*Status*   
-Add a text cell under the *Setting up the environment* when the author removes the private token from each notebook before the GitHub repository becomes public.
+### 1.Explain Google Colab file paths
 
 *Issue*   
 Section 1.1. explains that Google Colab's default directory is:    
@@ -133,7 +129,7 @@ Section 1.1. explains that Google Colab's default directory is:
 So:   
 ````/content/filename = filename. However, the reviewers````   
 
-*Solution*
+*Resolution*
 The following sentence has been added at the beginning of the *Setting up the environment section* in each notebook:   
 This notebook was developed in Google Colab. Colab includes many pre-installed libraries and sets `/content/` as the default directory, meaning you can access files directly by their filename if you wish (e.g., `filename` instead of needing to specify `/content/filename`). This differs from local environments, where you'll often need to install libraries or specify full file paths.
 
@@ -149,7 +145,7 @@ automatically uninstall `click`, kill the session, trigger, and auto-restart. Th
 *Solution*: This cell resolves the issue, and I can easily add it when I remove the private token from each notebook before making the repository public.
 It could only be mentioned once in Chapter 5, when gTTs is first introduced, since the following chapters do not repeat the setting up of the environment each time.
 
-````
+```
 # Cell 1: Conditional 'click' setup and auto-restart.
 # This cell will only modify 'click' and restart the runtime IF the 'click' version is not 8.1.8.
 # After the restart (if it occurs), Colab will reconnect, and you can simply "Run All" from the top.
@@ -197,11 +193,15 @@ else:
 # IMPORTANT: If a restart happens above, this part of the code will NOT be executed
 # until the notebook is re-run AFTER the restart.
 ```
-----
-### 3.Installation transformers
-Check that transformers are installed with  '!pip install transformers' and not  '!pip transformers starting Chapter 7'
+### 3.Missing term when installation transformers
+Issue: The term `install` was missing in several notebooks starting Chapter 7.
+Resolution: The notebooks were checked to make sure the code was  '!pip install transformers' and not  '!pip transformers` starting Chapter 7'
 
 ### 3.Invalid Notebook when opening the Notebook directly in GitHub
-Solved by deleting metadata (outputs in the notebook) when saving the notebook in GitHub
+Issue: When opening a notebook directly in GitHub, an invalid notebook message appeared due to residual metadata.
 
+Resolved by deleting the metadata (outputs in the notebook) when saving the notebook in GitHub
+
+### 4. Checklist before making the repository public
+Check readme, remove private token, simplify collaborators list
 
