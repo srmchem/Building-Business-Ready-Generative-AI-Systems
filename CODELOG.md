@@ -134,8 +134,8 @@ So:
 ````/content/filename = filename. However, the reviewers````   
 
 *Solution*
-Add a sentence at the beginning of the *Setting up the environment section* in each notebook:   
-"This code was developed in Google Colab. Colab includes many pre-installed libraries and sets /content/ as the default directory, meaning you can access files directly by their filename if you wish (e.g., filename instead of needing to specify /content/filename). This differs from local environments, where you'll often need to install libraries or specify full file paths."
+The following sentence has been added at the beginning of the *Setting up the environment section* in each notebook:   
+This notebook was developed in Google Colab. Colab includes many pre-installed libraries and sets `/content/` as the default directory, meaning you can access files directly by their filename if you wish (e.g., `filename` instead of needing to specify `/content/filename`). This differs from local environments, where you'll often need to install libraries or specify full file paths.
 
 ### 2.Pre-installing the required version of `click` when installing gTTs
 *Status*: Implement the new cell when removing the private token. Update the content in Chapter 5 with a short explanation and a code excerpt (about 5 lines altogether).
