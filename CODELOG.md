@@ -131,7 +131,7 @@ So:
 
 *Resolution*
 The following sentence has been added at the beginning of the *Setting up the environment section* in each notebook:   
-This notebook was developed in Google Colab. Colab includes many pre-installed libraries and sets `/content/` as the default directory, meaning you can access files directly by their filename if you wish (e.g., `filename` instead of needing to specify `/content/filename`). This differs from local environments, where you'll often need to install libraries or specify full file paths.
+"This notebook was developed in Google Colab. Colab includes many pre-installed libraries and sets `/content/` as the default directory, meaning you can access files directly by their filename if you wish (e.g., `filename` instead of needing to specify `/content/filename`). This differs from local environments, where you'll often need to install libraries or specify full file paths."
 
 ### 7.2.Installing the required version of `click` when installing gTTs
 Issue: gTTs requires a version of `click` that is not 8.1.8. 
