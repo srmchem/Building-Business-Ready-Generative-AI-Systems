@@ -114,4 +114,74 @@ Though this does not exclude other controls, it remains the primary objective.
 
 In practical terms, this means that for each output in a chapter, two types of TR comments add value :
 - "works as expected" 
-- "doesn't work as expected because:" + explanation. 
+- "doesn't work as expected because:" + explanation.
+- 
+
+## Code Optimization
+
+### 1.Unifiying Google Colab Paths or not
+Status: decision pending
+
+Section 1.1. explains that Google Colab's default directory is `/content`. So /content/filename = filename. However, the reviewers
+and probably many readers will run their notebooks locally and will have to clarify this. If the developer is not a beginner, this is no problem.
+Maybe I should unify this or simply add a note at the top of the notebook or not.
+
+
+### 2.Pre-installing the resquired version of `click` when installing gTTs
+Status: decision pending
+
+gTTs requires a version of `click` that is not 8.1.8. 
+Google Colab's version is higher
+So presently, a restart is required in the middle of the *Setting up the environment process*
+I'm thinking of inserting the  following cell in cell 2 of the notebooks so that the user just *run all* during the session. The program will 
+automatically uninstall click, kill the session, trigger and auto-restart. The user just has to presse *run all* again.
+
+This cell solves the issue:
+
+# Cell 2: Conditional 'click' setup and auto-restart.
+# This cell will only modify 'click' and restart the runtime IF the 'click' version is not 8.1.8.
+# After the restart (if it occurs), Colab will reconnect, and you can simply "Run All" from the top.
+
+import importlib.metadata
+import os
+import time
+
+required_click_version = '8.1.8'
+current_click_version = None
+
+print("--- Checking 'click' package version... ---")
+
+try:
+    current_click_version = importlib.metadata.version('click')
+    print(f"Currently installed 'click' version: {current_click_version}")
+except importlib.metadata.PackageNotFoundError:
+    print("'click' package not found.")
+
+# Check if current click version is not the required one
+if current_click_version != required_click_version:
+    print(f"\n--- 'click' version is not {required_click_version}. Initiating setup... ---")
+
+    # Uninstall any existing 'click' version
+    print("Uninstalling any existing 'click' installation...")
+    !pip uninstall -y click
+
+    # Install the specific 'click' version required by gTTS
+    print(f"Installing 'click=={required_click_version}' for compatibility...")
+    !pip install click=={required_click_version}
+
+    print("\n--- 'click' setup complete. ---")
+    print("!!! Initiating runtime restart to load the correct 'click' version. !!!")
+    print("!!! Please wait for Colab to reconnect, then simply click 'Run All' from the top. !!!")
+
+    # Give a brief moment for print statements to flush
+    time.sleep(2)
+
+    # Force a runtime restart. Colab will detect this.
+    os.kill(os.getpid(), 9)
+
+else:
+    print(f"--- 'click' is already at the correct version ({required_click_version}). No action needed. ---")
+
+# IMPORTANT: If a restart happens above, this part of the code will NOT be executed
+# until the notebook is re-run AFTER the restart.
+
