@@ -147,14 +147,25 @@ a)Search for this sentence:
 
 b) Then insert the following text after that sentence:
 
-`click`, a command-line library, is required for gTTs. The first cell of the notebook will set up the correct 'click' version and *trigger a runtime restart*. After reconnecting, simply click `Run All` to continue.  The code first checks if the correct version of `click` is installed and, if not, will install it:             
+`click`, a command-line library, is required for gTTS. The first cell of the notebook will check for and set up the correct `click` version. If an update is needed, it will then display a clear message in the notebook output prompting you to manually restart the runtime. After restarting, simply click `Run All` to continue.      
 
 ```python
+import importlib.metadata
+from IPython.display import display, HTML # Required for the message
+
+# ... (define required_click_version, current_click_version, and html_message as in your code) ...
+
 if current_click_version != required_click_version:
-      ... (pip uninstall/install click) ...    
-# Force a runtime restart. Colab will detect this.
-        import os
-   os.kill(os.getpid(), 9)
+    # --- Commands to uninstall and install 'click' would go here ---
+    # Example: !pip uninstall -y click
+    # Example: !pip install click==8.1.8
+
+    # Display the styled message prompting for manual restart
+    display(HTML(html_message))
+
+    # Stop the Python cell execution gracefully, prompting restart
+    raise SystemExit("Please restart the Colab runtime to apply changes.")
+
 else:
     print(f"--- 'click' is already at the correct version ({required_click_version}). No action needed. ---")
 ```
