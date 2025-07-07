@@ -121,7 +121,7 @@ In practical terms, this means that for each output in a chapter, two types of T
 
 The following issues are unimportant for an advanced developer. However, for beginners and some TRs, these issues can be confusing.   
 Solution 1: Leave everything as it is because it is explained in the content.   
-SOlution 2: Implement the solutions for those who are not experienced in development or didn't read the explanations    
+Solution 2: Implement the solutions for those who are not experienced in development or didn't read the explanations    
 
 ### 1.Unifiying Google Colab Paths or not
 *Status*: decision pending
@@ -131,19 +131,24 @@ Section 1.1. explains that Google Colab's default directory is:
 So:   
 ````/content/filename = filename. However, the reviewers````   
 and probably many readers will run their notebooks locally and will have to clarify this. If the developer is not a beginner, this is no problem.
-Maybe I should unify this or simply add a note at the top of the notebook or not.
 
+Maybe I should unify this, or simply add a note at the top of the notebook, or not.
 
-### 2.Pre-installing the resquired version of `click` when installing gTTs
-*Status*: decision pending
+- Unifying is not realistic since an advanced developer who doesn't use Google Colab will set up her/his own environment and paths.
+- Adding a text cell to Google Colab might be the best solution, though awkward, because then I would have to explain what Google Colab is: a VM, pre-installed libraries, etc.
+  
+
+### 2.Pre-installing the required version of `click` when installing gTTs
+*Status*: Waiting for confirmation
 
 gTTs requires a version of `click` that is not 8.1.8. 
-Google Colab's version is higher
+Google Colab's version is higher.
 So presently, a restart is required in the middle of the *Setting up the environment process*
-I'm thinking of inserting the  following cell in cell 2 of the notebooks so that the user just *run all* during the session. The program will 
-automatically uninstall click, kill the session, trigger and auto-restart. The user just has to presse *run all* again.
+I'm thinking of inserting the  following cell in cell 2 of the notebooks so that the user just *Run all* during the session. The program will 
+automatically uninstall `click`, kill the session, trigger, and auto-restart. The user simply needs to press *Run All* again.
 
-This cell solves the issue:
+Solution: This cell solves the issue, and I could easily add it when I remove the private token from each notebook before making the repository public.
+It could only be mentioned once in Chapter 5, when gTTs is first introduced, since the following chapters do not repeat the setting up of the environment each time.
 
 ````
 # Cell 1: Conditional 'click' setup and auto-restart.
