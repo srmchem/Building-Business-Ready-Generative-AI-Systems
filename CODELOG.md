@@ -124,22 +124,21 @@ Solution 1: Leave everything as it is because it is explained in the content.
 Solution 2: Implement the solutions for those who are not experienced in development or didn't read the explanations    
 
 ### 1.Unifiying Google Colab Paths or not
-*Status*: decision pending
+*Status*   
+Add a text cell under the *Setting up the environment* when the author removes the private token from each notebook before the GitHub repository becomes public.
 
+*Issue*   
 Section 1.1. explains that Google Colab's default directory is:    
 ````/content````   
 So:   
 ````/content/filename = filename. However, the reviewers````   
-and probably many readers will run their notebooks locally and will have to clarify this. If the developer is not a beginner, this is no problem.
 
-Maybe I should unify this, or simply add a note at the top of the notebook, or not.
-
-- Unifying is not realistic since an advanced developer who doesn't use Google Colab will set up her/his own environment and paths.
-- Adding a text cell to Google Colab might be the best solution, though awkward, because then I would have to explain what Google Colab is: a VM, pre-installed libraries, etc.
-  
+*Solution*
+Add a sentence at the beginning of the *Setting up the environment section* in each notebook:   
+"This code was developed in Google Colab. Colab includes many pre-installed libraries and sets /content/ as the default directory, meaning you can access files directly by their filename if you wish (e.g., filename instead of needing to specify /content/filename). This differs from local environments, where you'll often need to install libraries or specify full file paths."
 
 ### 2.Pre-installing the required version of `click` when installing gTTs
-*Status*: Waiting for confirmation
+*Status*: Implement the new cell when removing the private token. Update the content in Chapter 5 with a short explanation and a code excerpt (about 5 lines altogether).
 
 gTTs requires a version of `click` that is not 8.1.8. 
 Google Colab's version is higher.
@@ -147,7 +146,7 @@ So presently, a restart is required in the middle of the *Setting up the environ
 I'm thinking of inserting the  following cell in cell 2 of the notebooks so that the user just *Run all* during the session. The program will 
 automatically uninstall `click`, kill the session, trigger, and auto-restart. The user simply needs to press *Run All* again.
 
-Solution: This cell solves the issue, and I could easily add it when I remove the private token from each notebook before making the repository public.
+*Solution*: This cell resolves the issue, and I can easily add it when I remove the private token from each notebook before making the repository public.
 It could only be mentioned once in Chapter 5, when gTTs is first introduced, since the following chapters do not repeat the setting up of the environment each time.
 
 ````
