@@ -20,7 +20,8 @@ Status: I assume this will be done when you check the code
 Status: I filled it in and revised the text below it.    
 
 7. requirements3 is not used     
-Status: When I control the repository before making it public, I will delete it after ensuring it is never accessed.   
+Status: When I control the repository before making it public, I will delete it after ensuring it is never accessed *when I delete the private token in all the notebooks.*
+   
 
 8. I'm the only author   
 Status: I changed the text to: Get to know the Author
