@@ -26,9 +26,9 @@ Status: When I control the repository before making it public, I will delete it 
 8. I'm the only author   
 Status: I changed the text to: Get to know the Author
 
-9. Bottom content. The author's paragraph was ok. But the links didn't work in the other related books section.     
+9. Bottom content. The author's paragraph was ok. But the links didn't work in the other related books section.<br>                 
 Status: I added an icon to the Author section and wrote the Other related books section with the books that I see as necessary: my book on RAG because I deal with RAG in this book. My 3rd Edition of Transformers, because this book is built on that franchise and RAG.    
 
 10. Infos:     
-a) I added this control log with a date to the CHANGELOG and will remove it when the repo goes public     
+a) This content of the CHANGELOG will remove be removed when the repo goes public     
 b) I'll save and remove the CODELOG when the repo goes publicPlease read it before verifying the code.
