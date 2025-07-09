@@ -1,49 +1,49 @@
 <h1 align="center">
-Building Business-ready Generative AI Systems, First Edition</h1>
-
-<p align="center">
-    This is the code repository for <a href =""> Business-ready Generative AI Systems, First Edition</a>, published by Packt.
+Building Business-Ready Generative AI Systems, First Edition</h1>
+<p align="center">This is the code repository for <a href ="https://www.packtpub.com/en-us/product/building-business-ready-generative-ai-systems-first-edition/9781837020690"> Building Business-Ready Generative AI Systems, First Edition</a>, published by Packt.
 </p>
-
-<p align="center">Last updated: June 15, 2025.</p>
-<p align="center">
-  <img src="https://github.com/Denis2054/Building-Business-Ready-Generative-AI-Systems/raw/main/GenAISys.png" alt="Generative AI Systems" />
-</p>
-
-
-<p align="center">
-  See the <a href="https://github.com/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/CHANGELOG.md">CHANGELOG.md</a> for details.
-</p>
-
 
 <h2 align="center">
-Build Generative AI Systems(GenAISys).
+Build Human-Centered Generative AI Systems with Agents, Memory, and LLMs for Enterprise
 </h2>
 <p align="center">
 Denis Rothman</p>
 
 <p align="center">
-   <a href="https://packt.link/genai" alt="Discord" title="Learn more on the Discord server"><img width="32px" src="https://cliply.co/wp-content/uploads/2021/08/372108630_DISCORD_LOGO_400.gif"/></a>
+   <a href="https://packt.link/I1tSU" alt="Discord" title="Learn more on the Discord server"><img width="32px" src="https://cliply.co/wp-content/uploads/2021/08/372108630_DISCORD_LOGO_400.gif"/></a>
   &#8287;&#8287;&#8287;&#8287;&#8287;
-  <a href="https://packt.link/free-ebook/9781836200918"><img width="32px" alt="Free PDF" title="Free PDF" src="https://cdn-icons-png.flaticon.com/512/4726/4726010.png"/></a>
+  <a href="https://packt.link/free-ebook/9781837020690"><img width="32px" alt="Free PDF" title="Free PDF" src="https://cdn-icons-png.flaticon.com/512/4726/4726010.png"/></a>
  &#8287;&#8287;&#8287;&#8287;&#8287;
-  <a href=""><img width="32px" alt="Graphic Bundle" title="Graphic Bundle" src="https://cdn-icons-png.flaticon.com/512/2659/2659360.png"/></a>
+  <a href="https://packt.link/gbp/9781837020690"><img width="32px" alt="Graphic Bundle" title="Graphic Bundle" src="https://cdn-icons-png.flaticon.com/512/2659/2659360.png"/></a>
   &#8287;&#8287;&#8287;&#8287;&#8287;
-   <a href=""><img width="32px" alt="Amazon" title="Get your copy" src="https://cdn-icons-png.flaticon.com/512/15466/15466027.png"/></a>
+   <a href="https://www.amazon.com/Building-Business-Ready-Generative-Systems-Human-Centered/dp/1837020698/ref=tmm_pap_swatch_0?_encoding=UTF8&sr=8-1"><img width="32px" alt="Amazon" title="Get your copy" src="https://cdn-icons-png.flaticon.com/512/15466/15466027.png"/></a>
   &#8287;&#8287;&#8287;&#8287;&#8287;
 </p>
 <details open> 
   <summary><h2>About the book</summary>
-<a href="">
-<img src="" height="256px" align="right">
+<a href="https://www.packtpub.com/product/unity-cookbook-fifth-edition/9781805123026">
+<img src="https://content.packt.com/B32304/cover_image_small.jpg" alt="Unity Cookbook, Fifth Edition" height="256px" align="right">
 </a>
 
-Business-ready Generative AI Systems[]
-
+In today's rapidly evolving AI landscape, standalone LLMs no longer deliver sufficient business value on their own. This guide moves beyond basic chatbots, showing you how to build advanced, agentic ChatGPT-grade systems capable of sophisticated semantic and sentiment analysis, powered by context-aware AI controllers. You'll design AI controller architectures with multi-user memory retention, enabling your system to dynamically adapt to diverse user and system inputs. You'll architect a Retrieval-Augmented Generation (RAG) system with Pinecone, designed to combine instruction-driven scenarios. Enhance your system’s intelligence with powerful multimodal capabilities—including image generation, voice interactions, and machine-driven reasoning—leveraging Chain-of-Thought orchestration to address complex, cross-domain automation challenges. Seamlessly integrate generative models like OpenAI’s suite and DeepSeek-R1 without disrupting your existing GenAISys ecosystem. Your GenAISys will apply neuroscience-inspired insights to marketing strategies, predict human mobility, integrate smoothly into human workflows, visualize complex scenarios, and connect to live external data all wrapped in a polished, investor-ready interface. By the end, you'll have built a GenAISys capable of deploying intelligent agents in your business environment.
 </details>
 <details open> 
   <summary><h2>Key Learnings</summary>
 <ul>
+
+<li>Implement an AI controller with a conversation AI agent and orchestrator at its core</li>
+
+<li>Build contextual awareness with short-term, long-term, and cross-session memory</li>
+
+<li>Cross-domain automation with multimodal reasoning, image generation, and voice features</li>
+
+<li>Expand a CoT agent by integrating consumer-memory understanding</li>
+
+<li>Integrate cutting-edge models of your choice without disrupting your existing GenAISys</li>
+
+<li>Connect to real-time external data while blocking security breach</li>
+
+</ul>
 
   </details>
 
@@ -107,11 +107,11 @@ Some of the modules are as follows:
 
 **Note:** This GitHub repository will be continually maintained and updated as the platforms evolve. As such, the versions will evolve in time in this repo so that you will always have access to state-of-art programs!
 
-<details> 
-  <summary><h2>Get to know Author</h2></summary>
 
-_Denis Rothman_ graduated from Sorbonne University and Paris-Cité University, designing one of the first patented encoding and embedding systems and teaching at Paris-I Panthéon Sorbonne.He authored one of the first patented word encoding and AI bots/robots. He began his career delivering a **Natural Language Processing** (**NLP**) chatbot for Moët et Chandon(LVMH) and an AI tactical defense optimizer for Airbus (formerly Aerospatiale).
-Denis then authored an AI optimizer for IBM and luxury brands, leading to an **Advanced Planning and Scheduling** (**APS**) solution used worldwide.
+<details> 
+  <summary><h2>Get to know Authors</h2></summary>
+
+_Denis Rothman_ Denis Rothman graduated from Sorbonne University and Paris-Diderot University, designing one of the very first word2matrix patented embedding and patented AI conversational agents. He began his career authoring one of the first AI cognitive Natural Language Processing (NLP) chatbots applied as an automated language teacher for Moet et Chandon and other companies. He authored an AI resource optimizer for IBM and apparel producers. He then authored an Advanced Planning and Scheduling (APS) solution used worldwide. 
 [LinkedIn](https://www.linkedin.com/in/denis-rothman-0b034043/)
 
 
@@ -121,9 +121,9 @@ Denis then authored an AI optimizer for IBM and luxury brands, leading to an **A
   <summary><h2>Other Related Books</h2></summary>
 <ul>
 
-  <li><a href="https://www.packtpub.com/en-us/product/transformers-for-natural-language-processing-and-computer-vision-9781805128724">Transformers for Natural Language Processing and Computer Vision, Third Edition, First Edition</a></li>
+  <li><a href="https://www.packtpub.com/en-us/product/building-ai-agents-with-llms-rag-and-knowledge-graphs-first-edition/9781835080382">Building AI Agents with LLMs, RAG, and Knowledge Graphs, First Edition</a></li>
 
-  <li><a href="https://www.packtpub.com/en-us/product/generative-ai-application-integration-patterns-9781835887608">Generative AI Application Integration Patterns, First Edition</a></li>
+  <li><a href="https://www.packtpub.com/en-us/product/ai-agents-in-practice-first-edition/9781805801344">AI Agents in Practice, First Edition</a></li>
  
 </ul>
 
