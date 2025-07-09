@@ -114,22 +114,17 @@ Some of the modules are as follows:
 
 
 <details> 
-  <summary><h2>Get to know Authors</h2></summary>
+  <summary><h2>✍️ Get to know the Author</h2></summary>
 
 _Denis Rothman_ Denis Rothman graduated from Sorbonne University and Paris-Diderot University, designing one of the very first word2matrix patented embedding and patented AI conversational agents. He began his career authoring one of the first AI cognitive Natural Language Processing (NLP) chatbots applied as an automated language teacher for Moet et Chandon and other companies. He authored an AI resource optimizer for IBM and apparel producers. He then authored an Advanced Planning and Scheduling (APS) solution used worldwide. 
 [LinkedIn](https://www.linkedin.com/in/denis-rothman-0b034043/)
-
-
-
 </details>
-<details> 
-  <summary><h2>Other Related Books</h2></summary>
-<ul>
 
-  <li><a href="https://www.packtpub.com/en-us/product/building-ai-agents-with-llms-rag-and-knowledge-graphs-first-edition/9781835080382">Building AI Agents with LLMs, RAG, and Knowledge Graphs, First Edition</a></li>
 
-  <li><a href="https://www.packtpub.com/en-us/product/ai-agents-in-practice-first-edition/9781805801344">AI Agents in Practice, First Edition</a></li>
- 
-</ul>
-
+<details>
+  <summary><h2>📚 Other Related Books</h2></summary>
+  <ul>
+    <li><a href="https://www.packtpub.com/en-us/product/rag-driven-generative-ai-9781836200901">RAG-driven Generative AI, First Edition</a></li>
+    <li><a href="https://www.packtpub.com/en-us/product/transformers-for-natural-language-processing-and-computer-vision-9781805128724">Transformers for Natural Language Processing and Computer Vision, Third Edition</a></li>
+  </ul>
 </details>
