@@ -108,6 +108,7 @@ Some of the modules are as follows:
 | `transformers`   | `4.48.3`                            |
 | `DeepSeek`          | `DeepSeek-R1-Distill-Llama-8B`                          |
 | `Pinecone `      | `5.0.1`                            |
+| `gTTS `      | `2.5.4`                            |
 
 **Note:** This GitHub repository will be continually maintained and updated as the platforms evolve. As such, the versions will be reviewed in time in this repo so that you will always have access to optimal programs!
 
