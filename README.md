@@ -1,5 +1,5 @@
 <h1 align="center">
-Building Business-Ready Generative AI Systems, First Edition</h1>
+<a href ="https://www.packtpub.com/en-us/product/building-business-ready-generative-ai-systems-9781837020690"> Building Business-Ready Generative AI Systems, First Edition</h1>
 
 
 
