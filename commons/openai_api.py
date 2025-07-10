@@ -2,6 +2,7 @@ from openai import OpenAI
 import openai
 from openai import OpenAI
 import base64
+client = OpenAI()
 
 # Implemented in Chapter01
 def make_openai_api_call(input, mrole,mcontent,user_role):
