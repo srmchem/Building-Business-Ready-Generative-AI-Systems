@@ -116,7 +116,7 @@ Some of the modules are as follows:
 <details> 
   <summary><h2>✍️ Get to know the Author</h2></summary>
 
-_Denis Rothman_ Denis Rothman graduated from Sorbonne University and Paris-Diderot University, designing one of the very first word2matrix patented embedding and patented AI conversational agents. He began his career authoring one of the first AI cognitive Natural Language Processing (NLP) chatbots applied as an automated language teacher for Moet et Chandon and other companies. He authored an AI resource optimizer for IBM and apparel producers. He then authored an Advanced Planning and Scheduling (APS) solution used worldwide. 
+_Denis Rothman_ graduated from Sorbonne University and Paris-Diderot University, designing one of the very first word2matrix patented embedding and patented AI conversational agents. He began his career authoring one of the first AI cognitive Natural Language Processing (NLP) chatbots applied as an automated language teacher for Moet et Chandon and other companies. He authored an AI resource optimizer for IBM and apparel producers. He then authored an Advanced Planning and Scheduling (APS) solution used worldwide. 
 [LinkedIn](https://www.linkedin.com/in/denis-rothman-0b034043/)
 </details>
 
