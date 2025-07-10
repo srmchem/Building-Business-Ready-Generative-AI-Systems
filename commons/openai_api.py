@@ -33,6 +33,12 @@ def make_openai_api_call(input, mrole,mcontent,user_role):
     # Initialize the OpenAI client
     client = OpenAI()
 
+    # checking api_key
+    api_key = os.getenv('OPENAI_API_KEY')
+    if not api_key:
+      raise ValueError("OPENAI_API_KEY environment variable is not set!") # This check is still good to have
+    client = OpenAI(api_key=api_key) # <-- This is the crucial change
+    
     # Make the API call
     response = client.chat.completions.create(
         model=gmodel,
