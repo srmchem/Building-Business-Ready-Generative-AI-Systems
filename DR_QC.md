@@ -41,6 +41,6 @@ Expected Downtime/Update Window: <br>
 | <ul><li>GenAISys_Customer_Service.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter09/GenAISys_Customer_Service.ipynb)  | 
  **Chapter 10, Presenting a Business-ready Generative AI System**
 | <ul><li>GenAISys_Presentation.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter10/GenAISys_Presentation.ipynb)  | 
-| <ul><li>GenAISYS_&_MAS.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter10/GenAISYS_&_MAS.ipynb)  |
+| <ul><li>GenAISYS_and_MAS.ipynb</a></li> |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter10/GenAISYS_and_MAS.ipynb)  |
 
 
