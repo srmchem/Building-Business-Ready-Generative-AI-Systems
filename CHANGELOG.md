@@ -2,33 +2,3 @@
 
 This changelog contains the notable updates to the **Building-Business-Ready-Generative-AI-Systems** repository.   
 🐬 Indicates *new bonus notebooks* to explore.
-
-# README.md quality control: 08/09/2025
-1. The links for the book are not implemented at the top of the README file.  
-Status: Please complete this with links to Packt, etc. 
-
-2. Kaggle is missing from the programs of the chapter list.   
-Status: I assume this will be done when you check the code
-    
-3. The About the Book section did not fit the Preface I just updated.     
-Status: I updated it. Check with Tanya, please.   
-
-4. The about section was empty    
-Status: I filled it in. Please check.   
-
-5. Versions table    
-Status: I filled it in and revised the text below it.    
-
-7. requirements3 is not used     
-Status: When I control the repository before making it public, I will delete it after ensuring it is never accessed *when I delete the private token in all the notebooks.*
-   
-
-8. I'm the only author   
-Status: I changed the text to: Get to know the Author
-
-9. Bottom content. The author's paragraph was ok. But the links didn't work in the other related books section.<br>                             
-Status: I added an icon to the Author section and wrote the Other related books section with the books that I see as necessary: my book on RAG because I deal with RAG in this book. My 3rd Edition of Transformers, because this book is built on that franchise and RAG.    
-
-10. Infos:     
-a) This content of the CHANGELOG will be removed be removed when the repo goes public     
-b) I'll save and remove the CODELOG when the repo goes publicPlease read it before verifying the code.
