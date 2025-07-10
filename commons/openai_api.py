@@ -1,5 +1,6 @@
 from openai import OpenAI
 import openai
+import os
 from openai import OpenAI
 import base64
 client = OpenAI()
