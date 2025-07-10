@@ -3,7 +3,7 @@
 This changelog contains the notable updates to the **Building-Business-Ready-Generative-AI-Systems** repository.   
 🐬 Indicates *new bonus notebooks* to explore.
 
-# README.md quality control: 07/09/2025
+# README.md quality control: 08/09/2025
 1. The links for the book are not implemented at the top of the README file.  
 Status: Please complete this with links to Packt, etc. 
 
