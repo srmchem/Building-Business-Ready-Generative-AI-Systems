@@ -4,7 +4,7 @@ Building Business-Ready Generative AI Systems, First Edition</h1>
 
 
 
-<p align="center">This is the code repository for <a href ="https://www.packtpub.com/en-us/product/building-business-ready-generative-ai-systems-first-edition/9781837020690"> Building Business-Ready Generative AI Systems, First Edition</a>, published by Packt.
+<p align="center">This is the code repository for <a href ="https://www.packtpub.com/en-us/product/building-business-ready-generative-ai-systems-9781837020690"> Building Business-Ready Generative AI Systems, First Edition</a>, published by Packt.
 </p>
 <h2 align="center">
 Build Human-Centered Generative AI Systems with Agents, Memory, and LLMs for Enterprise
@@ -24,8 +24,8 @@ Denis Rothman</p>
 </p>
 <details open> 
   <summary><h2>About the book</summary>
-<a href="https://www.packtpub.com/product/unity-cookbook-fifth-edition/9781805123026">
-<img src="https://content.packt.com/B32304/cover_image_small.jpg" alt="Unity Cookbook, Fifth Edition" height="256px" align="right">
+<a href="https://www.packtpub.com/en-us/product/building-business-ready-generative-ai-systems-9781837020690">
+<img src="https://content.packt.com/B32304/cover_image_small.jpg" alt="Building Business-Ready Generative AI Systems, First Edition" height="256px" align="right">
 </a>
 
 In the rapidly evolving AI landscape, standalone LLMs alone don’t deliver business value. This comprehensive guide enables you to become a generative AI architect, building powerful ChatGPT-grade systems from scratch that are adaptable to any platform. You'll go beyond basic chatbots, developing systems capable of semantic and sentiment analysis—with context-aware AI controllers at their core.<br>
