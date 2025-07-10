@@ -1,8 +1,20 @@
 <h1 align="center">
 Building Business-Ready Generative AI Systems, First Edition</h1>
+
+
+<h1 align="center">
+Repository Undergoing deployment!</h1>
+<h2 align="center">
+Expected Downtime/Update Window: <br>  
+🗓️ Date: July 10, 2025   <br>
+⏰ Time: 8:45 AM GMT - 11:00 PM GMT<br>    
+During this period, you might experience some inconsistencies or temporary changes. We appreciate your patience and understanding as we work to deploy things!   
+We'll be back to full functionality at 11:00 PM GMT. Thanks for your support!   
+</h2>
+
+
 <p align="center">This is the code repository for <a href ="https://www.packtpub.com/en-us/product/building-business-ready-generative-ai-systems-first-edition/9781837020690"> Building Business-Ready Generative AI Systems, First Edition</a>, published by Packt.
 </p>
-
 <h2 align="center">
 Build Human-Centered Generative AI Systems with Agents, Memory, and LLMs for Enterprise
 </h2>
