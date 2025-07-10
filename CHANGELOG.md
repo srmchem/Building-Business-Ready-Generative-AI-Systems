@@ -5,16 +5,16 @@ This changelog contains the notable updates to the **Building-Business-Ready-Gen
 
 # README.md quality control: 07/09/2025
 1. The links for the book are not implemented at the top of the README file.  
-Status:
-    
-2. The about section was empty    
-Status: I filled it in. Please check.   
+Status: Please complete this with links to Packt, etc. 
 
+2. Kaggle is missing from the programs of the chapter list.   
+Status: I assume this will be done when you check the code
+    
 3. The About the Book section did not fit the Preface I just updated.     
 Status: I updated it. Check with Tanya, please.   
 
-4. Kaggle is missing from the programs of the chapter list.   
-Status: I assume this will be done when you check the code       
+4. The about section was empty    
+Status: I filled it in. Please check.   
 
 5. Versions table    
 Status: I filled it in and revised the text below it.    
