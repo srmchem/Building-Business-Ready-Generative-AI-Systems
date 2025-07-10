@@ -1,8 +1,6 @@
 from openai import OpenAI
 import openai
 from openai import OpenAI
-# Initialize the OpenAI client
-client = OpenAI()
 import base64
 
 # Implemented in Chapter01
@@ -82,7 +80,10 @@ def image_analysis(image_path_or_url, query_text, model="gpt-4o"):
         "frequency_penalty": 0,
         "presence_penalty": 0,
     }
-
+    
+    # Initialize the OpenAI client
+    client = OpenAI()
+    
     # Make the API call
     response = client.chat.completions.create(
         model=model,
