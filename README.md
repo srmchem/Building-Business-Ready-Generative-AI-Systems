@@ -1,7 +1,7 @@
 <h1 align="center">
 <a href ="https://www.packtpub.com/en-us/product/building-business-ready-generative-ai-systems-9781837020690"> Building Business-Ready Generative AI Systems, First Edition</h1>
 
-
+Last updated July 12, 2025
 
 
 <p align="center">This is the code repository for <a href ="https://www.packtpub.com/en-us/product/building-business-ready-generative-ai-systems-9781837020690"> Building Business-Ready Generative AI Systems, First Edition</a>, published by Packt.
