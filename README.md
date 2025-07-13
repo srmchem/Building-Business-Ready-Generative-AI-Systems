@@ -1,9 +1,6 @@
 <h1 align="center">
 <a href ="https://www.packtpub.com/en-us/product/building-business-ready-generative-ai-systems-9781837020690"> Building Business-Ready Generative AI Systems, First Edition</h1>
 
-Last updated July 12, 2025
-
-
 <p align="center">This is the code repository for <a href ="https://www.packtpub.com/en-us/product/building-business-ready-generative-ai-systems-9781837020690"> Building Business-Ready Generative AI Systems, First Edition</a>, published by Packt.
 </p>
 <h2 align="center">
@@ -57,7 +54,7 @@ By the end, your GenAISys will be capable of trajectory analysis and human mobil
 <details open> 
   <summary><h2>Chapters</summary>
 
-**This repo is continually updated and upgraded.**    
+**This repo is continually updated and upgraded. Last updated July 12, 2025**    
 📝 For details on updates and improvements, see the [Changelog](./CHANGELOG.md).    
 🐬 *New bonus notebooks* to explore, see [Changelog](./CHANGELOG.md).     
 🚩 If you see anything that doesn't run as expected, raise an issue, and we'll work on it!      
